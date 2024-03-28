@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Home</h1>
-    <NuxtLink to="sample" />
+    <NuxtLink to="/sample">sss</NuxtLink>
   </div>
 </template>
 <script lang="ts" setup>
