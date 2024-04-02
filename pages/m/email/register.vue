@@ -6,11 +6,11 @@
       <!-- 引入 Tailwind CSS -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     </head>
-    <div class="text-color-1" style="background-color: #902BF5;width:100%">
+    <div class="photo text-color-1" style="background-color: #902BF5;width:100%">
       <div>
         <img src="/assets/img/desktop.png" alt="">
       </div>
-      <div class="photo">
+      <div>
         <img src="/assets/img/mail-cover.png" alt="">
         <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
           <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
