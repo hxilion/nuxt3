@@ -6,11 +6,11 @@
     <!-- 引入 Tailwind CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
   </head>
-  <div class="photo px-10 pb-10 text-color-1" style="background-color: #902BF5;width:100%">
+  <div class="email photo px-10 pb-10 text-color-1" style="background-color: #902BF5;width:100%">
     <div>
       <img src="/assets/img/desktop.png" alt="">
     </div>
-    <div style="max-width: 640px; min-width: 390px;">
+    <div class="email-content" style="max-width: 640px; min-width: 390px;">
       <img src="/assets/img/mail-cover.png" alt="">
       <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
@@ -26,7 +26,12 @@
           以下のURLをクリックして、メールアドレスの認証を完了してください。
         </div>
         <div class="photo mb-10">
-          <img src="/assets/img/purple.png" alt="">
+          <button
+            type="button"
+            class="mail-verify px-3 py-5 rounded-lg text-white text-base" 
+            onclick="location.href='/'" target="_blank">メール認証
+            <img class="ml-2.5" src="/assets/img/vector.png" alt="">
+          </button>
         </div>
         <div class="mb-5">
           メールアドレスの確認が完了すると、Pazuruの会員として、様々なゲームをご遊戯いただけます。
@@ -58,8 +63,8 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="text-sm text-left text-start font-medium px-10 pt-5 pb-5 rounded-b-md" style="background-color: #F4EAFE;max-width: 640px; min-width: 390px;">
-        <div class="photo mb-10" style="float: right;position: relative;top: -52px;">
+      <div class="email-conect text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #F4EAFE;max-width: 640px; min-width: 390px;">
+        <div class="photo" style="float: right;position: relative;top: -52px;">
           <img src="/assets/img/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
@@ -72,7 +77,7 @@
           ※営業時間：
         </div>
       </div>
-      <div class="text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
+      <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
         <div class="container">
             <div class="image-wrapper">
               <img src="/assets/img/facebook.png" alt="">
@@ -143,4 +148,53 @@
     max-width: 100%; /* 讓圖片保持其原始大小比例 */
     height: auto;
   }
+
+  .mail-verify {
+    display: flex;
+    justify-content: center; /* 將圖片水平置中 */
+    align-items: center; /* 將圖片垂直置中 */
+    width: 180px;
+    height: 52px;
+    background: linear-gradient(#a655f7, #902BF5);
+    border: 2px solid #ddbdfc;
+  }
+
+  @media (max-width: 1024px) {
+  .email {
+    padding: 0 40px 40px 40px;
+  }
+  .email-content {
+    max-width: 640px; min-width: 390px;
+  }
+  .email-conect {
+    padding: 20px 40px 20px 40px;
+    max-width: 640px; min-width: 390px;
+  }
+  .email-about {
+    max-width: 640px;
+    min-width: 390px;
+  }
+}
+@media (max-width: 768px) {
+  .email {
+    padding: 0 40px 40px 40px;
+  }
+  .email-content {
+    max-width: 640px; min-width: 390px;
+  }
+  .email-conect {
+    padding: 20px 40px 20px 40px;
+    max-width: 640px; min-width: 390px;
+  }
+  .email-about {
+    max-width: 640px;
+    min-width: 390px;
+  }
+}
+
+@media (max-width: 500px) {
+  .email-conect {
+    padding: 20px;
+  }
+}
 </style>

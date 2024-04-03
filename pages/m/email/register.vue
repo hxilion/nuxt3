@@ -26,7 +26,12 @@
           以下のURLをクリックして、メールアドレスの認証を完了してください。
         </div>
         <div class="photo mb-10">
-          <img src="/assets/img/purple.png" alt="">
+          <button
+            type="button"
+            class="mail-verify px-3 py-5 rounded-lg text-white text-base" 
+            onclick="location.href='/'" target="_blank">メール認証
+            <img class="ml-2.5" src="/assets/img/vector.png" alt="">
+          </button>
         </div>
         <div class="mb-5">
           メールアドレスの確認が完了すると、Pazuruの会員として、様々なゲームをご遊戯いただけます。
@@ -142,6 +147,16 @@
   .image-wrapper img {
     max-width: 100%; /* 讓圖片保持其原始大小比例 */
     height: auto;
+  }
+
+  .mail-verify {
+    display: flex;
+    justify-content: center; /* 將圖片水平置中 */
+    align-items: center; /* 將圖片垂直置中 */
+    width: 180px;
+    height: 52px;
+    background: linear-gradient(#a655f7, #902BF5);
+    border: 2px solid #ddbdfc;
   }
 </style>
   
