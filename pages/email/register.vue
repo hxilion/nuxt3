@@ -1,12 +1,5 @@
 <template>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="register" content="width=device-width, initial-scale=1.0">
-    <title>Your Title</title>
-    <!-- 引入 Tailwind CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-  </head>
-  <div class="email photo px-10 pb-10 text-color-1" style="background-color: #902BF5;width:100%">
+  <div class="email photo px-10 pb-10 text-color-1" style="background-color: #902BF5;width:100%;min-width: 470px;">
     <div>
       <img src="/assets/img/desktop.png" alt="">
     </div>
@@ -159,42 +152,43 @@
     border: 2px solid #ddbdfc;
   }
 
-  @media (max-width: 1024px) {
-  .email {
-    padding: 0 40px 40px 40px;
+  /* @media (max-width: 1024px) {
+    .email {
+      padding: 0 40px 40px 40px;
+    }
+    .email-content {
+      max-width: 640px; min-width: 390px;
+    }
+    .email-conect {
+      padding: 20px 40px 20px 40px;
+      max-width: 640px; min-width: 390px;
+    }
+    .email-about {
+      max-width: 640px;
+      min-width: 390px;
+    }
   }
-  .email-content {
-    max-width: 640px; min-width: 390px;
-  }
-  .email-conect {
-    padding: 20px 40px 20px 40px;
-    max-width: 640px; min-width: 390px;
-  }
-  .email-about {
-    max-width: 640px;
-    min-width: 390px;
-  }
-}
-@media (max-width: 768px) {
-  .email {
-    padding: 0 40px 40px 40px;
-  }
-  .email-content {
-    max-width: 640px; min-width: 390px;
-  }
-  .email-conect {
-    padding: 20px 40px 20px 40px;
-    max-width: 640px; min-width: 390px;
-  }
-  .email-about {
-    max-width: 640px;
-    min-width: 390px;
-  }
-}
 
-@media (max-width: 500px) {
-  .email-conect {
-    padding: 20px;
+  @media (max-width: 768px) {
+    .email {
+      padding: 0 40px 40px 40px;
+    }
+    .email-content {
+      max-width: 640px; min-width: 390px;
+    }
+    .email-conect {
+      padding: 20px 40px 20px 40px;
+      max-width: 640px; min-width: 390px;
+    }
+    .email-about {
+      max-width: 640px;
+      min-width: 390px;
+    }
   }
-}
+
+  @media (max-width: 500px) {
+    .email-conect {
+      padding: 20px;
+    }
+  } */
 </style>

@@ -1,17 +1,10 @@
 <template>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="register" content="width=device-width, initial-scale=1.0">
-    <title>Your Title</title>
-    <!-- 引入 Tailwind CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-  </head>
   <div class="photo text-color-1" style="background-color: #902BF5;width:100%">
     <div>
       <img src="/assets/img/desktop.png" alt="">
     </div>
     <div>
-      <img src="/assets/img/mail-cover.png" alt="">
+      <img src="/assets/img/mail-cover-m.png" alt="">
       <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
           %user_name% 様
