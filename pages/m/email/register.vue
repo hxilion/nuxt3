@@ -44,7 +44,13 @@
           Pazuruでは会員様にゲームを最大限お楽しみいただけるよう、 登録してすぐご利用可能なボーナスをご用意しております。 是非ご活用ください♪
         </div>
         <div class="photo mb-10">
-          <img src="/assets/img/yellow.png" alt="">
+          <a href="https://pazuru.com/ja/promotions" target="_blank">
+            <button
+              type="button"
+              class="mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
+                プロモーション
+            </button>
+          </a>
         </div>
         <div class="mb-10">
           今後とも、Pazuruをよろしくお願いいたします。
@@ -150,6 +156,17 @@
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);
     border: 2px solid #ddbdfc;
+  }
+
+  .mail-promotion {
+    display: flex;
+    justify-content: center; /* 將圖片水平置中 */
+    align-items: center; /* 將圖片垂直置中 */
+    width: 180px;
+    height: 52px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FFE555 0%, #FFD801 100%);
+    border: 2px solid #FFED8A;
   }
 </style>
   
