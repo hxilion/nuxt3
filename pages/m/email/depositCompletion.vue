@@ -78,8 +78,8 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="contact-us text-sm text-left text-start font-medium p-5 rounded-b-md">
-        <div class="photo email-ol">
+      <div class="text-sm text-left text-start font-medium p-5 rounded-b-md" style="background-color: #F4EAFE;">
+        <div class="email-ol">
           <img src="/assets/img/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
@@ -113,7 +113,7 @@
         <div class="photo my-10">
           <img src="/assets/img/pazuru-logo-white.png" alt="">
         </div>
-        <div class="font-xs" style="color: #f4eafe;">
+        <div class="text-xs" style="color: #f4eafe;">
           <a class="divide-y" href="/">プライバシーポリシー</a>
           <a class="divide-y" href="/">利用規約</a>
           <a class="divide-y" href="/">よくある質問</a>

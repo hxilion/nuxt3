@@ -63,13 +63,13 @@
         </div>
       </div>
       <div class="email-conect text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #F4EAFE;max-width: 640px; min-width: 390px;">
-        <div class="photo" style="float: right;position: relative;top: -52px;">
+        <div class="email-ol">
           <img src="/assets/img/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
           Pazuru運営事務局
         </div>
-        <div class="text-color-1 text-xs mb-2.5">
+        <div class="text-color-1 text-xs mb-2.5 whitespace-nowrap">
           メールアドレス：info@pazuru.com
         </div>
         <div class="text-color-1 text-xs">
@@ -97,13 +97,13 @@
         <div class="photo my-10">
           <img src="/assets/img/pazuru-logo-white.png" alt="">
         </div>
-        <div class="font-xs" style="color: #f4eafe;">
+        <div class="text-xs" style="color: #f4eafe;">
           <a class="divide-y" href="/">プライバシーポリシー</a>
           <a class="divide-y" href="/">利用規約</a>
           <a class="divide-y" href="/">よくある質問</a>
           <a href="/">カスタマーサポート</a>
         </div>
-        <div class="text-color-1 text-xs mt-10" style="color: #fff;">
+        <div class="text-xs mt-10" style="color: #fff;">
           ©Pazuru 2024 | 全著作権所有
         </div>
       </div>
@@ -167,6 +167,12 @@
     font-weight: 700;
     background: linear-gradient(90deg, #FFE555 0%, #FFD801 100%);
     border: 2px solid #FFED8A;
+  }
+
+  .email-ol {
+    float: right;
+    position: relative;
+    top: -52px;
   }
 
   /* @media (max-width: 1024px) {
