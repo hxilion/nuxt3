@@ -1,9 +1,9 @@
 <template>
-  <div class="email photo px-10 pb-10 text-color-1" style="background-color: #902BF5;width:100%;min-width: 470px;">
+  <div class="photo text-color-1" style="background-color: #902BF5;width:100%;">
     <div>
       <img src="/assets/img/desktop.png" alt="">
     </div>
-    <div class="email-content" style="max-width: 640px; min-width: 390px;">
+    <div>
       <img src="/assets/img/deposit-completion.png" alt="">
       <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
@@ -35,21 +35,21 @@
           <div class='right'></div>
         </div>
         <div class="grid-game">
-          <div class="photo mb-5">
+          <div class="photo mb-2.5">
             <img src="/assets/img/game-1.png" alt="">
-            <span class="leading-10">Quest to the West</span>
+            <span class="text-xs leading-10">Quest to the West</span>
           </div>
-          <div class="photo mb-5">
+          <div class="photo mb-2.5">
             <img src="/assets/img/game-2.png" alt="">
-            <span class="leading-10">Triple Juicy Drops</span>
+            <span class="text-xs leading-10">Triple Juicy Drops</span>
           </div>
-          <div class="photo mb-5">
+          <div class="photo mb-2.5">
             <img src="/assets/img/game-3.png" alt="">
-            <span class="leading-10">Take Olympus</span>
+            <span class="text-xs leading-10">Take Olympus</span>
           </div>
           <div class="photo mb-5">
             <img src="/assets/img/game-4.png" alt="">
-            <span class="leading-10">Lost Mystery Chests</span>
+            <span class="text-xs leading-10">Lost Mystery Chests</span>
           </div>
         </div>
         <div class="photo mb-10">
@@ -78,21 +78,21 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="email-conect contact-us text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md">
+      <div class="contact-us text-sm text-left text-start font-medium p-5 rounded-b-md">
         <div class="photo email-ol">
           <img src="/assets/img/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
           Pazuru運営事務局
         </div>
-        <div class="text-color-1 text-xs mb-2.5">
+        <div class="text-color-1 text-xs mb-2.5 whitespace-nowrap">
           メールアドレス：info@pazuru.com
         </div>
         <div class="text-color-1 text-xs">
           ※営業時間：
         </div>
       </div>
-      <div class="email-about text-sm font-medium px-10 py-5" style="max-width: 640px; min-width: 390px;">
+      <div class="text-sm font-medium px-10 pt-5 pb-5">
         <div class="container">
             <div class="image-wrapper">
               <img src="/assets/img/facebook.png" alt="">
@@ -157,7 +157,7 @@
 
   .grid-game {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 30px;
   }
 
@@ -180,7 +180,7 @@
     align-items: center; /* 將圖片垂直置中 */
     width: 180px;
     height: 52px;
-    background: linear-gradient(#a655f7, #902bf5);
+    background: linear-gradient(#a655f7, #902BF5);
     border: 2px solid #ddbdfc;
   }
 
@@ -236,54 +236,13 @@
     border-bottom: 24px solid transparent;
   }
 
+  .contact-us {
+    background-color: #f4eafe;
+  }
+
   .email-ol {
     float: right;
     position: relative;top: -52px;
   }
 
-  .contact-us {
-    background-color: #f4eafe;
-    max-width: 640px;
-    min-width: 390px;
-  }
-
-  /* @media (max-width: 1024px) {
-    .email {
-      padding: 0 40px 40px 40px;
-    }
-    .email-content {
-      max-width: 640px; min-width: 390px;
-    }
-    .email-conect {
-      padding: 20px 40px 20px 40px;
-      max-width: 640px; min-width: 390px;
-    }
-    .email-about {
-      max-width: 640px;
-      min-width: 390px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .email {
-      padding: 0 40px 40px 40px;
-    }
-    .email-content {
-      max-width: 640px; min-width: 390px;
-    }
-    .email-conect {
-      padding: 20px 40px 20px 40px;
-      max-width: 640px; min-width: 390px;
-    }
-    .email-about {
-      max-width: 640px;
-      min-width: 390px;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .email-conect {
-      padding: 20px;
-    }
-  } */
 </style>

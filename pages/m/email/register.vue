@@ -62,14 +62,14 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="text-sm text-left text-start font-medium px-5 pt-5 pb-5 rounded-b-md" style="background-color: #F4EAFE;">
-        <div class="photo mb-10" style="float: right;position: relative;top: -52px;">
+      <div class="text-sm text-left text-start font-medium p-5 rounded-b-md" style="background-color: #F4EAFE;">
+        <div class="photo" style="float: right;position: relative;top: -52px;">
           <img src="/assets/img/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
           Pazuru運営事務局
         </div>
-        <div class="text-color-1 text-xs mb-2.5">
+        <div class="text-color-1 text-xs mb-2.5 whitespace-nowrap">
           メールアドレス：info@pazuru.com
         </div>
         <div class="text-color-1 text-xs">
