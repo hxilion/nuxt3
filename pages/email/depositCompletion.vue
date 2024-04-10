@@ -34,20 +34,20 @@
           </div>
           <div class='right'></div>
         </div>
-        <div class="grid-game">
-          <div class="photo mb-5">
+        <div class="grid-game photo">
+          <div class="mb-5">
             <img src="/assets/img/game-1.png" alt="">
             <span class="leading-10">Quest to the West</span>
           </div>
-          <div class="photo mb-5">
+          <div class="mb-5">
             <img src="/assets/img/game-2.png" alt="">
             <span class="leading-10">Triple Juicy Drops</span>
           </div>
-          <div class="photo mb-5">
+          <div class="mb-5">
             <img src="/assets/img/game-3.png" alt="">
             <span class="leading-10">Take Olympus</span>
           </div>
-          <div class="photo mb-5">
+          <div class="mb-5">
             <img src="/assets/img/game-4.png" alt="">
             <span class="leading-10">Lost Mystery Chests</span>
           </div>
@@ -110,7 +110,7 @@
               <img src="/assets/img/tiktok.png" alt="">
             </div>
           </div>
-        <div class="photo my-10">
+        <div class="my-10">
           <img src="/assets/img/pazuru-logo-white.png" alt="">
         </div>
         <div class="text-xs" style="color: #f4eafe;">

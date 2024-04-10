@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="email-conect contact-us text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #f4eafe;">
-        <div class="photo email-ol">
+        <div class="email-ol">
           <img src="/assets/img/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
@@ -66,7 +66,7 @@
               <img src="/assets/img/tiktok.png" alt="">
             </div>
           </div>
-        <div class="photo my-10">
+        <div class="my-10">
           <img src="/assets/img/pazuru-logo-white.png" alt="">
         </div>
         <div class="font-xs" style="color: #f4eafe;">

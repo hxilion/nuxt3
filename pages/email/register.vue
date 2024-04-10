@@ -34,8 +34,12 @@
         </div>
         <div class="divide-x mb-10">
         </div>
-        <div class="photo mb-10">
-          <img src="/assets/img/title-a.png" alt="">
+        <div class="title mb-10">
+          <div class='left'></div>
+          <div class="p-2 content">
+            <span class="content-text text-2xl font-extrabold">おすすめプロモーション ♪</span>
+          </div>
+          <div class='right'></div>
         </div>
         <div class="photo mb-10">
           <img src="/assets/img/banner.png" alt="">
@@ -94,7 +98,7 @@
               <img src="/assets/img/tiktok.png" alt="">
             </div>
           </div>
-        <div class="photo my-10">
+        <div class="my-10">
           <img src="/assets/img/pazuru-logo-white.png" alt="">
         </div>
         <div class="text-xs" style="color: #f4eafe;">
@@ -173,6 +177,47 @@
     float: right;
     position: relative;
     top: -52px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center; /* 將圖片水平置中 */
+    align-items: center; /* 將圖片垂直置中 */
+  }
+
+  .content {
+    height: 48px;
+    min-width: 148px;
+    text-align: center;
+    line-height: initial;
+    background: linear-gradient(90deg, #ecd9ff 0%, #ddbdfc 100%);
+  }
+
+  .content-text {
+    background: linear-gradient(90deg, #8327df 0%, #3c1267 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .right {
+    width: 0;
+    height: 0;
+    background-color: #ddbdfc;
+    border-right: 12px solid rgb(255, 255, 255);
+    border-left: 24px solid transparent;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+  }
+
+  .left {
+    width: 0;
+    height: 0;
+    background-color: #ecd9ff;
+    border-right: 24px solid transparent;
+    border-left: 12px solid rgb(255, 255, 255);
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
   }
 
   /* @media (max-width: 1024px) {
