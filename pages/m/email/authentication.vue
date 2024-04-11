@@ -35,11 +35,11 @@
         <div class="divide-x mb-10">
         </div>
         <div class="title mb-10">
-          <div class='left'></div>
+          <div class="left"></div>
           <div class="p-2 content">
             <span class="content-text text-2xl font-extrabold">おすすめプロモーション ♪</span>
           </div>
-          <div class='right'></div>
+          <div class="right"></div>
         </div>
         <div class="photo mb-10">
           <img src="/assets/img/banner.png" alt="">

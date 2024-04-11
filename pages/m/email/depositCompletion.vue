@@ -28,11 +28,11 @@
         </div>
         <div class="divide-x mb-10"></div>
         <div class="title mb-10">
-          <div class='left'></div>
+          <div class="left"></div>
           <div class="p-2 content">
             <span class="content-text text-2xl font-extrabold">人気ゲーム情報</span>
           </div>
-          <div class='right'></div>
+          <div class="right"></div>
         </div>
         <div class="photo grid-game">
           <div class="mb-2.5">
