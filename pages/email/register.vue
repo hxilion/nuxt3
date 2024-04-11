@@ -1,58 +1,46 @@
 <template>
-  <div class="photo text-color-1 font-medium" style="background-color: #902BF5;width:100%;font-family:'M PLUS 2'">
+  <div class="email photo px-10 pb-10 text-color-1 font-medium" style="background-color: #902BF5;width:100%;min-width: 470px;font-family:'M PLUS 2'">
     <div>
       <img src="/assets/img/email/desktop.png" alt="">
     </div>
-    <div class="email-content">
-      <img src="/assets/img/email/authentication-completed-m.png" alt="">
-      <div class="text-sm text-left text-start font-medium py-10 px-5" style="background-color: #fff;">
+    <div class="email-content" style="max-width: 640px; min-width: 390px;">
+      <img src="/assets/img/email/register.png" alt="">
+      <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>
-        <div>
-          この度は、Pazuruにご登録いただきありがとうございます！
+        <div class="mb-10">
+          お世話になっております。Pazuruにアカウントを登録いただき、誠にありがとうございます。
         </div>
         <div class="mb-5">
-          <a href="https://pazuru.com/ja/promotions" target="_blank">URL</a>をクリックしていただいたことで、メールアドレスの確認が完了いたしました。
+          残念ながら、アカウント登録が未完了でございます。以下の項目が未記入または不完全です。
         </div>
         <div class="mb-10">
-          以下のURLをクリックして、メールアドレスの認証を完了してください。
+          <ol start="1">
+            <li>ユーザーID</li>
+            <li>パスワード</li>
+            <li>メールアドレス</li>
+            <li>その他必要事項</li>
+          </ol>
         </div>
-        <div class="text-base mb-10 font-bold">
-          メールアドレス:％User_ Email％
-        </div>
-        <div>
-          ※このメールは保管ください。
-        </div>
-        <div>
-          Pazuruの会員として、様々なゲームをご遊戯いただけます！
-        </div>
+        <div class="divide-x mb-14"></div>
         <div class="mb-10">
-          早速ログインして、Pazuruの世界を楽しみましょう！
+          アカウントを有効にするために、以下のリンクから再度登録フォームにアクセスし、必要な情報を入力してください。
         </div>
         <div class="photo mb-14">
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="mail-verify px-3 py-5 rounded-lg text-white text-base" >早速ログインする！
+              class="mail-verify px-3 py-5 rounded-lg text-white text-base" >アカウント登録フォーム
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
         </div>
-        <div class="divide-x mb-10">
+        <div class="mb-10">
+          ご不明点やご質問があれば、お気軽にカスタマーサポートチャットまでお問い合わせください。
         </div>
-        <div class="title mb-10">
-          <div class="left"></div>
-          <div class="p-2 content">
-            <span class="content-text text-xl font-extrabold">ご入金方法のご案内</span>
-          </div>
-          <div class="right"></div>
-        </div>
-        <div class="mb-10 text-center">
-          Pazuruの入金方法はとっても簡単♪たったの３ステップ！
-        </div>
-        <div class="photo mb-10">
-          <img src="/assets/img/email/payment-m.png" alt="">
+        <div class="mb-14">
+          よろしくお願いいたします。
         </div>
         <div class="text-color-2 text-xs">
           ※このメールは自動送信のため、返信できません。
@@ -61,7 +49,7 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="text-sm text-left text-start p-5 font-medium rounded-b-md" style="background-color: #F4EAFE;">
+      <div class="email-conect text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #F4EAFE;max-width: 640px; min-width: 390px;">
         <div class="email-ol">
           <img src="/assets/img/email/email-ol.png" alt="">
         </div>
@@ -75,7 +63,7 @@
           ※営業時間：
         </div>
       </div>
-      <div class="text-sm font-medium px-10 pt-5 pb-5">
+      <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
         <div class="container">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
@@ -151,7 +139,7 @@
     display: flex;
     justify-content: center; /* 將圖片水平置中 */
     align-items: center; /* 將圖片垂直置中 */
-    width: 209px;
+    width: 240px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);
     border: 2px solid #ddbdfc;
@@ -163,44 +151,55 @@
     top: -52px;
   }
 
-  .title {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
+  ol {
+    padding: 20px;
   }
 
-  .content {
-    height: 48px;
-    min-width: 148px;
-    text-align: center;
-    line-height: initial;
-    background: linear-gradient(90deg, #ecd9ff 0%, #ddbdfc 100%);
+  li {
+    margin-bottom: 0.5rem;
   }
 
-  .content-text {
-    background: linear-gradient(90deg, #8327df 0%, #3c1267 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  .right {
-    width: 0;
-    height: 0;
-    background-color: #ddbdfc;
-    border-right: 12px solid rgb(255, 255, 255);
-    border-left: 24px solid transparent;
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
+  ol li {
+    list-style: decimal;
   }
 
-  .left {
-    width: 0;
-    height: 0;
-    background-color: #ecd9ff;
-    border-right: 24px solid transparent;
-    border-left: 12px solid rgb(255, 255, 255);
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
+  /* @media (max-width: 1024px) {
+    .email {
+      padding: 0 40px 40px 40px;
+    }
+    .email-content {
+      max-width: 640px; min-width: 390px;
+    }
+    .email-conect {
+      padding: 20px 40px 20px 40px;
+      max-width: 640px; min-width: 390px;
+    }
+    .email-about {
+      max-width: 640px;
+      min-width: 390px;
+    }
   }
+
+  @media (max-width: 768px) {
+    .email {
+      padding: 0 40px 40px 40px;
+    }
+    .email-content {
+      max-width: 640px; min-width: 390px;
+    }
+    .email-conect {
+      padding: 20px 40px 20px 40px;
+      max-width: 640px; min-width: 390px;
+    }
+    .email-about {
+      max-width: 640px;
+      min-width: 390px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .email-conect {
+      padding: 20px;
+    }
+  } */
 </style>

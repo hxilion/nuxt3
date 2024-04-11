@@ -5,7 +5,7 @@
     </div>
     <div>
       <img src="/assets/img/email/mail-cover-m.png" alt="">
-      <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
+      <div class="text-sm text-left text-start font-medium py-10 px-5" style="background-color: #fff;">
         <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
           %user_name% 様
         </div>
