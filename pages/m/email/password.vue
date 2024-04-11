@@ -1,10 +1,10 @@
 <template>
   <div class="email photo text-color-1" style="background-color: #902BF5;width:100%;">
     <div>
-      <img src="/assets/img/desktop.png" alt="">
+      <img src="/assets/img/email/desktop.png" alt="">
     </div>
     <div>
-      <img src="/assets/img/password-m.png" alt="">
+      <img src="/assets/img/email/password-m.png" alt="">
       <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
           %user_name% 様
@@ -36,7 +36,7 @@
       </div>
       <div class="text-sm text-left text-start font-medium p-5 rounded-b-md" style="background-color: #F4EAFE;">
         <div class="email-ol">
-          <img src="/assets/img/email-ol.png" alt="">
+          <img src="/assets/img/email/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
           Pazuru運営事務局
@@ -51,23 +51,23 @@
       <div class="text-sm font-medium px-10 py-5">
         <div class="container">
             <div class="image-wrapper">
-              <img src="/assets/img/facebook.png" alt="">
+              <img src="/assets/img/email/facebook.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/instagram.png" alt="">
+              <img src="/assets/img/email/instagram.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/twitter.png" alt="">
+              <img src="/assets/img/email/twitter.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/youtube.png" alt="">
+              <img src="/assets/img/email/youtube.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/tiktok.png" alt="">
+              <img src="/assets/img/email/tiktok.png" alt="">
             </div>
           </div>
         <div class="my-10">
-          <img src="/assets/img/pazuru-logo-white.png" alt="">
+          <img src="/assets/img/email/pazuru-logo-white.png" alt="">
         </div>
         <div class="font-xs" style="color: #f4eafe;">
           <a class="divide-y" href="/">プライバシーポリシー</a>

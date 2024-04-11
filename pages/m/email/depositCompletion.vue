@@ -1,10 +1,10 @@
 <template>
   <div class="photo text-color-1" style="background-color: #902BF5;width:100%;">
     <div>
-      <img src="/assets/img/desktop.png" alt="">
+      <img src="/assets/img/email/desktop.png" alt="">
     </div>
     <div>
-      <img src="/assets/img/deposit-completion.png" alt="">
+      <img src="/assets/img/email/deposit-completion.png" alt="">
       <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
           %user_name% 様
@@ -20,7 +20,7 @@
             type="button"
             class="mail-verify px-3 py-5 rounded-lg text-white text-base" 
             onclick="location.href='/'" target="_blank">ログイン
-            <img class="ml-2.5" src="/assets/img/vector.png" alt="">
+            <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
           </button>
         </div>
         <div class="mb-10">
@@ -36,19 +36,19 @@
         </div>
         <div class="photo grid-game">
           <div class="mb-2.5">
-            <img src="/assets/img/game-1.png" alt="">
+            <img src="/assets/img/email/game-1.png" alt="">
             <span class="text-xs leading-10">Quest to the West</span>
           </div>
           <div class="mb-2.5">
-            <img src="/assets/img/game-2.png" alt="">
+            <img src="/assets/img/email/game-2.png" alt="">
             <span class="text-xs leading-10">Triple Juicy Drops</span>
           </div>
           <div class="mb-2.5">
-            <img src="/assets/img/game-3.png" alt="">
+            <img src="/assets/img/email/game-3.png" alt="">
             <span class="text-xs leading-10">Take Olympus</span>
           </div>
           <div class="mb-5">
-            <img src="/assets/img/game-4.png" alt="">
+            <img src="/assets/img/email/game-4.png" alt="">
             <span class="text-xs leading-10">Lost Mystery Chests</span>
           </div>
         </div>
@@ -58,7 +58,7 @@
               type="button"
               class="mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
                 人気ゲーム
-              <img class="ml-2.5" src="/assets/img/vector-b.png" alt="">
+              <img class="ml-2.5" src="/assets/img/email/vector-b.png" alt="">
             </button>
           </a>
         </div>
@@ -80,7 +80,7 @@
       </div>
       <div class="text-sm text-left text-start font-medium p-5 rounded-b-md" style="background-color: #F4EAFE;">
         <div class="email-ol">
-          <img src="/assets/img/email-ol.png" alt="">
+          <img src="/assets/img/email/email-ol.png" alt="">
         </div>
         <div class="text-color-1 text-xs font-bold mb-2.5">
           Pazuru運営事務局
@@ -95,23 +95,23 @@
       <div class="text-sm font-medium px-10 pt-5 pb-5">
         <div class="container">
             <div class="image-wrapper">
-              <img src="/assets/img/facebook.png" alt="">
+              <img src="/assets/img/email/facebook.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/instagram.png" alt="">
+              <img src="/assets/img/email/instagram.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/twitter.png" alt="">
+              <img src="/assets/img/email/twitter.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/youtube.png" alt="">
+              <img src="/assets/img/email/youtube.png" alt="">
             </div>
             <div class="image-wrapper">
-              <img src="/assets/img/tiktok.png" alt="">
+              <img src="/assets/img/email/tiktok.png" alt="">
             </div>
           </div>
         <div class="my-10">
-          <img src="/assets/img/pazuru-logo-white.png" alt="">
+          <img src="/assets/img/email/pazuru-logo-white.png" alt="">
         </div>
         <div class="text-xs" style="color: #f4eafe;">
           <a class="divide-y" href="/">プライバシーポリシー</a>
