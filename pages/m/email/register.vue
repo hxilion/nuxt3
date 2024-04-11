@@ -31,7 +31,7 @@
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="mail-verify px-3 py-5 rounded-lg text-white text-base" >アカウント登録フォーム
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" >アカウント登録フォーム
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="email-about text-sm font-medium px-10 pt-5 pb-5">
-        <div class="container">
+        <div class="container-flex">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>
@@ -120,7 +120,7 @@
     color: #727478;
   }
 
-  .container {
+  .container-flex {
     display: flex;
     justify-content: center; /* 將圖片水平置中 */
     align-items: center; /* 將圖片垂直置中 */
@@ -136,9 +136,6 @@
   }
 
   .mail-verify {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
     width: 240px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);

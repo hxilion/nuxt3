@@ -12,8 +12,15 @@
         <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
           Pazuruにご連絡いただき、ありがとうございます。パスワードの再設定リクエストを受け取りました。以下のリンクをクリックしてパスワードをリセットしてください。
         </div>
-        <div class="mb-10 font-normal">
-          <a href="$ACTIVELINK$" target="_blank" rel="noopener" style="color: #1e90ff;">$resetlink$</a>
+        <div class="photo mb-10">
+          <a href="/" target="_blank">
+            <button
+              type="button"
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
+             >パスワードをリセット
+              <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
+            </button>
+          </a>
         </div>
         <div class="mb-10">
           このリンクは24時間有効で、一度しか使用できません。
@@ -49,7 +56,7 @@
         </div>
       </div>
       <div class="text-sm font-medium px-10 py-5">
-        <div class="container">
+        <div class="container-flex">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>
@@ -105,7 +112,7 @@
     color: #727478;
   }
 
-  .container {
+  .container-flex {
     display: flex;
     justify-content: center; /* 將圖片水平置中 */
     align-items: center; /* 將圖片垂直置中 */
@@ -124,6 +131,13 @@
     float: right;
     position: relative;
     top: -52px;
+  }
+
+  .mail-verify {
+    width: 230px;
+    height: 52px;
+    background: linear-gradient(#a655f7, #902bf5);
+    border: 2px solid #ddbdfc;
   }
 </style>
   

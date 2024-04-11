@@ -34,14 +34,14 @@
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="mail-verify px-3 py-5 rounded-lg text-white text-base" >早速ログインする！
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" >早速ログインする！
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
         </div>
         <div class="divide-x mb-10">
         </div>
-        <div class="title mb-10">
+        <div class="container-flex mb-10">
           <div class="left"></div>
           <div class="p-2 content">
             <span class="content-text text-2xl font-extrabold">ご入金方法のご案内</span>
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
-        <div class="container">
+        <div class="container-flex">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>
@@ -132,7 +132,7 @@
     color: #727478;
   }
 
-  .container {
+  .container-flex {
     display: flex;
     justify-content: center; /* 將圖片水平置中 */
     align-items: center; /* 將圖片垂直置中 */
@@ -148,9 +148,6 @@
   }
 
   .mail-verify {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
     width: 209px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);
@@ -161,12 +158,6 @@
     float: right;
     position: relative;
     top: -52px;
-  }
-
-  .title {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
   }
 
   .content {

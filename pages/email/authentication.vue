@@ -19,12 +19,14 @@
           以下のURLをクリックして、メールアドレスの認証を完了してください。
         </div>
         <div class="photo mb-10">
-          <button
-            type="button"
-            class="mail-verify px-3 py-5 rounded-lg text-white text-base" 
-            onclick="location.href='/'" target="_blank">メール認証
-            <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
-          </button>
+          <a href="/" target="_blank">
+            <button
+              type="button"
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
+             >メール認証
+              <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
+            </button>
+          </a>
         </div>
         <div class="mb-5">
           メールアドレスの確認が完了すると、Pazuruの会員として、様々なゲームをご遊戯いただけます。
@@ -81,7 +83,7 @@
         </div>
       </div>
       <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
-        <div class="container">
+        <div class="container-flex">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>
@@ -137,7 +139,7 @@
     color: #727478;
   }
 
-  .container {
+  .container-flex {
     display: flex;
     justify-content: center; /* 將圖片水平置中 */
     align-items: center; /* 將圖片垂直置中 */
@@ -153,9 +155,6 @@
   }
 
   .mail-verify {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
     width: 180px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);

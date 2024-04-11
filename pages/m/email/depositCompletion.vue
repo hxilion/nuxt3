@@ -18,7 +18,7 @@
         <div class="photo mb-10">
           <button
             type="button"
-            class="mail-verify px-3 py-5 rounded-lg text-white text-base" 
+            class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
             onclick="location.href='/'" target="_blank">ログイン
             <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
           </button>
@@ -27,7 +27,7 @@
           プレイヤー様の勝利をお祈りしています彡！
         </div>
         <div class="divide-x mb-10"></div>
-        <div class="title mb-10">
+        <div class="container-flex mb-10">
           <div class="left"></div>
           <div class="p-2 content">
             <span class="content-text text-2xl font-extrabold">人気ゲーム情報</span>
@@ -56,7 +56,7 @@
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
+              class="container-flex mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
                 人気ゲーム
               <img class="ml-2.5" src="/assets/img/email/vector-b.png" alt="">
             </button>
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div class="text-sm font-medium px-10 pt-5 pb-5">
-        <div class="container">
+        <div class="container-flex">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>
@@ -149,7 +149,7 @@
     color: #727478;
   }
 
-  .container {
+  .container-flex {
     display: flex;
     justify-content: center; /* 將圖片水平置中 */
     align-items: center; /* 將圖片垂直置中 */
@@ -175,9 +175,6 @@
   }
 
   .mail-verify {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
     width: 180px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);
@@ -185,20 +182,11 @@
   }
 
   .mail-promotion {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
     width: 180px;
     height: 52px;
     font-weight: 700;
     background: linear-gradient(90deg, #ffe555 0%, #ffd801 100%);
     border: 2px solid #ffed8a;
-  }
-
-  .title {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
   }
 
   .content {
