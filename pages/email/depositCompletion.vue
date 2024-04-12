@@ -93,7 +93,7 @@
         </div>
       </div>
       <div class="email-about text-sm font-medium px-10 py-5" style="max-width: 640px; min-width: 390px;">
-        <div class="container-flex">
+        <div class="container-flex" style="width: 100%;">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>

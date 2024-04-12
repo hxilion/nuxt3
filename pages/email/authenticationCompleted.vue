@@ -1,7 +1,7 @@
 <template>
   <div class="email photo px-10 pb-10 text-color-1 font-medium" style="background-color: #902BF5;width:100%;min-width: 470px;font-family:'M PLUS 2'">
     <div>
-      <img src="/assets/img/email/desktop.png" alt="">
+      <img src="https://static4.smr.vc/fce0e306bd7aea9abe7105-desktop.png" alt="">
     </div>
     <div class="email-content" style="max-width: 640px; min-width: 390px;">
       <img src="/assets/img/email/authentication-completed.png" alt="">
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
-        <div class="container-flex">
+        <div class="container-flex" style="width: 100%;">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>
