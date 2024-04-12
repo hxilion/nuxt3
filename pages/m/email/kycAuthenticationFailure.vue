@@ -1,38 +1,45 @@
 <template>
-  <div class="email photo text-color-1" style="background-color: #902BF5;width:100%;">
+  <div class="photo text-color-1 font-medium" style="background-color: #902BF5;width:100%;font-family:'M PLUS 2'">
     <div>
       <img src="/assets/img/email/desktop.png" alt="">
     </div>
     <div>
-      <img src="/assets/img/email/password-m.png" alt="">
+      <img src="/assets/img/email/kyc-fail.png" alt="">
       <div class="text-sm text-left text-start font-medium py-10 px-5" style="background-color: #fff;">
-        <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
+        <div class="mb-10">
           %user_name% 様
         </div>
-        <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
-          Pazuruにご連絡いただき、ありがとうございます。パスワードの再設定リクエストを受け取りました。以下のリンクをクリックしてパスワードをリセットしてください。
+        <div class="mb-10">
+          お世話になっております。Pazuruにて本人確認認証を行っていただき、ありがとうございました。
         </div>
-        <div class="photo mb-10">
-          <a href="/" target="_blank">
+        <div>
+          残念ながら、本人確認認証が失敗しました。以下の理由により、認証が完了していない可能性があります。
+        </div>
+        <div class="mb-10">
+          <ul>
+            <li>提出された書類に不備がある</li>
+            <li>書類の画像が不鮮明である</li>
+            <li>本人確認書類が期限切れである</li>
+          </ul>
+        </div>
+        <div class="divide-x mb-14"></div>
+        <div class="mb-10">
+          再度、正確な情報を提出いただき、KYC認証を完了させていただければ幸いです。以下のリンクから再申請を行ってください。
+        </div>
+        <div class="photo mb-14">
+          <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
-             >パスワードをリセット
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" >本人確認書類登録フォーム
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
         </div>
         <div class="mb-10">
-          このリンクは24時間有効で、一度しか使用できません。
+          ご不明点やご質問があれば、お気軽にカスタマーサポートチャットまでお問い合わせください。
         </div>
-        <div class="mb-10">
-          パスワードを変更しない場合は、このメールを無視してください。
-        </div>
-        <div class="mb-10">
-          何かご不明点やご質問があれば、お気軽にカスタマーサポートチャットまでお問い合わせください。
-        </div>
-        <div class="mb-20">
-          引き続きどうぞよろしくお願いいたします。
+        <div class="mb-14">
+          よろしくお願いいたします。
         </div>
         <div class="text-color-2 text-xs">
           ※このメールは自動送信のため、返信できません。
@@ -41,7 +48,7 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="text-sm text-left text-start font-medium p-5 rounded-b-md" style="background-color: #F4EAFE;">
+      <div class="email-conect text-sm text-left text-start p-5 font-medium rounded-b-md" style="background-color: #F4EAFE;">
         <div class="email-ol">
           <img src="/assets/img/email/email-ol.png" alt="">
         </div>
@@ -55,7 +62,7 @@
           ※営業時間：
         </div>
       </div>
-      <div class="text-sm font-medium px-10 py-5">
+      <div class="email-about text-sm font-medium px-10 pt-5 pb-5">
         <div class="container-flex" style="width: 100%;">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
@@ -76,7 +83,7 @@
         <div class="my-10">
           <img src="/assets/img/email/pazuru-logo-white.png" alt="">
         </div>
-        <div class="font-xs" style="color: #f4eafe;">
+        <div class="text-xs" style="color: #f4eafe;">
           <a class="divide-y" href="/">プライバシーポリシー</a>
           <a class="divide-y" href="/">利用規約</a>
           <a class="divide-y" href="/">よくある質問</a>
@@ -89,18 +96,18 @@
     </div>
   </div>
 </template>
-  
+
 <style>
   .photo {
     text-align: -webkit-center;
   }
 
   .divide-x {
-    border-bottom: 1px solid #cc9dfa;
+    border-bottom: 1px solid #CC9DFA;
   }
 
   .divide-y {
-    border-right: 1px solid #f4eafe;
+    border-right: 1px solid #F4EAFE;
     margin-right: 10px;
     padding-right: 10px;
   }
@@ -127,17 +134,25 @@
     height: auto;
   }
 
+  .mail-verify {
+    width: 240px;
+    height: 52px;
+    background: linear-gradient(#a655f7, #902BF5);
+    border: 2px solid #ddbdfc;
+  }
+
   .email-ol {
     float: right;
     position: relative;
     top: -52px;
   }
 
-  .mail-verify {
-    width: 230px;
-    height: 52px;
-    background: linear-gradient(#a655f7, #902bf5);
-    border: 2px solid #ddbdfc;
+  ul {
+    padding: 20px;
+    list-style: disc;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
   }
 </style>
-  

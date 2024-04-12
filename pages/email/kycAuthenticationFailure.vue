@@ -1,37 +1,36 @@
 <template>
-  <div class="photo text-color-1 font-medium" style="background-color: #902BF5;width:100%;font-family:'M PLUS 2'">
+  <div class="email photo px-10 pb-10 text-color-1 font-medium" style="background-color: #902BF5;width:100%;min-width: 470px;font-family:'M PLUS 2'">
     <div>
       <img src="/assets/img/email/desktop.png" alt="">
     </div>
-    <div>
-      <img src="/assets/img/email/register-m.png" alt="">
-      <div class="text-sm text-left text-start font-medium py-10 px-5" style="background-color: #fff;">
+    <div class="email-content" style="max-width: 640px; min-width: 390px;">
+      <img src="/assets/img/email/kyc-fail.png" alt="">
+      <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>
         <div class="mb-10">
-          お世話になっております。Pazuruにアカウントを登録いただき、誠にありがとうございます。
+          お世話になっております。Pazuruにて本人確認認証を行っていただき、ありがとうございました。
         </div>
-        <div class="mb-5">
-          残念ながら、アカウント登録が未完了でございます。以下の項目が未記入または不完全です。
+        <div>
+          残念ながら、本人確認認証が失敗しました。以下の理由により、認証が完了していない可能性があります。
         </div>
         <div class="mb-10">
-          <ol start="1">
-            <li>ユーザーID</li>
-            <li>パスワード</li>
-            <li>メールアドレス</li>
-            <li>その他必要事項</li>
-          </ol>
+          <ul>
+            <li>提出された書類に不備がある</li>
+            <li>書類の画像が不鮮明である</li>
+            <li>本人確認書類が期限切れである</li>
+          </ul>
         </div>
         <div class="divide-x mb-14"></div>
         <div class="mb-10">
-          アカウントを有効にするために、以下のリンクから再度登録フォームにアクセスし、必要な情報を入力してください。
+          再度、正確な情報を提出いただき、KYC認証を完了させていただければ幸いです。以下のリンクから再申請を行ってください。
         </div>
         <div class="photo mb-14">
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" >アカウント登録フォーム
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" >本人確認書類登録フォーム
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
@@ -49,7 +48,7 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="email-conect text-sm text-left text-start p-5 font-medium rounded-b-md" style="background-color: #F4EAFE;">
+      <div class="email-conect text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #F4EAFE;max-width: 640px; min-width: 390px;">
         <div class="email-ol">
           <img src="/assets/img/email/email-ol.png" alt="">
         </div>
@@ -63,8 +62,8 @@
           ※営業時間：
         </div>
       </div>
-      <div class="email-about text-sm font-medium px-10 pt-5 pb-5">
-        <div class="container-flex" style="width: 100%;">
+      <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
+        <div class="container-flex">
             <div class="image-wrapper">
               <img src="/assets/img/email/facebook.png" alt="">
             </div>
@@ -148,15 +147,52 @@
     top: -52px;
   }
 
-  ol {
+  ul {
     padding: 20px;
+    list-style: disc;
   }
 
   li {
     margin-bottom: 0.5rem;
   }
 
-  ol li {
-    list-style: decimal;
+  /* @media (max-width: 1024px) {
+    .email {
+      padding: 0 40px 40px 40px;
+    }
+    .email-content {
+      max-width: 640px; min-width: 390px;
+    }
+    .email-conect {
+      padding: 20px 40px 20px 40px;
+      max-width: 640px; min-width: 390px;
+    }
+    .email-about {
+      max-width: 640px;
+      min-width: 390px;
+    }
   }
+
+  @media (max-width: 768px) {
+    .email {
+      padding: 0 40px 40px 40px;
+    }
+    .email-content {
+      max-width: 640px; min-width: 390px;
+    }
+    .email-conect {
+      padding: 20px 40px 20px 40px;
+      max-width: 640px; min-width: 390px;
+    }
+    .email-about {
+      max-width: 640px;
+      min-width: 390px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .email-conect {
+      padding: 20px;
+    }
+  } */
 </style>

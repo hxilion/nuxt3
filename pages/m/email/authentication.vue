@@ -36,7 +36,7 @@
         </div>
         <div class="divide-x mb-10">
         </div>
-        <div class="title mb-10">
+        <div class="container-flex mb-10">
           <div class="left"></div>
           <div class="p-2 content">
             <span class="content-text text-2xl font-extrabold">おすすめプロモーション ♪</span>
@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="text-sm font-medium px-10 pt-5 pb-5">
-        <div class="container">
+        <div class="container-flex" style="width: 100%;">
           <div class="image-wrapper">
             <img src="/assets/img/email/facebook.png" alt="">
           </div>
@@ -173,12 +173,6 @@
     float: right;
     position: relative;
     top: -52px;
-  }
-
-  .title {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
   }
 
   .content {
