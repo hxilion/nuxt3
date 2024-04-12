@@ -65,22 +65,22 @@
       </div>
       <div class="email-about text-sm font-medium px-10 pt-5 pb-5">
         <div class="container-flex" style="width: 100%;">
-            <div class="image-wrapper">
-              <img src="/assets/img/email/facebook.png" alt="">
-            </div>
-            <div class="image-wrapper">
-              <img src="/assets/img/email/instagram.png" alt="">
-            </div>
-            <div class="image-wrapper">
-              <img src="/assets/img/email/twitter.png" alt="">
-            </div>
-            <div class="image-wrapper">
-              <img src="/assets/img/email/youtube.png" alt="">
-            </div>
-            <div class="image-wrapper">
-              <img src="/assets/img/email/tiktok.png" alt="">
-            </div>
+          <div class="image-wrapper">
+            <img src="/assets/img/email/facebook.png" alt="">
           </div>
+          <div class="image-wrapper">
+            <img src="/assets/img/email/instagram.png" alt="">
+          </div>
+          <div class="image-wrapper">
+            <img src="/assets/img/email/twitter.png" alt="">
+          </div>
+          <div class="image-wrapper">
+            <img src="/assets/img/email/youtube.png" alt="">
+          </div>
+          <div class="image-wrapper">
+            <img src="/assets/img/email/tiktok.png" alt="">
+          </div>
+        </div>
         <div class="my-10">
           <img src="/assets/img/email/pazuru-logo-white.png" alt="">
         </div>
