@@ -48,7 +48,7 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="email-conect text-sm text-left text-start p-5 font-medium rounded-b-md" style="background-color: #F4EAFE;">
+      <div class="text-sm text-left text-start p-5 font-medium rounded-b-md" style="background-color: #F4EAFE;">
         <div class="email-ol">
           <img src="/assets/img/email/email-ol.png" alt="">
         </div>
@@ -62,7 +62,7 @@
           ※営業時間：
         </div>
       </div>
-      <div class="email-about text-sm font-medium px-10 pt-5 pb-5">
+      <div class="text-sm font-medium px-10 pt-5 pb-5">
         <div class="container-flex" style="width: 100%;">
           <div class="image-wrapper">
             <img src="/assets/img/email/facebook.png" alt="">
