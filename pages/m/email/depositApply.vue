@@ -4,7 +4,7 @@
         <img src="https://static4.smr.vc/fce0e306bd7aea9abe7105-desktop.png" alt="">
       </div>
       <div>
-        <img src="/assets/img/email/auto-reply-m.png" alt="">
+        <img src="/assets/img/email/deposit-apply-m.png" alt="">
         <div class="text-sm text-left text-start font-medium px-5 py-10" style="background-color: #fff;">
           <div class="mb-10">
             %user_name% 様

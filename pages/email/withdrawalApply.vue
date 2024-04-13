@@ -4,7 +4,7 @@
       <img src="https://static4.smr.vc/fce0e306bd7aea9abe7105-desktop.png" alt="">
     </div>
     <div class="email-content" style="max-width: 640px; min-width: 390px;">
-      <img src="/assets/img/email/deposit-apply.png" alt="">
+      <img src="/assets/img/email/withdrawal-apply.png" alt="">
       <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
@@ -13,13 +13,13 @@
           いつもPazuruをご利用いただきありがとうございます。
         </div>
         <div class="mb-10">
-          この度は<span class="font-bold">【%Dep_ Price%】</span>円の入金申請をいただきましたことをお知らせいたします。
+          この度は<span class="font-bold">【%Dep_ Price%】</span>円の出勤申請をいただきましたことをお知らせいたします。
         </div>
         <div>
-          入金申請は正常に受付されましたので、しばらくお待ちください。
+          出金申請は正常に受付されましたので、しばらくお待ちください。
         </div>
         <div class="mb-10">
-          入金が完了しましたら、再度メールにてご連絡いたします。
+          出金が完了しましたら、再度メールにてご連絡いたします。
         </div>
         <div>
           Pazuruでは、お客様の満足度向上のために努めております。
