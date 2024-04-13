@@ -1,11 +1,11 @@
 <template>
-  <div class="email photo px-10 pb-10 text-color-1 font-medium" style="background-color: #902BF5;width:100%;min-width: 470px;font-family:'M PLUS 2'">
+  <div class="photo text-color-1 font-medium" style="background-color: #902BF5;width:100%;font-family:'M PLUS 2'">
     <div>
       <img src="/assets/img/email/desktop.png" alt="">
     </div>
-    <div class="email-content" style="max-width: 640px; min-width: 390px;">
-      <img src="/assets/img/email/withdrawal-fail.png" alt="">
-      <div class="text-sm text-left text-start p-10" style="background-color: #fff;">
+    <div>
+      <img src="/assets/img/email/withdrawal-fail-m.png" alt="">
+      <div class="text-sm text-left text-start px-5 py-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>
@@ -36,7 +36,7 @@
             <button
               type="button"
               class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
-             >マイページ
+              >マイページ
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
@@ -57,7 +57,7 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="email-conect text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #F4EAFE;max-width: 640px; min-width: 390px;">
+      <div class="email-conect text-sm text-left text-start p-5 font-medium rounded-b-md" style="background-color: #F4EAFE;">
         <div class="email-ol">
           <img src="/assets/img/email/email-ol.png" alt="">
         </div>
@@ -71,7 +71,7 @@
           ※営業時間：
         </div>
       </div>
-      <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
+      <div class="email-about text-sm font-medium px-10 pt-5 pb-5"">
         <div class="container-flex" style="width: 100%;">
           <div class="image-wrapper">
             <img src="/assets/img/email/facebook.png" alt="">
@@ -166,44 +166,5 @@
     position: relative;
     top: -52px;
   }
-
-  /* @media (max-width: 1024px) {
-    .email {
-      padding: 0 40px 40px 40px;
-    }
-    .email-content {
-      max-width: 640px; min-width: 390px;
-    }
-    .email-conect {
-      padding: 20px 40px 20px 40px;
-      max-width: 640px; min-width: 390px;
-    }
-    .email-about {
-      max-width: 640px;
-      min-width: 390px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .email {
-      padding: 0 40px 40px 40px;
-    }
-    .email-content {
-      max-width: 640px; min-width: 390px;
-    }
-    .email-conect {
-      padding: 20px 40px 20px 40px;
-      max-width: 640px; min-width: 390px;
-    }
-    .email-about {
-      max-width: 640px;
-      min-width: 390px;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .email-conect {
-      padding: 20px;
-    }
-  } */
 </style>
+  
