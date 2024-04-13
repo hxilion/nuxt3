@@ -85,7 +85,7 @@
             </a>
           </div>
         </div>
-				<div class="divide-x mb-14"></div>
+		    <div class="divide-x mb-14"></div>
         <div class="container-flex mb-10">
           <div class="left"></div>
           <div class="p-2 content">
