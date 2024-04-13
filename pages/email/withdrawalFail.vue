@@ -1,45 +1,61 @@
 <template>
-  <div class="email photo px-10 pb-10 text-color-1 font-medium" style="background-color: #902BF5;width:100%;min-width: 470px;font-family:'M PLUS 2'">
+  <div class="photo text-color-1 font-medium" style="background-color: #902BF5;font-family:'M PLUS 2'">
     <div>
-      <img src="/assets/img/email/desktop.png" alt="">
+      <img src="https://static4.smr.vc/fce0e306bd7aea9abe7105-desktop.png" alt="">
     </div>
-    <div class="email-content" style="max-width: 640px; min-width: 390px;">
-      <img src="/assets/img/email/kyc-fail.png" alt="">
-      <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
+    <div>
+      <img src="/assets/img/email/withdrawal-fail.png" alt="">
+      <div class="text-sm text-left text-start p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>
-        <div class="mb-10">
-          お世話になっております。Pazuruにて本人確認認証を行っていただき、ありがとうございました。
+        <div class="mb-5">
+          いつもPazuruをご利用いただきありがとうございます。
         </div>
         <div>
-          残念ながら、本人確認認証が失敗しました。以下の理由により、認証が完了していない可能性があります。
+          この度は<span class="font-bold">【%WD_ Price%】</span>円の出金申請をいただきましたが、出金申請の受付にエラーorキャンセルが発生しました。
         </div>
         <div class="mb-10">
-          <ul>
-            <li>提出された書類に不備がある</li>
-            <li>書類の画像が不鮮明である</li>
-            <li>本人確認書類が期限切れである</li>
-          </ul>
+          お手数をおかけいたしますが、再度出金申請をお願いいたします。
         </div>
-        <div class="divide-x mb-14"></div>
-        <div class="mb-10">
-          再度、正確な情報を提出いただき、KYC認証を完了させていただければ幸いです。以下のリンクから再申請を行ってください。
+        <div class="photo mb-10">
+          <a href="https://pazuru.com/ja/promotions" target="_blank">
+            <button
+              type="button"
+              class="mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
+                プロモーション
+            </button>
+          </a>
+        </div>
+        <div class="divide-x mb-10">
+        </div>
+        <div class="container-flex mb-10">
+          <div class="left"></div>
+          <div class="p-2 content">
+            <span class="content-text text-2xl font-extrabold">入金ボーナス実施中</span>
+          </div>
+          <div class="right"></div>
+        </div>
+        <div class="photo mb-10">
+          <img src="/assets/img/email/payment.png" alt="">
         </div>
         <div class="photo mb-14">
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" >本人確認書類登録フォーム
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base">入金ボーナス
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
         </div>
+        <div>
+          Pazuruでは、お客様の満足度向上のために努めております。
+        </div>
         <div class="mb-10">
-          ご不明点やご質問があれば、お気軽にカスタマーサポートチャットまでお問い合わせください。
+          ご不明な点やご質問などがございましたら、お気軽にお問い合わせください。
         </div>
         <div class="mb-14">
-          よろしくお願いいたします。
+          Pazuruカスタマーサポート
         </div>
         <div class="text-color-2 text-xs">
           ※このメールは自動送信のため、返信できません。
@@ -48,7 +64,7 @@
           ※このメールに心当たりのない場合は、お手数ですがこのメールを削除してください。
         </div>
       </div>
-      <div class="email-conect text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #F4EAFE;max-width: 640px; min-width: 390px;">
+      <div class="text-sm text-left text-start px-10 pt-5 pb-5 font-medium rounded-b-md" style="background-color: #F4EAFE;">
         <div class="email-ol">
           <img src="/assets/img/email/email-ol.png" alt="">
         </div>
@@ -62,7 +78,7 @@
           ※営業時間：
         </div>
       </div>
-      <div class="email-about text-sm font-medium px-10 pt-5 pb-5" style="max-width: 640px; min-width: 390px;">
+      <div class="text-sm font-medium px-10 pt-5 pb-5">
         <div class="container-flex" style="width: 100%;">
           <div class="image-wrapper">
             <img src="/assets/img/email/facebook.png" alt="">
@@ -135,7 +151,7 @@
   }
 
   .mail-verify {
-    width: 240px;
+    width: 160px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);
     border: 2px solid #ddbdfc;
@@ -147,52 +163,38 @@
     top: -52px;
   }
 
-  ul {
-    padding: 20px;
-    list-style: disc;
+  .content {
+    height: 48px;
+    min-width: 148px;
+    text-align: center;
+    line-height: initial;
+    background: linear-gradient(90deg, #ecd9ff 0%, #ddbdfc 100%);
   }
 
-  li {
-    margin-bottom: 0.5rem;
+  .content-text {
+    background: linear-gradient(90deg, #8327df 0%, #3c1267 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .right {
+    width: 0;
+    height: 0;
+    background-color: #ddbdfc;
+    border-right: 12px solid rgb(255, 255, 255);
+    border-left: 24px solid transparent;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
   }
 
-  /* @media (max-width: 1024px) {
-    .email {
-      padding: 0 40px 40px 40px;
-    }
-    .email-content {
-      max-width: 640px; min-width: 390px;
-    }
-    .email-conect {
-      padding: 20px 40px 20px 40px;
-      max-width: 640px; min-width: 390px;
-    }
-    .email-about {
-      max-width: 640px;
-      min-width: 390px;
-    }
+  .left {
+    width: 0;
+    height: 0;
+    background-color: #ecd9ff;
+    border-right: 24px solid transparent;
+    border-left: 12px solid rgb(255, 255, 255);
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
   }
-
-  @media (max-width: 768px) {
-    .email {
-      padding: 0 40px 40px 40px;
-    }
-    .email-content {
-      max-width: 640px; min-width: 390px;
-    }
-    .email-conect {
-      padding: 20px 40px 20px 40px;
-      max-width: 640px; min-width: 390px;
-    }
-    .email-about {
-      max-width: 640px;
-      min-width: 390px;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .email-conect {
-      padding: 20px;
-    }
-  } */
 </style>

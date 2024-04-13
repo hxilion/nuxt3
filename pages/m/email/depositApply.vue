@@ -5,7 +5,7 @@
       </div>
       <div>
         <img src="/assets/img/email/deposit-apply-m.png" alt="">
-        <div class="text-sm text-left text-start font-medium px-5 py-10" style="background-color: #fff;">
+        <div class="text-sm text-left text-start px-5 py-10" style="background-color: #fff;">
           <div class="mb-10">
             %user_name% 様
           </div>

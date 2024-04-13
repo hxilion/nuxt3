@@ -1,15 +1,15 @@
 <template>
-  <div class="email photo text-color-1" style="background-color: #902BF5;width:100%;">
+  <div class="email photo text-color-1 font-medium" style="background-color: #902BF5;width:100%;font-family:'M PLUS 2';">
     <div>
       <img src="/assets/img/email/desktop.png" alt="">
     </div>
     <div>
       <img src="/assets/img/email/password-m.png" alt="">
-      <div class="text-sm text-left text-start font-medium py-10 px-5" style="background-color: #fff;">
-        <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
+      <div class="text-sm text-left text-start py-10 px-5" style="background-color: #fff;">
+        <div class="mb-10">
           %user_name% 様
         </div>
-        <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
+        <div class="mb-10">
           Pazuruにご連絡いただき、ありがとうございます。パスワードの再設定リクエストを受け取りました。以下のリンクをクリックしてパスワードをリセットしてください。
         </div>
         <div class="photo mb-10">

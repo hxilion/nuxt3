@@ -5,7 +5,7 @@
     </div>
     <div>
       <img src="/assets/img/email/withdrawal-success.png" alt="">
-      <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
+      <div class="text-sm text-left text-start p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>

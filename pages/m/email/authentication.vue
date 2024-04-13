@@ -1,15 +1,15 @@
 <template>
-  <div class="photo text-color-1" style="background-color: #902BF5;width:100%">
+  <div class="photo text-color-1 font-medium" style="background-color: #902BF5;width:100%;font-family:'M PLUS 2';">
     <div>
       <img src="/assets/img/email/desktop.png" alt="">
     </div>
     <div>
       <img src="/assets/img/email/mail-cover-m.png" alt="">
-      <div class="text-sm text-left text-start font-medium py-10 px-5" style="background-color: #fff;">
-        <div class="mb-10" style="font-family:'M PLUS 2', Sans-serif">
+      <div class="text-sm text-left text-start py-10 px-5" style="background-color: #fff;">
+        <div class="mb-10">
           %user_name% 様
         </div>
-        <div style="font-family:'M PLUS 2', Sans-serif">
+        <div>
           この度は、Pazuruにご登録いただき、誠にありがとうございます！
         </div>
         <div class="mb-5">

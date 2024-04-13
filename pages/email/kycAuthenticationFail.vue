@@ -1,49 +1,45 @@
 <template>
   <div class="email photo px-10 pb-10 text-color-1 font-medium" style="background-color: #902BF5;width:100%;min-width: 470px;font-family:'M PLUS 2'">
     <div>
-      <img src="https://static4.smr.vc/fce0e306bd7aea9abe7105-desktop.png" alt="">
+      <img src="/assets/img/email/desktop.png" alt="">
     </div>
     <div class="email-content" style="max-width: 640px; min-width: 390px;">
-      <img src="/assets/img/email/withdrawal-success.png" alt="">
+      <img src="/assets/img/email/kyc-fail.png" alt="">
       <div class="text-sm text-left text-start p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>
-        <div class="mb-5">
-          いつもPazuruをご利用いただきありがとうございます。
+        <div class="mb-10">
+          お世話になっております。Pazuruにて本人確認認証を行っていただき、ありがとうございました。
+        </div>
+        <div>
+          残念ながら、本人確認認証が失敗しました。以下の理由により、認証が完了していない可能性があります。
         </div>
         <div class="mb-10">
-          この度は<span class="font-bold">【%WD_ Price%】</span>円の出金申請ですが、無事にお客様ご指定のお口座に反映されました。この度の勝利、おめでとうございました。勝利を堪能してください！
+          <ul>
+            <li>提出された書類に不備がある</li>
+            <li>書類の画像が不鮮明である</li>
+            <li>本人確認書類が期限切れである</li>
+          </ul>
         </div>
-        <div class="divide-x mb-10">
-        </div>
-        <div class="container-flex mb-10">
-          <div class="left"></div>
-          <div class="p-2 content">
-            <span class="content-text text-2xl font-extrabold">入金ボーナス実施中</span>
-          </div>
-          <div class="right"></div>
-        </div>
-        <div class="photo mb-10">
-          <img src="/assets/img/email/payment.png" alt="">
+        <div class="divide-x mb-14"></div>
+        <div class="mb-10">
+          再度、正確な情報を提出いただき、KYC認証を完了させていただければ幸いです。以下のリンクから再申請を行ってください。
         </div>
         <div class="photo mb-14">
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base">入金ボーナス
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" >本人確認書類登録フォーム
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
         </div>
-        <div>
-          Pazuruでは、お客様の満足度向上のために努めております。
-        </div>
         <div class="mb-10">
-          ご不明な点やご質問などがございましたら、お気軽にお問い合わせください。
+          ご不明点やご質問があれば、お気軽にカスタマーサポートチャットまでお問い合わせください。
         </div>
         <div class="mb-14">
-          Pazuruカスタマーサポート
+          よろしくお願いいたします。
         </div>
         <div class="text-color-2 text-xs">
           ※このメールは自動送信のため、返信できません。
@@ -139,7 +135,7 @@
   }
 
   .mail-verify {
-    width: 160px;
+    width: 240px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);
     border: 2px solid #ddbdfc;
@@ -151,39 +147,13 @@
     top: -52px;
   }
 
-  .content {
-    height: 48px;
-    min-width: 148px;
-    text-align: center;
-    line-height: initial;
-    background: linear-gradient(90deg, #ecd9ff 0%, #ddbdfc 100%);
+  ul {
+    padding: 20px;
+    list-style: disc;
   }
 
-  .content-text {
-    background: linear-gradient(90deg, #8327df 0%, #3c1267 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  .right {
-    width: 0;
-    height: 0;
-    background-color: #ddbdfc;
-    border-right: 12px solid rgb(255, 255, 255);
-    border-left: 24px solid transparent;
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
-  }
-
-  .left {
-    width: 0;
-    height: 0;
-    background-color: #ecd9ff;
-    border-right: 24px solid transparent;
-    border-left: 12px solid rgb(255, 255, 255);
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
+  li {
+    margin-bottom: 0.5rem;
   }
 
   /* @media (max-width: 1024px) {

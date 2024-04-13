@@ -1,37 +1,43 @@
 <template>
   <div class="email photo px-10 pb-10 text-color-1 font-medium" style="background-color: #902BF5;width:100%;min-width: 470px;font-family:'M PLUS 2'">
     <div>
-      <img src="https://static4.smr.vc/fce0e306bd7aea9abe7105-desktop.png" alt="">
+      <img src="/assets/img/email/desktop.png" alt="">
     </div>
     <div class="email-content" style="max-width: 640px; min-width: 390px;">
-      <img src="/assets/img/email/withdrawal-success.png" alt="">
+      <img src="/assets/img/email/deposit-fail.png" alt="">
       <div class="text-sm text-left text-start p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>
-        <div class="mb-5">
+        <div class="mb-10">
           いつもPazuruをご利用いただきありがとうございます。
         </div>
+        <div>
+          この度は<span class="font-bold">【%Dep_ Price%】</span>円の入金申請をいただきましたが、入金申請の受付にエラーorキャンセルが発生しました。
+        </div>
         <div class="mb-10">
-          この度は<span class="font-bold">【%WD_ Price%】</span>円の出金申請ですが、無事にお客様ご指定のお口座に反映されました。この度の勝利、おめでとうございました。勝利を堪能してください！
-        </div>
-        <div class="divide-x mb-10">
-        </div>
-        <div class="container-flex mb-10">
-          <div class="left"></div>
-          <div class="p-2 content">
-            <span class="content-text text-2xl font-extrabold">入金ボーナス実施中</span>
-          </div>
-          <div class="right"></div>
-        </div>
-        <div class="photo mb-10">
-          <img src="/assets/img/email/payment.png" alt="">
+          お手数をおかけいたしますが、再度入金申請をお願いいたします。
         </div>
         <div class="photo mb-14">
           <a href="https://pazuru.com/ja/promotions" target="_blank">
             <button
               type="button"
-              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base">入金ボーナス
+              class="mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
+              入金申請
+              <img class="ml-2.5" src="/assets/img/email/vector-b.png" alt="">
+            </button>
+          </a>
+        </div>
+        <div class="divide-x mb-14"></div>
+        <div class="mb-5">
+          原因や対処方法については、以下のページをご覧ください。
+        </div>
+        <div class="photo mb-14">
+          <a href="/" target="_blank">
+            <button
+              type="button"
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
+             >マイページ
               <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
             </button>
           </a>
@@ -39,7 +45,7 @@
         <div>
           Pazuruでは、お客様の満足度向上のために努めております。
         </div>
-        <div class="mb-10">
+        <div class="mb-5">
           ご不明な点やご質問などがございましたら、お気軽にお問い合わせください。
         </div>
         <div class="mb-14">
@@ -139,51 +145,27 @@
   }
 
   .mail-verify {
-    width: 160px;
+    width: 180px;
     height: 52px;
     background: linear-gradient(#a655f7, #902BF5);
     border: 2px solid #ddbdfc;
+  }
+
+  .mail-promotion {
+    display: flex;
+    justify-content: center; /* 將圖片水平置中 */
+    align-items: center; /* 將圖片垂直置中 */
+    width: 180px;
+    height: 52px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #FFE555 0%, #FFD801 100%);
+    border: 2px solid #FFED8A;
   }
 
   .email-ol {
     float: right;
     position: relative;
     top: -52px;
-  }
-
-  .content {
-    height: 48px;
-    min-width: 148px;
-    text-align: center;
-    line-height: initial;
-    background: linear-gradient(90deg, #ecd9ff 0%, #ddbdfc 100%);
-  }
-
-  .content-text {
-    background: linear-gradient(90deg, #8327df 0%, #3c1267 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  .right {
-    width: 0;
-    height: 0;
-    background-color: #ddbdfc;
-    border-right: 12px solid rgb(255, 255, 255);
-    border-left: 24px solid transparent;
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
-  }
-
-  .left {
-    width: 0;
-    height: 0;
-    background-color: #ecd9ff;
-    border-right: 24px solid transparent;
-    border-left: 12px solid rgb(255, 255, 255);
-    border-top: 24px solid transparent;
-    border-bottom: 24px solid transparent;
   }
 
   /* @media (max-width: 1024px) {

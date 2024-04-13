@@ -5,7 +5,7 @@
     </div>
     <div class="email-content" style="max-width: 640px; min-width: 390px;">
       <img src="/assets/img/email/register.png" alt="">
-      <div class="text-sm text-left text-start font-medium p-10" style="background-color: #fff;">
+      <div class="text-sm text-left text-start p-10" style="background-color: #fff;">
         <div class="mb-10">
           %user_name% 様
         </div>
