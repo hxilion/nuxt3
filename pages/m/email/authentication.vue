@@ -55,6 +55,7 @@
               type="button"
               class="container-flex mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
                 プロモーション
+                <img class="ml-2.5" src="/assets/img/email/vector-b.png" alt="">
             </button>
           </a>
         </div>
@@ -195,7 +196,7 @@
     height: 0;
     background-color: #ddbdfc;
     border-right: 12px solid rgb(255, 255, 255);
-    border-left: 24px solid transparent;
+    border-left: 12px solid transparent;
     border-top: 24px solid transparent;
     border-bottom: 24px solid transparent;
   }
@@ -204,7 +205,7 @@
     width: 0;
     height: 0;
     background-color: #ecd9ff;
-    border-right: 24px solid transparent;
+    border-right: 12px solid transparent;
     border-left: 12px solid rgb(255, 255, 255);
     border-top: 24px solid transparent;
     border-bottom: 24px solid transparent;

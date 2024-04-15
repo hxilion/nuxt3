@@ -36,7 +36,7 @@
         </div>
         <div class="divide-x mb-10">
         </div>
-        <div class="title mb-10">
+        <div class="container-flex mb-10">
           <div class="left"></div>
           <div class="p-2 content">
             <span class="content-text text-2xl font-extrabold">おすすめプロモーション ♪</span>
@@ -55,6 +55,7 @@
               type="button"
               class="mail-promotion text-color-1 px-3 py-5 rounded-lg text-white text-base" >
                 プロモーション
+                <img class="ml-2.5" src="/assets/img/email/vector-b.png" alt="">
             </button>
           </a>
         </div>
@@ -178,12 +179,6 @@
     top: -52px;
   }
 
-  .title {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
-  }
-
   .content {
     height: 48px;
     min-width: 148px;
@@ -204,7 +199,7 @@
     height: 0;
     background-color: #ddbdfc;
     border-right: 12px solid rgb(255, 255, 255);
-    border-left: 24px solid transparent;
+    border-left: 12px solid transparent;
     border-top: 24px solid transparent;
     border-bottom: 24px solid transparent;
   }
@@ -213,7 +208,7 @@
     width: 0;
     height: 0;
     background-color: #ecd9ff;
-    border-right: 24px solid transparent;
+    border-right: 12px solid transparent;
     border-left: 12px solid rgb(255, 255, 255);
     border-top: 24px solid transparent;
     border-bottom: 24px solid transparent;

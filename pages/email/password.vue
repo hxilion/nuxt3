@@ -155,12 +155,6 @@
     border: 2px solid #ffed8a;
   }
 
-  .title {
-    display: flex;
-    justify-content: center; /* 將圖片水平置中 */
-    align-items: center; /* 將圖片垂直置中 */
-  }
-
   .content {
     height: 48px;
     min-width: 148px;
@@ -181,7 +175,7 @@
     height: 0;
     background-color: #ddbdfc;
     border-right: 12px solid rgb(255, 255, 255);
-    border-left: 24px solid transparent;
+    border-left: 12px solid transparent;
     border-top: 24px solid transparent;
     border-bottom: 24px solid transparent;
   }
@@ -190,7 +184,7 @@
     width: 0;
     height: 0;
     background-color: #ecd9ff;
-    border-right: 24px solid transparent;
+    border-right: 12px solid transparent;
     border-left: 12px solid rgb(255, 255, 255);
     border-top: 24px solid transparent;
     border-bottom: 24px solid transparent;
