@@ -2,7 +2,7 @@
   <div>
     <h1>Home</h1>
     <NuxtLink to="/sample">sss</NuxtLink>
-    <Icon name="tdesign:arrow-left-right-2" size="360" />
+    <button> <a href="javascript:dp('dp:gf_saw&id=1112&standalone=true')">測試</a></button>
   </div>
 </template>
 <script lang="ts" setup>
