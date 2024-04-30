@@ -3,14 +3,14 @@
     <div>
       <img src="/assets/img/backstage/desktop.png" alt="">
     </div>
-    <form name="login-from">
+    <form name="login-from" @submit="add" method="post">
       <div class="pt-10">
         <label class="text-white" for="name">帳號 : </label>
         <input
           v-model="username"
           type="username"
           class="outline h-10 ml-5 px-5 rounded-lg"
-          minlength="4"
+          minlength="2"
           maxlength="20"
           size="30"
           required
@@ -28,11 +28,20 @@
           required
         />
       </div>
-      <button type="submit" class="btn rounded-lg mt-20" @click.prevent="getForm">登入</button>
+      <div class="pt-10">
+        <label class="text-white" for="passwordConform">密碼確認 : </label>
+        <input
+          v-model="passwordConform"
+          type="password"
+          class="outline h-10 ml-5 mr-7 px-5 rounded-lg"
+          minlength="4"
+          maxlength="20"
+          size="30"
+          required
+        />
+      </div>
+      <button type="submit" class="btn rounded-lg ml-5 mt-20">新增</button>
     </form>
-    <a href="/register" target="_blank">
-      <div class="text-cyan-300 mt-4 text-xs	">註冊帳號</div>
-    </a>
   </div>
 </template>
 
@@ -41,9 +50,17 @@ import { ref } from 'vue';
 
 const username = ref('');
 const password = ref('');
-const getForm = () => {
-  console.log(username.value);
-  console.log(password.value);
+const passwordConform = ref('');
+const errors = ref('');
+const add = (e: any) => {
+  if (password.value !== passwordConform.value) {
+    errors.value = '密碼不一樣重打吧';
+    console.log(errors.value);
+  } else {
+    console.log(username.value);
+    console.log(password.value);
+  }
+  e.preventDefault();
 }
 
 // const cookie = useCookie('name')
