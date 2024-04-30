@@ -16,12 +16,14 @@
           この度は【%Dep_ Price%】円の入金申請につきまして、無事にお客様のPazuru口座に反映されました。是非プレーをお楽しみくださいませ！
         </div>
         <div class="photo mb-10">
-          <button
-            type="button"
-            class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
-            onclick="location.href='/'" target="_blank">ログイン
-            <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
-          </button>
+          <a href="https://pazuru.com/ja/promotions" target="_blank">
+            <button
+              type="button"
+              class="container-flex mail-verify px-3 py-5 rounded-lg text-white text-base" 
+              >ログイン
+              <img class="ml-2.5" src="/assets/img/email/vector.png" alt="">
+            </button>
+          </a>
         </div>
         <div class="mb-10">
           プレイヤー様の勝利をお祈りしています彡！
