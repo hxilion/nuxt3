@@ -31,13 +31,17 @@
       <button type="submit" class="btn rounded-lg mt-20" @click.prevent="getForm">登入</button>
     </form>
     <a href="/register" target="_blank">
-      <div class="text-cyan-300 mt-4 text-xs	">註冊帳號</div>
+      <div class="text-cyan-300 mt-4 text-xs">註冊帳號</div>
     </a>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+
+definePageMeta({
+  layout: false
+})
 
 const username = ref('');
 const password = ref('');

@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client'
+// import db from '@/server/db'
 
 const prismaClient = new PrismaClient()
 
@@ -7,11 +8,9 @@ export default defineEventHandler(() => {
     data: {
       providerName: null,
       providerUserId: null,
-      nickname: 'Ryan',
-      email: 'lion@luckylab.page',
+      username: 'Ryan',
       password: 'qwe123',
-      avatar: '',
-      emailVerified: true
+      avatar: ''
     }
   })
 
