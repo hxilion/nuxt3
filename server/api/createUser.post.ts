@@ -3,16 +3,19 @@ import { PrismaClient } from '@prisma/client'
 
 const prismaClient = new PrismaClient()
 
-export default defineEventHandler(() => {
+export default defineEventHandler( async (event) => {
+  const body = await readBody(event);
+  console.log(88, body);
+
   const user = prismaClient.user.create({
     data: {
       providerName: null,
       providerUserId: null,
-      username: 'Ryan',
-      password: 'qwe123',
+      username: body.username,
+      password: body.password,
       avatar: ''
     }
   })
 
-  return user
+  return user;
 })

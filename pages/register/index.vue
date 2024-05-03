@@ -1,7 +1,9 @@
 <template>
   <div class="register py-40 font-medium" >
-    <NuxtImg src="/assets/img/backstage/desktop.png" />
-    <Form id="registerForm" @submit="add" ref="myForm">
+    <NuxtImg
+      src="backstage/desktop.png"
+    />
+    <Form @submit="add">
       <div class="pt-10">
         <Field
           name="username"
@@ -20,27 +22,37 @@
         <div class="msg text-red-600 text-xs font-normal"><ErrorMessage name="username" /></div>
       </div>
       <div class="pt-10">
-        <label class="text-white" for="password">密碼 : </label>
         <Field
-          v-model="form.password"
           name="password"
-          type="password"
-          class="outline h-10 ml-2 px-5 rounded-lg"
-          placeholder="請輸入密碼"
           :rules="validatePassword"
-        />
+          v-slot="{ handleChange }"
+        >
+          <label class="text-white" for="password">密碼 : </label>
+          <input
+            v-model="form.password"
+            type="password"
+            class="outline h-10 ml-2 px-5 rounded-lg"
+            placeholder="請輸入密碼"
+            @input="handleChange"
+          />
+        </Field>
       </div>
       <div class="msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="password" /></div>
       <div class="pt-10">
-        <label class="text-white" for="passwordConform">密碼確認 : </label>
         <Field
-          v-model="form.passwordConform"
           name="passwordConform"
-          type="password"
-          class="outline h-10 ml-2 mr-7 px-5 rounded-lg"
-          placeholder="再次輸入密碼"
-          :rules="validatePassword"
-        />
+          :rules="validateConformPassword"
+          v-slot="{ handleChange }"
+        >
+          <label class="text-white" for="passwordConform">密碼確認 : </label>
+          <input
+            v-model="form.passwordConform"
+            type="password"
+            class="outline h-10 ml-2 mr-7 px-5 rounded-lg"
+            placeholder="再次輸入密碼"
+            @input="handleChange"
+          />
+        </Field>
       </div>
       <div class="msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="passwordConform" /></div>
       <div class="mt-20">
@@ -51,58 +63,35 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { ref } from 'vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
-import { errorMessages } from 'vue/compiler-sfc';
 
 const form = reactive ({
   username: '',
   password: '',
   passwordConform: '',
 });
-const errors = ref('');
-const myForm = ref<HTMLFormElement | null>();
-const runtimeConfig = useRuntimeConfig()
-const { apiBase } = runtimeConfig.public
+const runtimeConfig = useRuntimeConfig();
+const { apiBase } = runtimeConfig.public;
 
-watch(
-  () => form.username,
-  (username) => {
-    if (validateUser(username)) {
-      console.log(852, myForm.value);
-      console.log(4, JSON.parse(JSON.stringify(myForm.value)));
+const add = async () => {
+  const response = await $fetch('/api/createUser', {
+    method: 'POST',
+    body: { ...form },
+    headers: {
+      'Content-Type': 'application/json'
     }
-    // let obj = JSON.stringify(myForm.value, (key, value)=>{
-    //   console.log(key);
-    //   console.log(value);
-    //   // if(key == 'name'){
-    //   //   return value+"这是对象的属性值";
-    //   // }else{
-    //   //   return value;
-    //   // }
-    // });
-    // if (!validateUser(username) && typeof JSON.parse(JSON.stringify(myForm.value)).errors.username !== undefined) {
-    //   console.log(7532);
-    //   JSON.parse(JSON.stringify(myForm.value)).errors.username = '';
-    // }
-    console.log(validateUser(username));
-    console.log(JSON.parse(JSON.stringify(myForm.value)).errors)
-    console.log(JSON.parse(JSON.stringify(myForm.value)).errors.username)
-  },
-  { deep: true }
-)
+  })
+console.log('success', response);
 
-const add = (values: any, actions: any) => {
-  console.log(values);
-  console.log(actions);
-  if (form.password !== form.passwordConform) {
-    errors.value = '密碼不一樣重打吧';
-    console.log(errors.value);
-  } else {
-    // const { data } = useFetch(`${apiBase}/creatUser`, {
-    //   query: {form}
-    // })
-  }
+  // console.log(responseData.value)
+  // await $fetch(`${apiBase}/creatUser`, {
+  //   method: 'POST',
+  //   body: JSON.stringify(values),
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   }
+  // })
 }
 
 const validateUser = (value: any) => {
@@ -130,6 +119,14 @@ const validatePassword = (value:any) => {
     return '格式錯誤，輸入4-20字元，需英文+數字';
   }
   // All is good
+  return true;
+}
+
+const validateConformPassword = () => {
+  if (form.password !== form.passwordConform) {
+    return '密碼不一樣重打吧';
+  }
+
   return true;
 }
 

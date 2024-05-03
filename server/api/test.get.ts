@@ -1,6 +1,12 @@
+let counter = 0
+
 export default defineEventHandler(() => {
+  counter += 1
+
   return {
-    ok: true,
-    message: '測試 [GET] /api/test'
+    name: 'Ryan',
+    gender: '男',
+    email: 'ryanchien8125@gmail.com',
+    counter
   }
 })

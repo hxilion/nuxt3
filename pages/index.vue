@@ -1,7 +1,7 @@
 <template>
   <div class="login py-40 font-medium" >
     <div>
-      <img src="/assets/img/backstage/desktop.png" alt="">
+      <NuxtImg src="/backstage/desktop.png" />
     </div>
     <form name="login-from">
       <div class="pt-10">

@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
-    '@vee-validate/nuxt',
+    "@nuxt/image",
+    '@vee-validate/nuxt'
   ],
   veeValidate: {
     // disable or enable auto imports
@@ -24,6 +25,9 @@ export default defineNuxtConfig({
       FieldArray: 'VeeFieldArray',
       ErrorMessage: 'VeeErrorMessage',
     },
+  },
+  image: {
+    dir: 'assets/img'
   },
   runtimeConfig: {
     apiSecret: '怎麼可以讓你知道呢 :P',  //設定只有伺服器端可以使用的環境變數。
