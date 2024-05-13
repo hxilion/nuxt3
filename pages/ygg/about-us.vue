@@ -1,8 +1,9 @@
 <template>
-<div class="game">123</div>
+  <div class="about-us">123</div>
 </template>
 
 <script setup lang="ts"></script>
 
 <style>
+
 </style>
