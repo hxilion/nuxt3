@@ -63,16 +63,17 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
+
+definePageMeta({
+  layout: false
+})
 
 const form = reactive ({
   username: '',
   password: '',
   passwordConform: '',
 });
-const runtimeConfig = useRuntimeConfig();
-const { apiBase } = runtimeConfig.public;
 
 const add = async () => {
   const response = await $fetch('/api/createUser', {
@@ -82,16 +83,10 @@ const add = async () => {
       'Content-Type': 'application/json'
     }
   })
-console.log('success', response);
 
-  // console.log(responseData.value)
-  // await $fetch(`${apiBase}/creatUser`, {
-  //   method: 'POST',
-  //   body: JSON.stringify(values),
-  //   headers: {
-  //     'Content-Type': 'application/json'
-  //   }
-  // })
+  if (response) {
+    navigateTo('/')
+  }
 }
 
 const validateUser = (value: any) => {

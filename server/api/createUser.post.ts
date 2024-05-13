@@ -5,7 +5,6 @@ const prismaClient = new PrismaClient()
 
 export default defineEventHandler( async (event) => {
   const body = await readBody(event);
-  console.log(88, body);
 
   const user = prismaClient.user.create({
     data: {
@@ -16,6 +15,8 @@ export default defineEventHandler( async (event) => {
       avatar: ''
     }
   })
+
+  console.log(user);
 
   return user;
 })
