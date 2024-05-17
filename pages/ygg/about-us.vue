@@ -96,11 +96,9 @@
               :class="item.show ? 'year-dot-focus' : 'year-dot'"
               @click="statusChange(index, item.year, true, `content${item.year}`)"
             >
-              <a :href="`#content${item.year}`">
-                <div class="bg-tree absolute" :class="`bg-tree${index}`">
-                  <div v-for=" in 9" class="dot mx-1 rounded-sm"></div>
-                </div>
-              </a>
+              <div class="bg-tree absolute" :class="`bg-tree${index}`">
+                <img src="/assets/img/ygg/bg-dot.svg" alt="">
+              </div>
             </div>
             <span class="text-lg">{{ item.year }}</span>
           </div>
@@ -112,9 +110,7 @@
               <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2014)">
-              <a href="#content2014">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -125,14 +121,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2013)">
-              <a href="#content2013">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2015)">
-              <a href="#content2015">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -146,14 +138,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2014)">
-              <a href="#content2014">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2016)">
-              <a href="#content2016">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -165,14 +153,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2015)">
-              <a href="#content2015">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2017)">
-              <a href="#content2017">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -185,14 +169,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2016)">
-              <a href="#content2016">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2018)">
-              <a href="#content2018">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -207,14 +187,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2017)">
-              <a href="#content2017">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2019)">
-              <a href="#content2019">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -230,14 +206,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2018)">
-              <a href="#content2018">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2020)">
-              <a href="#content2020">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -255,14 +227,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2019)">
-              <a href="#content2019">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2021)">
-              <a href="#content2021">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -286,14 +254,10 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2020)">
-              <a href="#content2020">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2022)">
-              <a href="#content2022">
-                <Icon class="text-white" name="tdesign:arrow-right" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-right" size="30" />
             </button>
           </div>
           <div class="content-right ml-20 mt-16 font-normal">
@@ -313,9 +277,7 @@
           <div class="content-left mt-10">
             <div class="content-title mt-4 text-5xl font-light">{{ yearTitle }}</div>
             <button class="year-switch mt-10 mr-5" @click="stepBtn('back', 2021)">
-              <a href="#content2021">
-                <Icon class="text-white" name="tdesign:arrow-left" size="30" />
-              </a>
+              <Icon class="text-white" name="tdesign:arrow-left" size="30" />
             </button>
             <button class="year-switch" @click="stepBtn('next', 2023)">
               <Icon class="text-white" name="tdesign:arrow-right" size="30" />
@@ -350,16 +312,240 @@
           </div>
         </div>
       </div>
-      
-      <!-- <div class="bg-tree absolute">
-        <div v-for="n in 90" class="dot mx-1 rounded-sm">
-      </div>
-      </div> -->
     </div>
     <div class="card4">
       <div class="pt-20 pb-12 px-8">
         <div class="text-2xl text-white pb-10 font-bold">
           Some of our partners
+        </div>
+      </div>
+    </div>
+    <div class="card5">
+      <div class="title text-4xl font-bold pt-14 pb-4 pl-10">Awards</div>
+      <div id="marquee">
+        <div class="view2">
+          <div class="pic-container">
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2015</div>
+              <div class="job-title text-center font-bold">SOFTWARE RISING STAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2016</div>
+              <div class="job-title text-center font-bold">GAMING SORTWARE SUPPLIER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2016</div>
+              <div class="job-title text-center font-bold">SLOT PROVIDER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2017</div>
+              <div class="job-title text-center font-bold">IG AWARDS</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2017</div>
+              <div class="job-title text-center font-bold">SLOT PROVIDER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2018</div>
+              <div class="job-title text-center font-bold">INNOVATOR OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2018</div>
+              <div class="job-title text-center font-bold">INNOVATOR IN RNG CASINO SOFTWARE</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2019</div>
+              <div class="job-title text-center font-bold">INNOVATOR OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2019</div>
+              <div class="job-title text-center font-bold">INNOVATOR IN RNG CASINO SUPPLIER</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2020</div>
+              <div class="job-title text-center font-bold">INNOVATOR OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2021</div>
+              <div class="job-title text-center font-bold">SLOT PROVIDER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-nordics-2-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2022</div>
+              <div class="job-title text-center font-bold">PLATFORM SUPPLIER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2022</div>
+              <div class="job-title text-center font-bold">RNG CASINO PROVIDER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2023</div>
+              <div class="job-title text-center font-bold">INNOVATOR OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2015</div>
+              <div class="job-title text-center font-bold">SOFTWARE RISING STAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2016</div>
+              <div class="job-title text-center font-bold">GAMING SORTWARE SUPPLIER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2016</div>
+              <div class="job-title text-center font-bold">SLOT PROVIDER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2017</div>
+              <div class="job-title text-center font-bold">IG AWARDS</div>
+            </div>
+            <div class="pic">
+              <div class="mb-10">
+                <img src="/assets/img/ygg/egr-300x247.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2017</div>
+              <div class="job-title text-center font-bold">SLOT PROVIDER OF THE YEAR</div>
+            </div>
+            <div class="pic">
+              <div class="mb-11">
+                <img src="/assets/img/ygg/gaming-awards-300x233.png" alt="" />
+              </div>
+              <div class="name text-center font-bold">2018</div>
+              <div class="job-title text-center font-bold">INNOVATOR OF THE YEAR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card6">
+      <div class="contain-flex-1">
+        <div class="area1 pt-20 pb-12 px-8">
+          <div class="name text-lg pb-10 font-bold">
+            Yggdrasil stands for entertainment in a responsible way
+          </div>
+          <div class="mb-5 text-base">
+            <span class="font-bold">Playing Yggdrasil games should be entertaining but also done in a responsible manner.</span>
+            At Yggdrasil we take Responsible Gaming seriously and are constantly working on keeping our products not only fun, but also safe.
+          </div>
+          <div class="mb-5 text-base">
+            Yggdrasil Gaming complies with the industry’s best practice on responsible gaming. 
+            All games are developed for an adult audience, 
+            both experienced players as well as those who are just starting their gaming experience.
+          </div>
+          <div class="mb-5 text-base">
+            Our front-end game-client includes software to enable players to gamble responsibly and to support our licensees with responsible gaming controls.
+          </div>
+        </div>
+        <div class="area2 mt-10">
+          <div class="relative">
+            <div class="contain-bg text-white">
+              <img src="/assets/img/ygg/about-us-responsible-bg.jpg" alt=""/>
+            </div>
+            <div class="entertainment">
+              <div class="content">
+                <img src="/assets/img/ygg/self-exclusions.svg" alt="" />
+                <div class="text-center text-white font-bold">Self-Exclusions</div>
+              </div>
+              <div>
+                <img src="/assets/img/ygg/age-verifications.svg" alt="" />
+                <div class="text-center text-white font-bold">Age erifications</div>
+              </div>
+              <div>
+                <img src="/assets/img/ygg/reality-checks.svg" alt="" />
+                <div class="text-center text-white font-bold">Reality Checks</div>
+              </div>
+              <div>
+                <img src="/assets/img/ygg/help-lines.svg" alt="" />
+                <div class="text-center text-white font-bold">Help Lines</div>
+              </div>
+              <div>
+                <img src="/assets/img/ygg/jackpot-amount.svg" alt="" />
+                <div class="text-center text-white font-bold">Jackpot Amount</div>
+              </div>
+              <div>
+                <img src="/assets/img/ygg/certified-games.svg" alt="" />
+                <div class="text-center text-white font-bold">Certified Games</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="area3 p-10 flex">
+        <div class="area3-card p-7">
+          <div class="title name text-lg font-bold mb-7">Keep everyone informed</div>
+          <div class="job-title font-normal">
+            To build safe and entertaining products,
+            it is vital that all employees are annually trained in Responsible Gaming.
+            This is also a part of our onboarding process.</div>
+        </div>
+        <div class="area3-card p-7 mx-6">
+          <div class="title name text-lg font-bold mb-7">Build sustainable gaming</div>
+          <div class="job-title font-normal" >
+            TWe build games for regulated markets and support our clients with 
+            features needed to ensure Responsible Gaming as our games are made available on their websites.
+          </div>
+        </div>
+        <div class="area3-card p-7">
+          <div class="title name text-lg font-bold mb-7">
+            Keep everyone informed
+          </div>
+          <div class="job-title font-normal" >
+            To build safe and entertaining products,
+            it is vital that all employees are annually trained in Responsible Gaming.
+            This is also a part of our onboarding process.
+          </div>
         </div>
       </div>
     </div>
@@ -641,7 +827,7 @@ const stepBtn = (step: string, year: number) => {
   text-align: center;
 }
 
-.person-title  {
+.person-title   {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -699,14 +885,13 @@ const stepBtn = (step: string, year: number) => {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-column-gap: 30px;
-  min-width: 1160px;
+  min-width: 1250px;
+  max-width: 1400px;
 }
 
 .bg-tree {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-column-gap: 2px;
-  top: 127px;
+  width: 140px;
+  top: 130px;
 }
 
 .bg-tree10 {
@@ -763,5 +948,111 @@ const stepBtn = (step: string, year: number) => {
   height: 50%;
   bottom: 60px;
   right: 5px;
+}
+
+.card4 {
+  background-color: #474e5c;
+  height: 550px;
+}
+
+.card5 {
+  background-color: #ecf0f1;
+  height: 475px;
+}
+
+.card5 > .title {
+  color: #fa6432;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-110%);
+  }
+}
+@media (max-width: 1024px) {
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-250%);
+    }
+  }
+}
+@media (max-width: 768px) {
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-333%);
+    }
+  }
+}
+
+#marquee {
+  width: 100%;
+}
+#marquee .view2 {
+  overflow: hidden;
+  width: 100%;
+}
+#marquee .pic-container {
+  display: flex;
+  animation: marquee 20s linear 1s infinite;
+}
+#marquee .pic-container .pic {
+  flex-basis: auto;
+  flex-shrink: 0;
+  padding: 30px;
+}
+
+.pic > div {
+  text-align: -webkit-center;
+} 
+
+.pic img {
+  width: 155px;
+}
+
+.contain-flex-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contain-flex-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card6 img {
+  width: 100%;
+  height: auto;
+}
+
+.area1 {
+  min-width: 700px;
+}
+
+.entertainment {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-column-gap: 40px;
+  padding: 60px;
+}
+
+.contain-bg {
+  position: absolute;
+  top: 40px;
+  z-index: -1;
+}
+
+.area3-card {
+  background-color: #ecf0f1;
 }
 </style>

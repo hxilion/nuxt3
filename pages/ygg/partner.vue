@@ -54,9 +54,6 @@
 .card1 .picture {
   position: relative;
   top: -50px;
-  /* height: calc(100% - 100px);;
-  left: calc(10.6667% - 30px); */
-  /* background-position: 10% 100%; */
 }
 
 .card2 {
