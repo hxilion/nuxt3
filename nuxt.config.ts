@@ -29,6 +29,10 @@ export default defineNuxtConfig({
   image: {
     dir: 'assets/img'
   },
+  css: [
+    // SCSS file in the project
+    "~/assets/style/main.scss", // you should add main.scss somewhere in your app
+  ],
   runtimeConfig: {
     apiSecret: '怎麼可以讓你知道呢 :P',  //設定只有伺服器端可以使用的環境變數。
     public: {
