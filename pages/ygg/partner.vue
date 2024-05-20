@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="picture text-right" style="max-width: 640px; min-width: 390px;">
-        <img src="/assets/img/ygg/partners-header.png" alt="">
+        <img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/partners-header.png" alt="">
       </div>
     </div>
     <div class="card2">
@@ -23,16 +23,43 @@
     </div>
     <div class="card3">
       <div class="pt-20 pb-12 px-8">
-        <div class="text-2xl text-white pb-10 font-bold">
-          Some of our partners
+        <div class="text-2xl text-white pb-10 font-bold">Some of our partners</div>
+        <div class="partners-logo">
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/MicrosoftTeams-image-9.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/InterWetten_Logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/Betfred-logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/Veikkaus-logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/casinoBarcelona_Logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/LeoVegas_Logo_2A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/KINDRED-logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/tipsport_Logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/betway_Logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/POKERSTARS_Logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/Entain_Logo_A.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/888_Logo_A.png" alt=""></div>
+          <div class="logo-bg" style="padding-top: 25px;padding-bottom: 25px;"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/william-hill.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/betsson-group.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/casumo.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/mrgreen.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/lottoland.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/comeon.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/lottomatica.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/skill-on-net.png" alt=""></div>
+          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/bet365.png" alt=""></div>
         </div>
       </div>
     </div>
-    <div class="card4">
+    <div class="partner-card4">
       <div class="pt-20 pb-12 px-8">
-        <div class="text-2xl text-white pb-10 font-bold">
-          Some of our partners
+        <div class="text-2xl pb-10 font-bold">
+          Partner with us
         </div>
+        <a href="/">
+            <button
+              type="button"
+              class="rounded-sm px-7 text-base text-white font-bold">SEND
+            </button>
+          </a>
       </div>
     </div>
   </div>
@@ -66,6 +93,28 @@
   width: 100%;
   height: 665px;
   background: linear-gradient(199deg, #fa9633 0, #fa6533 100%) no-repeat #fa6533;
+}
+
+.partners-logo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 30px;
+}
+
+.logo-bg {
+  background-color: rgba(255,255,255,.25);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.partner-card4 {
+  color: #fa6432;
+}
+
+.partner-card4 button {
+  background-color: #fa6432;
+  height: 40px;
+  width: 200px;
 }
 
 </style>
