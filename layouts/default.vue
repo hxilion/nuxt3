@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="flex w-full justify-center px-8 xl:px-0">
-      <nav class="flex w-full max-w-7xl items-center justify-between py-2">
+      <!-- <nav class="flex w-full max-w-7xl items-center justify-between py-2">
         <div>
           <a aria-label="TailwindBlog" href="/">
             <div class="flex items-center justify-between">
@@ -14,7 +14,7 @@
             </div>
           </a>
         </div>
-        <!-- <div class="flex items-center text-base leading-5">
+        <div class="flex items-center text-base leading-5">
           <div class="flex flex-row items-center">
             <NuxtLink
               class="px-3 py-2 text-gray-700 transition hover:text-emerald-500"
@@ -23,8 +23,8 @@
               登入
             </NuxtLink>
           </div>
-        </div> -->
-      </nav>
+        </div>
+      </nav> -->
     </header>
     <slot />
   </div>
