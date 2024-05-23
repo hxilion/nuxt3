@@ -1,0 +1,53 @@
+.form-lable1 {
+  background-color: #1E1E1E;
+  width: 360px;
+  height: 224px;
+}
+
+.container-flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-flex2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-style1 {
+  width: 100%;
+  height: 56px;
+  padding: 8px 16px;
+  border: 1px solid #D2D2D2;
+  box-sizing: border-box;
+}
+
+.btn-style1 {
+  width: 320px;
+  height: 56px;
+  background-color: #00FF50;
+}
+
+.divide-x1 {
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.divide-x2 {
+  border-bottom: 1px solid #00FF50;
+}
+
+.divide-y {
+  border-left: 4px solid #00FF50;
+}
+
+.color1 {
+  color: #00FF50;
+}
+
+.error-msg {
+  width: 220px;
+  margin-left: 20px;
+  text-align: left;
+}

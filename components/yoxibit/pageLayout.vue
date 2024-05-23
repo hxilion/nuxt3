@@ -30,5 +30,6 @@
 	background-color: #F8F8F8;
 	margin-left: auto;
 	margin-right: auto;
+  font-family: Murecho;
 }
 </style>

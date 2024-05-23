@@ -3,7 +3,7 @@
     <NuxtImg
       src="backstage/desktop.png"
     />
-    <Form @submit="add">
+    <Form @submit="add" style="width: 728px">
       <div class="pt-10">
         <Field
           name="username"
