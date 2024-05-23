@@ -3,10 +3,10 @@
     <div class="sign-up-step1" >
       <div class="email-form">
         <div class="text-center font-bold py-4">新規登録（仮登録）</div>
-        <div class="container-flex1 mb-5">
-          <div class="form-lable1 text-white mx-5 py-24 basis-4/12">メールアドレス :</div>
-          <div class="basis-7/12">
-            <Form>
+        <Form>
+          <div class="container-flex1 mb-5">
+            <div class="form-lable1 text-white mx-5 py-24 pl-4 flex-30">メールアドレス :</div>
+            <div class="flex-63">
               <Field
                 name="email"
                 :rules="validateEmail"
@@ -37,19 +37,19 @@
                 </Field>
               </div>
               <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="emailConform" /></div>
-            </Form>
+            </div>
           </div>
-        </div>
-        <div class="divide-x1"></div>
-        <div class="my-5 text-base tracking-widest text-center">アカウントは複数作成できません。</div>
-        <div class="text-center pb-5">
-          <button
-          type="button"
-          class="btn-style1 px-12 rounded-lg font-bold" 
-          >メール送信
-          <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
-          </button>
-        </div>
+          <div class="divide-x1"></div>
+          <div class="my-5 text-base tracking-widest text-center">アカウントは複数作成できません。</div>
+          <div class="text-center pb-5">
+            <button
+            type="button"
+            class="btn-style1 px-12 rounded-lg font-bold" 
+            >メール送信
+            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+            </button>
+          </div>
+        </Form>
       </div>
       <div class="mt-14">
         <div class="divide-y pl-4 text-2xl font-bold">通常5分程度で本登録のメールをお届けしていますが、届かない場合は下記をお試しください。</div>
@@ -109,18 +109,6 @@ const validateEmailConform = () => {
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 8px 24px 0px #1E1E1E1A;
-  }
-
-  .label-light-height {
-    line-height: 14;
-  }
-
-  .contain-flex > :first-child {
-    width: 360px;
-  }
-
-  .contain-flex > :last-child {
-    width: 728px;
   }
 
   button > img {
