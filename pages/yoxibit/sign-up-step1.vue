@@ -3,9 +3,9 @@
     <div class="sign-up-step1" >
       <div class="email-form">
         <div class="text-center font-bold py-4">新規登録（仮登録）</div>
-        <div class="container-flex1 mb-5" style="max-width: 1184px;">
+        <div class="container-flex1 mb-5">
           <div class="form-lable1 text-white mx-5 py-24 basis-4/12">メールアドレス :</div>
-          <div class="basis-8/12">
+          <div class="basis-7/12">
             <Form>
               <Field
                 name="email"
@@ -13,7 +13,7 @@
                 v-slot="{ handleChange }"
               >
                 <input
-                  v-model="email"
+                  v-model="form.email"
                   type="text"
                   class="input-style1"
                   @input="handleChange"
@@ -63,7 +63,7 @@
       </div>
       <div class="mt-14">
         <div class="divide-y pl-4 text-2xl font-bold">お困りの場合はカスタマーサポートへご連絡ください。</div>
-        <div class="pl-5 mt-4 ml-1 tracking-widest">宛先: <span class="color1 divide-x2">support@yoxibitmail.com</span></div>
+        <div class="pl-5 mt-4 ml-1 tracking-widest">宛先: <span class="text-primary divide-x2">support@yoxibitmail.com</span></div>
         <div class="pl-5 mt-4 ml-1 tracking-widest">件名: 口座開設希望</div>
       </div>
     </div>
@@ -73,9 +73,7 @@
 <script setup lang="ts">
 import PageLayout from '../../components/yoxibit/pageLayout.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
-import { ref, reactive } from 'vue';
-
-const email = ref('');
+import { reactive } from 'vue';
 
 const form = reactive ({
   email: '',
@@ -102,9 +100,7 @@ const validateEmailConform = () => {
 
   return true;
 }
-
 </script>
-
 
 <style lang="scss" scoped>
 .sign-up-step1 {
@@ -134,7 +130,5 @@ const validateEmailConform = () => {
   li {
     list-style-type: disc;
   }
-
 }
-
 </style>
