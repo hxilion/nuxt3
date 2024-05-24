@@ -288,16 +288,14 @@
           <div class="container-flex1">
             <div class="form-lable1 text-white mx-5 py-24 pl-4 flex-30">秘密の質問</div>
             <div class="flex-63">
-              <Field name="securityQuestion">
-                <select v-model="form.securityQuestion" class="input-style1 vector">
-                  <option selected>あなたの最初のペットの名前は？</option>
-                  <option>あなたの母親の旧姓は？</option>
-                  <option>あなたの好きな色は？</option>
-                  <option>あなたの好きなレストランは？</option>
-                  <option>あなたの生まれはどこですか？</option>
-                  <option>あなたの最初の学校名は？</option>
-                </select>
-              </Field>
+              <select v-model="form.securityQuestion" class="input-style1 vector">
+                <option selected>あなたの最初のペットの名前は？</option>
+                <option>あなたの母親の旧姓は？</option>
+                <option>あなたの好きな色は？</option>
+                <option>あなたの好きなレストランは？</option>
+                <option>あなたの生まれはどこですか？</option>
+                <option>あなたの最初の学校名は？</option>
+              </select>
               <div class="my-2 text-base font-bold">質問の答え</div>
               <Field
                 name="securityAnswer"
@@ -392,7 +390,7 @@ const validatePasswordConform = (value: any) => {
 }
 
 const validateUsername = (value: any) => {
-  
+
   if (!value) {
     return '帳號必填';
   }
