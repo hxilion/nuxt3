@@ -110,7 +110,7 @@ const validatePassword = (value:any) => {
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 .login {
   width: 100%;
   height: 734px;

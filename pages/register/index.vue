@@ -127,7 +127,7 @@ const validateConformPassword = () => {
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 .register {
   width: 100%;
   height: 734px;
