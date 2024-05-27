@@ -7,7 +7,7 @@
             <button
               type="button"
               class="btn-style2 px-5 rounded-lg font-bold mb-5 mr-2" 
-            >ポイントバックとは？1
+            >登録情報変更
               <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
@@ -15,7 +15,7 @@
             <button
               type="button"
               class="btn-style2 px-5 rounded-lg font-bold" 
-            >ポイントバック率
+            >メールアドレス変更
               <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
@@ -25,7 +25,7 @@
             <button
               type="button"
               class="btn-style2 px-5 rounded-lg font-bold" 
-            >ポイント送付活用方法
+            >パスワード変更
               <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
@@ -33,7 +33,7 @@
             <button
               type="button"
               class="btn-style2 px-5 rounded-lg font-bold" 
-            >適正利用のお願い
+            >秘密の質問変更
             <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
@@ -41,7 +41,7 @@
             <button
               type="button"
               class="btn-style2 px-5 rounded-lg font-bold" 
-            >適正利用のお願い
+            >ワンタイムパスワード変更
               <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
@@ -354,7 +354,7 @@
             </div>
         </Form>
       </div>
-      <div id="card５" class="card">
+      <div id="card5" class="card">
         <div class="divide-y font-bold text-2xl pl-10 mb-10">ワンタイムパスワード設定変更</div>
         <Form>
           <div class="container-flex1">
