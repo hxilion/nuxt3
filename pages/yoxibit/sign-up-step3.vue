@@ -445,12 +445,5 @@ const validateRequest = (value: any) => {
     padding: 8px 16px;
     border: 1px solid #D2D2D2;
   }
-
-  .vector {
-    appearance: none;
-    background-image: url("/assets/img/yoxibit/vector-down.png");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-  }
 }
 </style>

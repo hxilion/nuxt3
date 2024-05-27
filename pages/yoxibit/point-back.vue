@@ -4,84 +4,100 @@
       <div class="first-block bg-gray96 py-4">
         <div class="max-w-screen-xl mx-auto px-4 py-4">
           <div class="grid-btn">
-            <button
-              type="button"
-              class="btn-style2 px-12 rounded-lg font-bold mb-5 mr-2" 
-            >ポイントバックとは？
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
-            </button>
-            <button
-              type="button"
-              class="btn-style2 px-12 rounded-lg font-bold" 
-            >ポイントバック率
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
-            </button>
-            <button
-              type="button"
-              class="btn-style2 px-12 rounded-lg font-bold" 
-            >ポイント送付活用方法
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
-            </button>
-            <button
-              type="button"
-              class="btn-style2 px-12 rounded-lg font-bold" 
-            >適正利用のお願い
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
-            </button>
+            <a href="#card1">
+              <button
+                type="button"
+                class="btn-style2 px-12 rounded-lg font-bold mb-5 mr-2" 
+              >ポイントバックとは？
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              </button>
+            </a>
+            <a href="#card2">
+              <button
+                type="button"
+                class="btn-style2 px-12 rounded-lg font-bold" 
+              >ポイントバック率
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              </button>
+            </a>
+            <a href="#card3">
+              <button
+                type="button"
+                class="btn-style2 px-12 rounded-lg font-bold" 
+              >ポイント送付活用方法
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              </button>
+            </a>
+            <a href="#card4">
+              <button
+                type="button"
+                class="btn-style2 px-12 rounded-lg font-bold" 
+              >適正利用のお願い
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              </button>
+            </a>
           </div>
         </div>
       </div>
       <PageLayerWhite>
-        <div class="title font-bold text-center mb-10">ポイントバックとは？</div>
-        <div>YOXIBITでは業界最大級のポイントバックがもらえます。</div>
-        <div>加盟店から資金を受取るだけでポイントバック。加盟店へ送付をすればもっと大きなポイントバックが手に入ります。</div>
-        <div>何の手続きも要りません。</div>
+        <div id="card1">
+          <div class="title font-bold text-center mb-10">ポイントバックとは？</div>
+          <div>YOXIBITでは業界最大級のポイントバックがもらえます。</div>
+          <div>加盟店から資金を受取るだけでポイントバック。加盟店へ送付をすればもっと大きなポイントバックが手に入ります。</div>
+          <div>何の手続きも要りません。</div>
+        </div>
       </PageLayerWhite>
       <PageLayerGray>
-        <div class="card">
-          <div class="title font-bold text-center mb-10">ポイントバック率</div>
-          <div class="divide-y pl-4 mb-4 text-2xl font-bold">ポイントバック率</div>
-          <div>受取額の0.2%</div>
-          <div>送付額の0.6%</div>
-          <div class="my-5">合計<span class="text-redDC font-bold text-2xl">0.8%</span></div>
-          <div class="info">例）1,000ptを加盟店から受取り、同額を加盟店へ送付すれば、受取2pt+送付6ptで合計8ptのポイントバックが得られます。</div>
-          <div class="mt-5">1,000pt → <span class="text-redDC font-bold text-2xl"> 8ptバック！</span></div>
-          <div class="mt-5">50,000pt → <span class="text-redDC font-bold text-2xl"> 400ptバック！</span></div>
-          <div class="mt-5">500,000pt → <span class="text-redDC font-bold text-2xl"> 4,000ptバック！</span></div>
-        </div>
-        <div class="card">
-          <div class="divide-y pl-4 mb-4 text-2xl font-bold">ポイントバック月間上限額</div>
-          <div class="text-redDC font-bold text-2xl">20,000pt</div>
-        </div>
-        <div class="card">
-          <div class="divide-y pl-4 mb-4 text-2xl font-bold">集計期間と進呈日</div>
-          <div>集計期間：毎月1日〜月末</div>
-          <div>進呈日：翌月10日頃</div>
+        <div id="card2">
+          <div class="area1 mb-10">
+            <div class="title font-bold text-center mb-10">ポイントバック率</div>
+            <div class="divide-y pl-4 mb-4 text-2xl font-bold">ポイントバック率</div>
+            <div>受取額の0.2%</div>
+            <div>送付額の0.6%</div>
+            <div class="my-5">合計<span class="text-redDC font-bold text-2xl">0.8%</span></div>
+            <div class="info">例）1,000ptを加盟店から受取り、同額を加盟店へ送付すれば、受取2pt+送付6ptで合計8ptのポイントバックが得られます。</div>
+            <div class="mt-5">1,000pt → <span class="text-redDC font-bold text-2xl"> 8ptバック！</span></div>
+            <div class="mt-5">50,000pt → <span class="text-redDC font-bold text-2xl"> 400ptバック！</span></div>
+            <div class="mt-5">500,000pt → <span class="text-redDC font-bold text-2xl"> 4,000ptバック！</span></div>
+          </div>
+          <div class="area2  mb-10">
+            <div class="divide-y pl-4 mb-4 text-2xl font-bold">ポイントバック月間上限額</div>
+            <div class="text-redDC font-bold text-2xl">20,000pt</div>
+          </div>
+          <div class="area3  mb-10">
+            <div class="divide-y pl-4 mb-4 text-2xl font-bold">集計期間と進呈日</div>
+            <div>集計期間：毎月1日〜月末</div>
+            <div>進呈日：翌月10日頃</div>
+          </div>
         </div>
       </PageLayerGray>
       <PageLayerWhite>
-        <div class="title font-bold text-center mb-10">ポイント送付活用方法</div>
-        <div>加盟店からの出金するとき、現金化してまた入会すると、手数料や処理時間がもったいないです。</div>
-        <div>加盟店から出金した後、YOXIBITから加盟店へ送付すれば「完全無料」で「即時に完了」し、さらに使う程に「ポイントが貯まります」。</div>
-        <div>きっと、こんなお得なペイメントサービスは、世界中でYOXIBITだけでしょう！</div>
-        <div>ぜひ「ポイント送付」を活用して「世界一のお得さ」を実感してください。</div>
-        <div class="text-center my-16">
-          <button
-            type="submit"
-            class="btn-style1 px-12 rounded-lg font-bold" 
-          >初めての方へ
-          <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
-          </button>
+        <div id="card3">
+          <div class="title font-bold text-center mb-10">ポイント送付活用方法</div>
+          <div>加盟店からの出金するとき、現金化してまた入会すると、手数料や処理時間がもったいないです。</div>
+          <div>加盟店から出金した後、YOXIBITから加盟店へ送付すれば「完全無料」で「即時に完了」し、さらに使う程に「ポイントが貯まります」。</div>
+          <div>きっと、こんなお得なペイメントサービスは、世界中でYOXIBITだけでしょう！</div>
+          <div>ぜひ「ポイント送付」を活用して「世界一のお得さ」を実感してください。</div>
+          <div class="text-center my-16">
+            <button
+              type="submit"
+              class="btn-style1 px-12 rounded-lg font-bold" 
+            >初めての方へ
+            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+            </button>
+          </div>
         </div>
       </PageLayerWhite>
       <PageLayerGray>
-        <div class="title font-bold text-center mb-10">ポイントバック率</div>
-        <div>ポイントバックは、YOXIBITと加盟店様のサービスの利用促進を目的として提供されています。</div>
-        <div class="mb-10">ポイントバック獲得自体で利益を得ることを主目的にして、加盟店様のサービスを最低限しか利用しないようなことは、目的外利用としてお断りいたしますのでご承知おきください。</div>
-        <div>加盟店様での、入金額に対するプレイ額の平均値は8-10倍以上です。（100ドル入金なら800〜1,000ドル程度のプレイ。加盟店でもらえるボーナスを受け取ってのプレイも含む「長期的な平均」です。平均ですのでそれより少ないときもあると思います）</div>
-        <div class="mb-10">「等倍ベット」や「ローリング」と言われる行為を繰り返すと、通常のサービス利用目的では無いと判断され口座凍結等の対象となる可能性があります。この問題はプレイ額を増やすことによって防げます。</div>
-        <div>私たちYOXIBITは、お客さまと長年に渡ってお付き合いさせていただきたいと、心から願っております。サービスの適正利用にご理解、ご協力をお願いします。</div>
-        <div>引き続きサービス向上に努めてまいります。今後とも、どうぞよろしくお願いします。</div>
+        <div id="card4">
+          <div class="title font-bold text-center mb-10">適正利用のお願い</div>
+          <div>ポイントバックは、YOXIBITと加盟店様のサービスの利用促進を目的として提供されています。</div>
+          <div class="mb-10">ポイントバック獲得自体で利益を得ることを主目的にして、加盟店様のサービスを最低限しか利用しないようなことは、目的外利用としてお断りいたしますのでご承知おきください。</div>
+          <div>加盟店様での、入金額に対するプレイ額の平均値は8-10倍以上です。（100ドル入金なら800〜1,000ドル程度のプレイ。加盟店でもらえるボーナスを受け取ってのプレイも含む「長期的な平均」です。平均ですのでそれより少ないときもあると思います）</div>
+          <div class="mb-10">「等倍ベット」や「ローリング」と言われる行為を繰り返すと、通常のサービス利用目的では無いと判断され口座凍結等の対象となる可能性があります。この問題はプレイ額を増やすことによって防げます。</div>
+          <div>私たちYOXIBITは、お客さまと長年に渡ってお付き合いさせていただきたいと、心から願っております。サービスの適正利用にご理解、ご協力をお願いします。</div>
+          <div>引き続きサービス向上に努めてまいります。今後とも、どうぞよろしくお願いします。</div>
+        </div>
       </PageLayerGray>
     </div>
   </div>
@@ -92,7 +108,13 @@ import PageLayerWhite from '../../components/yoxibit/pageLayerWhite.vue';
 import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
 </script>
 <style lang="scss" scoped>
-.point-back {
+.yoxibit {
+  width: 100%;
+	height: auto;
+	background-color: #F8F8F8;
+	margin-left: auto;
+	margin-right: auto;
+  font-family: Murecho;
 
   .first-block {
     width: 100%;
@@ -109,30 +131,15 @@ import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
     font-size: 32px;
   }
 
-  .card {
-    margin-bottom: 40px;
-  }
-
   button > img {
     margin-top: 5px;
   }
-}
-</style>
 
-<style lang="scss">
-.yoxibit {
-	width: 100%;
-	height: auto;
-	background-color: #F8F8F8;
-	margin-left: auto;
-	margin-right: auto;
-  font-family: Murecho;
-}
-
-.info {
-  background: #0064FF;
-  color: #FFFFFF;
-  padding: 8px;
-  letter-spacing: 1.6px;
+  .info {
+    background: #0064FF;
+    color: #FFFFFF;
+    padding: 8px;
+    letter-spacing: 1.6px;
+  }
 }
 </style>
