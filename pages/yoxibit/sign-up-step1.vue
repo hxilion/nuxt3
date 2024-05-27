@@ -46,7 +46,7 @@
             type="button"
             class="btn-style1 px-12 rounded-lg font-bold" 
             >メール送信
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+            <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
             </button>
           </div>
         </Form>

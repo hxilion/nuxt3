@@ -180,7 +180,7 @@
               type="submit"
               class="btn-style1 px-12 rounded-lg font-bold" 
               >更新
-                <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+                <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </div>
         </Form>
@@ -234,7 +234,7 @@
                 type="submit"
                 class="btn-style1 px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>
@@ -294,7 +294,7 @@
                 type="submit"
                 class="btn-style1 px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>
@@ -348,7 +348,7 @@
                 type="submit"
                 class="btn-style1 px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>
@@ -379,7 +379,7 @@
                 type="submit"
                 class="btn-style1 px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>

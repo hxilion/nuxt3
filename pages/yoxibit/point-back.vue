@@ -9,7 +9,7 @@
                 type="button"
                 class="btn-style2 px-12 rounded-lg font-bold mb-5 mr-2" 
               >ポイントバックとは？
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </a>
             <a href="#card2">
@@ -17,7 +17,7 @@
                 type="button"
                 class="btn-style2 px-12 rounded-lg font-bold" 
               >ポイントバック率
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </a>
             <a href="#card3">
@@ -25,7 +25,7 @@
                 type="button"
                 class="btn-style2 px-12 rounded-lg font-bold" 
               >ポイント送付活用方法
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </a>
             <a href="#card4">
@@ -33,7 +33,7 @@
                 type="button"
                 class="btn-style2 px-12 rounded-lg font-bold" 
               >適正利用のお願い
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </a>
           </div>
@@ -83,7 +83,7 @@
               type="submit"
               class="btn-style1 px-12 rounded-lg font-bold" 
             >初めての方へ
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector.png" alt="">
+            <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
             </button>
           </div>
         </div>
