@@ -62,6 +62,13 @@
   padding: 0 48px;
 }
 
+.btn-style4 {
+  width: 66px;
+  height: 32px;
+  background-color: #DC0000;
+  padding: 0 16px;
+}
+
 .bg-gray {
   width: 100%;
 	height: auto;
@@ -102,4 +109,10 @@
   background-image: url("/assets/img/yoxibit/vector-down.png");
   background-repeat: no-repeat;
   background-position: right 20px center;
+}
+
+.block-vector-right {
+  background-image: url("/assets/img/yoxibit/vector-right.png");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
 }

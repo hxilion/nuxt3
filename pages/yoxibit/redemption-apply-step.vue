@@ -1,6 +1,6 @@
 <template>
   <PageLayout>
-    <div class="redemption-apply-step1 text-secondary" >
+    <div class="redemption-apply-step text-secondary" >
       <div class="title font-bold mb-4">換金の所要時間</div>
       <div class="application">
         <Form>
@@ -28,7 +28,31 @@
                   <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="amount" /></div>
                 </td>
               </tr>
-              <tr>
+              <tr v-if="isAccount">
+                <td>口座選択</td>
+                <td>
+                  <div>
+                    <input type="radio" id="bank1" name="contact" :value="form.bank1" class="mr-3" />
+                    <label for="bank1">三井住友銀行</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="bank2" name="contact" :value="form.bank2" class="mr-3" />
+                    <label for="bank2">りそな銀行</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="bank3" name="contact" :value="form.bank3" class="mr-3" />
+                    <label for="bank3">三菱東京UFJ銀行</label>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      class="rounded-lg font-bold text-white bg-secondary px-4 h-12 mt-1" 
+                      >口座の登録/削除はこちら
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr v-else>
                 <td>口座選択</td>
                 <td>
                   <span class="text-sm">登録口座はありません。口座登録を行ってください。</span>
@@ -52,6 +76,7 @@
                     <input
                       v-model="form.account1"
                       type="text"
+                      placeholder="銀行名"
                       class="input-style2 mb-4"
                       @input="handleChange"
                     />
@@ -65,24 +90,13 @@
                     <input
                       v-model="form.account2"
                       type="text"
+                      placeholder="支店名"
                       class="input-style2 mb-4"
                       @input="handleChange"
                     />
                   </Field>
                   <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="account2" /></div>
-                  <Field
-                    name="account3"
-                    :rules="validateRequest"
-                    v-slot="{ handleChange }"
-                  >
-                    <input
-                      v-model="form.account3"
-                      type="text"
-                      class="input-style2 mb-4"
-                      @input="handleChange"
-                    />
-                  </Field>
-                  <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="amoaccount3unt" /></div>
+                  <div v-if="isAccount" class="mb-4">{{ form.account3 }}</div>
                   <Field
                     name="account4"
                     :rules="validateRequest"
@@ -91,11 +105,25 @@
                     <input
                       v-model="form.account4"
                       type="text"
+                      placeholder="口座番号"
                       class="input-style2 mb-4"
                       @input="handleChange"
                     />
                   </Field>
                   <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="account4" /></div>
+                  <Field
+                    name="account5"
+                    :rules="validateRequest"
+                    v-slot="{ handleChange }"
+                  >
+                    <input
+                      v-model="form.account5"
+                      type="text"
+                      class="input-style2 mb-4"
+                      @input="handleChange"
+                    />
+                  </Field>
+                  <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="account5" /></div>
                 </td>
               </tr>
             </tbody>
@@ -171,15 +199,21 @@
 <script setup lang="ts">
 import PageLayout from '../../components/yoxibit/pageLayout.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 
 const form = reactive ({
   amount: '',
   account1: '',
   account2: '',
-  account3: '',
+  account3: '普通',
   account4: '',
+  account5: '',
+  bank1: '',
+  bank2: '',
+  bank3: '',
 });
+
+const isAccount = ref(true);
 
 const validateRequest = (value: any) => {
   if (!value) {
@@ -189,11 +223,10 @@ const validateRequest = (value: any) => {
   return true;
 }
 
-
 </script>
 
 <style lang="scss" scoped>
-.redemption-apply-step1 {
+.redemption-apply-step {
 
   .title {
     background-image: url(/assets/img/yoxibit/vector-right.png);
