@@ -35,6 +35,14 @@
   box-sizing: border-box;
 }
 
+.input-style2 {
+  width: 400px;
+  height: 56px;
+  padding: 8px 16px;
+  border: 1px solid #D2D2D2;
+  box-sizing: border-box;
+}
+
 .btn-style1 {
   width: 320px;
   height: 56px;
@@ -45,6 +53,13 @@
   width: 100%;
   height: 56px;
   background-color: #FFFFFF;
+}
+
+.btn-style3 {
+  width: 320px;
+  height: 56px;
+  background-color: #1E1E1E;
+  padding: 0 48px;
 }
 
 .bg-gray {

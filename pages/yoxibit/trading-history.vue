@@ -25,7 +25,7 @@
               type="button"
               class="btn-pdf px-12 rounded-lg font-bold text-white bg-secondary" 
               @click="downloadPDF"
-            >PDF
+              >PDF
             </button>
           </div>
         </div>
@@ -62,16 +62,12 @@ const { $html2pdf } = useNuxtApp()
 
 function downloadPDF() {
   if (document) {
-    const element = document.getElementById('table-list') as HTMLElement
-
-    // clone the element: https://stackoverflow.com/questions/60557116/html2pdf-wont-print-hidden-div-after-unhiding-it/60558415#60558415
+    const element = document.getElementById('table-list')!
     const clonedElement = element.cloneNode(true) as HTMLElement
     clonedElement.classList.remove('hidden')
     clonedElement.classList.add('block')
-    // need to append to the document, otherwise the downloading doesn't start
     document.body.appendChild(clonedElement)
 
-    // https://www.npmjs.com/package/html2pdf.js/v/0.9.0#options
     $html2pdf(clonedElement, {
       filename: 'filename.pdf',
       image: { type: 'png' },
