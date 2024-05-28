@@ -9,9 +9,8 @@
       <div class="text-center my-16">
         <button
         type="submit"
-        class="btn-style1 px-12 rounded-lg font-bold" 
+        class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
         >ログイン画面
-        <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
         </button>
       </div>
     </div>

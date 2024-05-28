@@ -7,17 +7,15 @@
             <a href="#card1">
               <button
                 type="button"
-                class="btn-style2 px-12 rounded-lg font-bold mb-5 mr-2" 
+                class="btn-style2 block-vector-right px-12 rounded-lg font-bold mb-5 mr-2" 
               >登録済み口座情報
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </a>
             <a href="#card2">
               <button
                 type="button"
-                class="btn-style2 px-12 rounded-lg font-bold" 
+                class="btn-style2 block-vector-right px-12 rounded-lg font-bold" 
               >新規口座登録
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </a>
           </div>

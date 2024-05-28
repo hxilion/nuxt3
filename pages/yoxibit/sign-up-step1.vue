@@ -44,9 +44,8 @@
           <div class="text-center pb-5">
             <button
             type="button"
-            class="btn-style1 px-12 rounded-lg font-bold" 
+            class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
             >メール送信
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
             </button>
           </div>
         </Form>

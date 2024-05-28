@@ -6,17 +6,15 @@
           <a href="#card1">
             <button
               type="button"
-              class="btn-style2 px-5 rounded-lg font-bold mb-5 mr-2" 
+              class="btn-style2 block-vector-right px-5 rounded-lg font-bold mb-5 mr-2" 
             >登録情報変更
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
           <a href="#card2">
             <button
               type="button"
-              class="btn-style2 px-5 rounded-lg font-bold" 
+              class="btn-style2 block-vector-right px-5 rounded-lg font-bold" 
             >メールアドレス変更
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
         </div>
@@ -24,25 +22,22 @@
           <a href="#card3">
             <button
               type="button"
-              class="btn-style2 px-5 rounded-lg font-bold" 
+              class="btn-style2 block-vector-right px-5 rounded-lg font-bold" 
             >パスワード変更
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
           <a href="#card4">
             <button
               type="button"
-              class="btn-style2 px-5 rounded-lg font-bold" 
+              class="btn-style2 block-vector-right px-5 rounded-lg font-bold" 
             >秘密の質問変更
-            <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
           <a href="#card5">
             <button
               type="button"
-              class="btn-style2 px-5 rounded-lg font-bold" 
+              class="btn-style2 block-vector-right px-5 rounded-lg font-bold" 
             >ワンタイムパスワード変更
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-down.png" alt="">
             </button>
           </a>
         </div>
@@ -178,9 +173,8 @@
             <div class="text-center pb-5">
               <button
               type="submit"
-              class="btn-style1 px-12 rounded-lg font-bold" 
+              class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
               >更新
-                <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
               </button>
             </div>
         </Form>
@@ -232,9 +226,8 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="btn-style1 px-12 rounded-lg font-bold" 
+                class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>
@@ -292,9 +285,8 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="btn-style1 px-12 rounded-lg font-bold" 
+                class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>
@@ -346,9 +338,8 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="btn-style1 px-12 rounded-lg font-bold" 
+                class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>
@@ -377,9 +368,8 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="btn-style1 px-12 rounded-lg font-bold" 
+                class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
                 >更新
-                  <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
                 </button>
               </div>
             </div>
