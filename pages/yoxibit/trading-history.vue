@@ -13,26 +13,25 @@
               <option selected>加盟店で絞り込み</option>
             </select>
           </div>
-          <div class="text-center mr-4">
+          <div class="text-center pr-4">
             <button
             type="submit"
-            class="btn px-12 rounded-lg font-bold bg-primary" 
+            class="btn-search px-12 rounded-lg font-bold bg-primary" 
             >検索
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
             </button>
           </div>
           <div class="text-center">
             <button
-              type="submit"
-              class="btn px-12 rounded-lg font-bold text-white bg-secondary" 
+              type="button"
+              class="btn-pdf px-12 rounded-lg font-bold text-white bg-secondary" 
+              @click="downloadPDF"
             >PDF
-              <img class="float-right clear-right" src="/assets/img/yoxibit/vector-right.png" alt="">
             </button>
           </div>
         </div>
       </Form>
       <div class="history-table">
-        <table>
+        <table id="table-list">
           <thead>
             <tr>
               <th v-for="header in headers" class="font-bold py-8 px-3 bg-secondary text-white h-12"> {{ header }} </th>
@@ -55,9 +54,32 @@
 </template>
   
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 import { Form } from 'vee-validate';
 import { reactive, ref } from 'vue';
+
+const { $html2pdf } = useNuxtApp()
+
+function downloadPDF() {
+  if (document) {
+    const element = document.getElementById('table-list') as HTMLElement
+
+    // clone the element: https://stackoverflow.com/questions/60557116/html2pdf-wont-print-hidden-div-after-unhiding-it/60558415#60558415
+    const clonedElement = element.cloneNode(true) as HTMLElement
+    clonedElement.classList.remove('hidden')
+    clonedElement.classList.add('block')
+    // need to append to the document, otherwise the downloading doesn't start
+    document.body.appendChild(clonedElement)
+
+    // https://www.npmjs.com/package/html2pdf.js/v/0.9.0#options
+    $html2pdf(clonedElement, {
+      filename: 'filename.pdf',
+      image: { type: 'png' },
+      enableLinks: true
+    })
+    clonedElement.remove()
+  }  
+}
 
 const searchform = reactive ({
   date: '年月で絞り込み',
@@ -128,14 +150,24 @@ const list = ref([
     box-sizing: border-box;
   }
 
-  .btn {
-    width: 100%;
+  .btn-search {
+    width: 130px;
     height: 56px;
+    background-image: url(/assets/img/yoxibit/vector-right.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+  }
+
+  .btn-pdf {
+    width: 130px;
+    height: 56px;
+    background-image: url(/assets/img/yoxibit/white-vector-right.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
   }
 
   button > img {
     margin-top: 5px;
-    margin-left: 40px
   }
 
   li {
@@ -153,7 +185,7 @@ const list = ref([
     border: 1px solid #D2D2D2;
   }
 
-  td{
+  td {
     background-color:#ffffff;
     color: #1E1E1E;
     width: 480px;
