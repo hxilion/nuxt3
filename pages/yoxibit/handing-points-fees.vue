@@ -107,7 +107,7 @@ import PageLayout from '../../components/yoxibit/pageLayout.vue';
     color: #1E1E1E;
     width: 480px;
     height: 48px;
-    padding: 0 10px;
+    padding: 10px;
   }
 
   td:first-of-type {
