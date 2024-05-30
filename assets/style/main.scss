@@ -1,8 +1,10 @@
+//bg-secondary h-56 text-white text-xl
 .form-lable1 {
   background-color: #1E1E1E;
   width: 360px;
   height: 224px;
 }
+//bg-secondary h-22 text-white text-xl
 
 .form-lable2 {
   background-color: #1E1E1E;
@@ -10,12 +12,13 @@
   height: 88px;
 }
 
+// bg-secondary w-90 h-35
 .form-lable3 {
   background-color: #1E1E1E;
   width: 360px;
   height: 140px;
 }
-
+// flex items-center
 .container-flex1 {
   display: flex;
   align-items: center;
@@ -27,6 +30,7 @@
   align-items: center;
 }
 
+//w-full h-14 py-2 px-4 box-border border border-grayD2
 .input-style1 {
   width: 100%;
   height: 56px;
@@ -42,13 +46,13 @@
   border: 1px solid #D2D2D2;
   box-sizing: border-box;
 }
-
+// w-80 h-14 bg-primary
 .btn-style1 {
   width: 320px;
   height: 56px;
   background-color: #00FF50;
 }
-
+//w-full h-14 bg-white
 .btn-style2 {
   width: 100%;
   height: 56px;
@@ -77,16 +81,17 @@
 	margin-right: auto;
   font-family: Murecho;
 }
-
+// border-b border-grayD2 my-5
 .divide-x1 {
   border-bottom: 1px solid #D2D2D2;
   margin: 20px 0px;
 }
-
+// border-l border-primary
 .divide-x2 {
   border-bottom: 1px solid #00FF50;
 }
 
+// border-l-4 border-primary
 .divide-y {
   border-left: 4px solid #00FF50;
 }
@@ -113,6 +118,12 @@
 
 .block-vector-right {
   background-image: url("/assets/img/yoxibit/vector-right.png");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.white-vector-right {
+  background-image: url("/assets/img/yoxibit/white-vector-right.png");
   background-repeat: no-repeat;
   background-position: center right 20px;
 }

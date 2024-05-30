@@ -23,7 +23,7 @@
       </div>
       <PageLayerWhite>
         <div id="card1">
-          <div class="title font-bold text-center mb-10">登録済み口座情報</div>
+          <div class="text-[32px] font-bold text-center mb-10">登録済み口座情報</div>
           <div class="bank-table">
             <table id="table-list">
               <thead>
@@ -67,7 +67,7 @@
       <PageLayerGray>
         <div id="card2">
           <div class="area1 mb-10">
-            <div class="title font-bold text-center mb-10">新規口座登録</div>
+            <div class="text-[32px] font-bold text-center mb-10">新規口座登録</div>
             <div class="new-registration">
               <Form>
                 <table class="mb-10">
@@ -236,14 +236,6 @@ const validateRequest = (value: any) => {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  button > img {
-    margin-top: 5px;
   }
 
   .info {

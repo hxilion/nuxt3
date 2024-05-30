@@ -1,8 +1,8 @@
 <template>
   <PageLayout>
     <div class="redemption-apply-step text-secondary" >
-      <div class="title font-bold mb-4">換金の所要時間</div>
-      <div class="application">
+      <div class="text-w[32px] font-bold mb-4">換金の所要時間</div>
+      <div class="w-full bg-white p-8 shadow-ctz1 mb-20">
         <Form>
           <table class="mb-10">
             <tbody>
@@ -227,31 +227,20 @@ const validateRequest = (value: any) => {
 
 <style lang="scss" scoped>
 .redemption-apply-step {
-
-  .title {
-    background-image: url(/assets/img/yoxibit/vector-right.png);
-    background-repeat: no-repeat;
-    background-position: center left 130px;
-  }
-
-  button > img {
-    margin-top: 5px;
-  }
-
-  .application {
-    width: 100%;
-    background-color: #fff;
-    padding: 32px;
-    box-shadow: 0px 8px 24px 0px #1E1E1E1A;
-    margin-bottom: 80px;
-  }
-
-  .application-table {
-    overflow:hidden;
-    border-radius:10px 10px 0px 0px;
-    padding: 12px 16px;
-    gap: 8px;
-  }
+  // .application {
+  //   width: 100%;
+  //   background-color: #fff;
+  //   padding: 32px;
+  //   box-shadow: 0px 8px 24px 0px #1E1E1E1A;
+  //   margin-bottom: 80px;
+  // }
+// px-4 py-3 gap-2
+//   .application-table {
+//     overflow:hidden;
+//     border-radius:10px 10px 0px 0px;
+//     padding: 12px 16px;
+//     gap: 8px;
+//   }
 
   table, th, td {
     border: 1px solid #D2D2D2;

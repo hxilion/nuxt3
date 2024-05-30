@@ -1,53 +1,63 @@
 <template>
   <PageLayout>
-    <div class="trading-history" >
-      <Form>
-        <div class="container-flex1 justify-center">
-          <div class="mr-4">
-            <select v-model="searchform.date" class="select vector text-secondary">
+    <div class="trading-history">
+      <Form class="mb-5">
+        <div class="flex items-center justify-center sm:block">
+          <div class="mr-4 sm:mr-0 sm:mb-3">
+            <select v-model="searchform.date" class="w-60 h-14 px-4 py-2 border border-grayD2 box-border vector text-secondary sm:w-full">
               <option selected>年月で絞り込み</option>
             </select>
           </div>
-          <div class="mr-4">
-            <select v-model="searchform.store" class="select vector text-secondary">
+          <div class="mr-4 sm:mr-0 sm:mb-3">
+            <select v-model="searchform.store" class="w-60 h-14 px-4 py-2 border border-grayD2 box-border vector text-secondary sm:w-full">
               <option selected>加盟店で絞り込み</option>
             </select>
           </div>
-          <div class="text-center pr-4">
+          <div class="text-center mr-4 sm:mr-0 sm:mb-3">
             <button
             type="submit"
-            class="btn-search px-12 rounded-lg font-bold bg-primary" 
+            class="w-[130px] h-14 block-vector-right px-12 rounded-lg font-bold bg-primary sm:w-full" 
             >検索
             </button>
           </div>
-          <div class="text-center">
+          <div class="text-center sm:mb-3">
             <button
               type="button"
-              class="btn-pdf px-12 rounded-lg font-bold text-white bg-secondary" 
+              class="w-[130px] h-14 white-vector-right px-12 rounded-lg font-bold text-white bg-secondary sm:w-full" 
               @click="downloadPDF"
               >PDF
             </button>
           </div>
         </div>
       </Form>
-      <div class="history-table">
-        <table id="table-list">
-          <thead>
-            <tr>
-              <th v-for="header in headers" class="font-bold py-8 px-3 bg-secondary text-white h-12"> {{ header }} </th>
-            </tr>
-          </thead>
-          <tbody class="color-secondary">
-            <tr v-for="item in list">
-              <td>{{ item.date }}</td>
-              <td>{{ item.content}}</td>
-              <td>{{ item.statue}}</td>
-              <td>{{ item.transactionAmount}}</td>
-              <td>{{ item.balance}}</td>
-              <td>{{ item.detail}}</td>
-            </tr>
-          </tbody>
-        </table>
+      <div>
+        <div class="sm:overflow-visible	">
+          <table id="table-list" class="px-3 py-4 gap-2">
+            <thead>
+              <tr>
+                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-56">申請日付</th>
+                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">申請内容</th>
+                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">状態</th>
+                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">取引額(pt)</th>
+                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">残高(pt)</th>
+                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-56">詳細</th>
+              </tr>
+              <!-- <tr>
+                <th v-for="header in headers" class="font-bold py-8 px-3 bg-secondary text-white h-12"> {{ header }} </th>
+              </tr> -->
+            </thead>
+            <tbody class="color-secondary">
+              <tr v-for="item in list">
+                <td>{{ item.date }}</td>
+                <td>{{ item.content}}</td>
+                <td>{{ item.statue}}</td>
+                <td>{{ item.transactionAmount}}</td>
+                <td>{{ item.balance}}</td>
+                <td>{{ item.detail}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </PageLayout>
@@ -138,43 +148,8 @@ const list = ref([
 <style lang="scss" scoped>
 .trading-history {
 
-  .select {
-    width: 220px;
-    height: 56px;
-    padding: 8px 16px;
-    border: 1px solid #D2D2D2;
-    box-sizing: border-box;
-  }
-
-  .btn-search {
-    width: 130px;
-    height: 56px;
-    background-image: url(/assets/img/yoxibit/vector-right.png);
-    background-repeat: no-repeat;
-    background-position: center right 20px;
-  }
-
-  .btn-pdf {
-    width: 130px;
-    height: 56px;
-    background-image: url(/assets/img/yoxibit/white-vector-right.png);
-    background-repeat: no-repeat;
-    background-position: center right 20px;
-  }
-
-  button > img {
-    margin-top: 5px;
-  }
-
   li {
     list-style-type: disc;
-  }
-
-  .history-table {
-    overflow:hidden;
-    border-radius:10px 10px 0px 0px;
-    padding: 12px 16px;
-    gap: 8px;
   }
 
   table, th, td {

@@ -1,24 +1,56 @@
 <template>
   <PageLayout>
     <div class="sign-up-step3" >
-      <div class="basic-info-form py-5">
+      <div class="py-5 w-full bg-white shadow-ctz1 sm:py-6 sm:px-4">
         <Form>
           <div class="mb-5">
-            <div class="container-flex1">
-              <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">メールアドレス</div>
+            <div class="flex items-center sm:block">
+              <div class="
+                bg-secondary
+                h-22
+                text-white
+                text-xl
+                font-bold
+                mx-5
+                py-8
+                pl-4
+                flex-30
+                sm:bg-white
+                sm:h-4
+                sm:text-secondary
+                sm:text-base
+                sm:mx-0
+                sm:p-0"
+              >メールアドレス</div>
               <div class="flex-63">
                 <input
                   v-model="form.email"
                   type="text"
-                  class="input-style1 opacity-40"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 opacity-40 sm:mt-3"
                   disabled
                 />
               </div>
             </div>
-            <div class="divide-x1"></div>
-            <div class="container-flex1">
-              <div class="form-lable1 text-white mx-5 py-24 pl-4 flex-30">パスワード<br><span class="text-redDC text-sm">16～40文字（半角英数）</span></div>
-              <div class="flex-63">
+            <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0  sm:border-0 sm:border-0"></div>
+            <div class="flex items-center sm:block">
+              <div class="
+                bg-secondary
+                h-56
+                text-white
+                text-xl
+                font-bold
+                mx-5
+                py-24
+                pl-4
+                flex-30
+                sm:bg-white
+                sm:h-4
+                sm:text-secondary
+                sm:text-base
+                sm:mx-0
+                sm:p-0"
+              >パスワード<br><span class="text-redDC text-sm sm:font-normal">16～40文字（半角英数）</span></div>
+              <div class="flex-63 sm:mt-6">
                 <Field
                   name="password"
                   :rules="validatePassword"
@@ -27,12 +59,12 @@
                   <input
                     v-model="form.password"
                     type="password"
-                    class="input-style1"
+                    class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                     @input="handleChange"
                   />
                 </Field>
                 <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="password" /></div>
-                <div class="my-2 text-base tracking-widest">確認のため、再入力をお願いします。</div>
+                <div class="my-2 text-base tracking-widest sm:text-sm sm:mb-0">確認のため、再入力をお願いします。</div>
                 <Field
                   name="passwordConform"
                   :rules="validatePasswordConform"
@@ -41,16 +73,32 @@
                   <input
                     v-model="form.passwordConform"
                     type="password"
-                    class="input-style1"
+                    class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                     @input="handleChange"
                   />
                 </Field>
                 <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="passwordConform" /></div>
               </div>
             </div>
-            <div class="divide-x1 my-4"></div>
-            <div class="container-flex1">
-              <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">フルネーム（漢字）</div>
+            <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+            <div class="flex items-center sm:block">
+              <div class="
+                bg-secondary
+                h-22
+                text-white
+                text-xl
+                font-bold
+                mx-5
+                py-8
+                pl-4
+                flex-30
+                sm:bg-white
+                sm:h-4
+                sm:text-secondary
+                sm:text-base
+                sm:mx-0
+                sm:p-0"
+              >フルネーム（漢字）</div>
               <div class="flex-63">
                 <Field
                   name="name"
@@ -60,18 +108,34 @@
                   <input
                     v-model="form.name"
                     type="text"
-                    class="input-style1"
+                    class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                     placeholder="王小明"
                     @input="handleChange"
                   />
                 </Field>
                 <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="name" /></div>
-                <div class="text-redDC font-normal">※フリガナを間違えると、引き出しの際の振込ができませんので、正確にご入力ください。</div>
+                <div class="text-redDC font-normal sm:text-sm">※フリガナを間違えると、引き出しの際の振込ができませんので、正確にご入力ください。</div>
               </div>
             </div>
-            <div class="divide-x1 my-4"></div>
-            <div class="container-flex1">
-              <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">フルネーム（フリガナ）</div>
+            <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+            <div class="flex items-center sm:block">
+              <div class="
+                bg-secondary
+                h-22
+                text-white
+                text-xl
+                font-bold
+                mx-5
+                py-8
+                pl-4
+                flex-30
+                sm:bg-white
+                sm:h-4
+                sm:text-secondary
+                sm:text-base
+                sm:mx-0
+                sm:p-0"
+              >フルネーム（フリガナ）</div>
               <div class="flex-63">
                 <Field
                   name="username"
@@ -81,7 +145,7 @@
                   <input
                     v-model="form.username"
                     type="text"
-                    class="input-style1"
+                    class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                     placeholder="王小明"
                     @input="handleChange"
                   />
@@ -89,37 +153,54 @@
                 <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="username" /></div>
               </div>
             </div>
-            <div class="divide-x1 my-4"></div>
-            <div class="container-flex1">
-              <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">フルネーム（アルファベット）</div>
+            <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+            <div class="flex items-center sm:block">
+              <div class="
+                bg-secondary
+                h-22
+                text-white
+                text-xl
+                font-bold
+                mx-5
+                py-8
+                pl-4
+                flex-30
+                sm:bg-white
+                sm:h-4
+                sm:text-secondary
+                sm:text-base
+                sm:mx-0
+                sm:p-0
+                sm:mb-2"
+              >フルネーム（アルファベット）</div>
               <div class="flex-30">
                 <Field
                   name="firstName"
                   :rules="validateUsername"
                   v-slot="{ handleChange }"
                 >
-                  <span class="font-bold">名前(FirstName)</span>
+                  <span class="font-bold sm:font-normal">名前(FirstName)</span>
                   <input
                     v-model="form.firstName"
                     type="text"
-                    class="input-style1"
+                    class="w-full h-14 py-2 px-4 box-border border border-grayD2"
                     placeholder="王"
                     @input="handleChange"
                   />
                 </Field>
                 <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="firstName" /></div>
               </div>
-              <div class="flex-30 ml-8">
+              <div class="flex-30 ml-8 sm:ml-0 sm:mt-2">
                 <Field
                   name="lastName"
                   :rules="validateUsername"
                   v-slot="{ handleChange }"
                 >
-                <span class="font-bold">名字(LastName)</span>
+                <span class="font-bold sm:font-normal">名字(LastName)</span>
                   <input
                     v-model="form.lastName"
                     type="text"
-                    class="input-style1"
+                    class="w-full h-14 py-2 px-4 box-border border border-grayD2"
                     placeholder="小明"
                     @input="handleChange"
                   />
@@ -127,16 +208,33 @@
                 <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="lastName" /></div>
               </div>
             </div>
-            <div class="divide-x1 my-4"></div>
-            <div class="container-flex1">
-              <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">フルネーム（アルファベット）</div>
+            <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+            <div class="flex items-center sm:block">
+              <div class="
+                bg-secondary
+                h-22
+                text-white
+                text-xl
+                font-bold
+                mx-5
+                py-8
+                pl-4
+                flex-30
+                sm:bg-white
+                sm:h-4
+                sm:text-secondary
+                sm:text-base
+                sm:mx-0
+                sm:p-0
+                sm:mb-2"
+              >生年月日</div>
               <div>
                 <Field
                   v-model="form.year"
                   name="year"
                   as="select"
                   :rules="validateRequest"
-                  class="date-select vector"
+                  class="w-46 h-14 border px-2 py-4 border-grayD2 vector"
                 >
                   <option disabled value="">年</option>
                   <option v-for=" n in (100)" :value="year - n">{{ year - n }}</option>
@@ -149,7 +247,7 @@
                   name="month"
                   as="select"
                   :rules="validateRequest"
-                  class="date-select vector"
+                  class="w-46 h-14 border px-2 py-4 border-grayD2 vector"
                 >
                   <option disabled value="">月</option>
                   <option v-for=" n in 12" :value="n">{{ n }}</option>
@@ -162,7 +260,7 @@
                   name="day"
                   as="select"
                   :rules="validateRequest"
-                  class="date-select vector"
+                  class="w-46 h-14 border px-2 py-4 border-grayD2 vector"
                 >
                   <option disabled value="">日</option>
                   <option v-for=" n in 31" :value="n">{{ n }}</option>
@@ -171,10 +269,26 @@
               </div>
             </div>
           </div>
-          <div class="divide-x1 my-4"></div>
-          <div class="container-flex1 flex-row">
-            <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">郵便番号 （半角）</div>
-            <div class="firstPostalCode">
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="flex items-center sm:block flex-row">
+            <div class="
+              bg-secondary
+              h-22
+              text-white
+              text-xl
+              font-bold
+              mx-5
+              py-8
+              pl-4
+              flex-30
+              sm:bg-white
+              sm:h-4
+              sm:text-secondary
+              sm:text-base
+              sm:mx-0
+              sm:p-0"
+            >郵便番号 （半角）</div>
+            <div class="w-25">
               <Field
                 name="firstPostalCode"
                 :rules="validateRequest"
@@ -183,7 +297,7 @@
                 <input
                   v-model="form.firstPostalCode"
                   type="text"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3 sm:w-20"
                   maxlength="3"
                   @input="handleChange"
                 />
@@ -191,7 +305,7 @@
               <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="firstPostalCode" /></div>
             </div>
             <span class="mx-4">-</span>
-            <div class="lastPostalCode">
+            <div class="w-35">
               <Field
                 name="lastPostalCode"
                 :rules="validateRequest"
@@ -200,17 +314,40 @@
                 <input
                   v-model="form.lastPostalCode"
                   type="text"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3 sm:w-24"
                   maxlength="4"
                   @input="handleChange"
                 />
               </Field>
               <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="lastPostalCode" /></div>
             </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-secondary text-white px-4 rounded-lg font-bold w-24 h-12 ml-5" 
+              >住所取得
+              </button>
+            </div>
           </div>
-          <div class="divide-x1 my-4"></div>
-          <div class="container-flex1">
-            <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">都道府県</div>
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="flex items-center sm:block">
+            <div class="
+              bg-secondary
+              h-22
+              text-white
+              text-xl
+              font-bold
+              mx-5
+              py-8
+              pl-4
+              flex-30
+              sm:bg-white
+              sm:h-4
+              sm:text-secondary
+              sm:text-base
+              sm:mx-0
+              sm:p-0"
+            >都道府県</div>
             <div class="flex-63">
               <Field
                 name="state"
@@ -220,16 +357,32 @@
                 <input
                   v-model="form.state"
                   type="text"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                   @input="handleChange"
                 />
               </Field>
               <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="state" /></div>
             </div>
           </div>
-          <div class="divide-x1 my-4"></div>
-          <div class="container-flex1">
-            <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">市区町村</div>
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="flex items-center sm:block">
+            <div class="
+              bg-secondary
+              h-22
+              text-white
+              text-xl
+              font-bold
+              mx-5
+              py-8
+              pl-4
+              flex-30
+              sm:bg-white
+              sm:h-4
+              sm:text-secondary
+              sm:text-base
+              sm:mx-0
+              sm:p-0"
+            >市区町村</div>
             <div class="flex-63">
               <Field
                 name="city"
@@ -239,16 +392,32 @@
                 <input
                   v-model="form.city"
                   type="text"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                   @input="handleChange"
                 />
               </Field>
               <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="city" /></div>
             </div>
           </div>
-          <div class="divide-x1 my-4"></div>
-          <div class="container-flex1">
-            <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">町名・番地</div>
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="flex items-center sm:block">
+            <div class="
+              bg-secondary
+              h-22
+              text-white
+              text-xl
+              font-bold
+              mx-5
+              py-8
+              pl-4
+              flex-30
+              sm:bg-white
+              sm:h-4
+              sm:text-secondary
+              sm:text-base
+              sm:mx-0
+              sm:p-0"
+            >町名・番地</div>
             <div class="flex-63">
               <Field
                 name="address1"
@@ -258,16 +427,32 @@
                 <input
                   v-model="form.address1"
                   type="text"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                   @input="handleChange"
                 />
               </Field>
               <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="address1" /></div>
             </div>
           </div>
-          <div class="divide-x1 my-4"></div>
-          <div class="container-flex1">
-            <div class="form-lable2 text-white mx-5 py-8 pl-4 flex-30">マンション名など</div>
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="flex items-center sm:block">
+            <div class="
+              bg-secondary
+              h-22
+              text-white
+              text-xl
+              font-bold
+              mx-5
+              py-8
+              pl-4
+              flex-30
+              sm:bg-white
+              sm:h-4
+              sm:text-secondary
+              sm:text-base
+              sm:mx-0
+              sm:p-0"
+            >マンション名など</div>
             <div class="flex-63">
               <Field
                 name="address2"
@@ -277,18 +462,34 @@
                 <input
                   v-model="form.address2"
                   type="text"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3"
                   @input="handleChange"
                 />
               </Field>
               <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="address2" /></div>
             </div>
           </div>
-          <div class="divide-x1"></div>
-          <div class="container-flex1">
-            <div class="form-lable1 text-white mx-5 py-24 pl-4 flex-30">秘密の質問</div>
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="flex items-center sm:block">
+            <div class="
+                bg-secondary
+                h-56
+                text-white
+                text-xl
+                font-bold
+                mx-5
+                py-24
+                pl-4
+                flex-30
+                sm:bg-white
+                sm:h-4
+                sm:text-secondary
+                sm:text-base
+                sm:mx-0
+                sm:p-0"
+              >秘密の質問</div>
             <div class="flex-63">
-              <select v-model="form.securityQuestion" class="input-style1 vector">
+              <select v-model="form.securityQuestion" class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3 vector">
                 <option selected>あなたの最初のペットの名前は？</option>
                 <option>あなたの母親の旧姓は？</option>
                 <option>あなたの好きな色は？</option>
@@ -296,7 +497,7 @@
                 <option>あなたの生まれはどこですか？</option>
                 <option>あなたの最初の学校名は？</option>
               </select>
-              <div class="my-2 text-base font-bold">質問の答え</div>
+              <div class="my-2 text-base font-bold sm:font-normal">質問の答え</div>
               <Field
                 name="securityAnswer"
                 :rules="validateRequest"
@@ -305,15 +506,15 @@
                 <input
                   v-model="form.securityAnswer"
                   type="password"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2"
                   @input="handleChange"
                 />
               </Field>
               <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="securityAnswer" /></div>
             </div>
           </div>
-          <div class="divide-x1"></div>
-          <div class="container-flex1 justify-center mb-5">
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="flex items-center justify-center mb-5">
             <input
               v-model="form.agreeUserAgreement"
               type="checkbox"
@@ -415,34 +616,8 @@ const validateRequest = (value: any) => {
 <style lang="scss" scoped>
 .sign-up-step3 {
 
-  .basic-info-form {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0px 8px 24px 0px #1E1E1E1A;
-  }
-
-  .firstPostalCode {
-    width: 100px;
-  }
-
-  .lastPostalCode {
-    width: 140px;
-  }
-
-  button > img {
-    margin-top: 5px;
-  }
-
   input::placeholder {
     color: grayD2;
-  }
-
-  .date-select {
-    width: 184px;
-    height: 56px;
-    border: 1px;
-    padding: 8px 16px;
-    border: 1px solid #D2D2D2;
   }
 }
 </style>

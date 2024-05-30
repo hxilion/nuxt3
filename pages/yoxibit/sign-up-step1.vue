@@ -1,12 +1,28 @@
 <template>
   <PageLayout>
-    <div class="sign-up-step1" >
-      <div class="email-form">
-        <div class="text-center font-bold py-4">新規登録（仮登録）</div>
+    <div class="sign-up-step1 text-secondary" >
+      <div class="w-full bg-white shadow-ctz1 sm:py-6 sm:px-4">
+        <div class="text-center font-bold py-5 text-2xl sm:text-xl">新規登録（仮登録）</div>
         <Form>
-          <div class="container-flex1 mb-5">
-            <div class="form-lable1 text-white mx-5 py-24 pl-4 flex-30">メールアドレス :</div>
-            <div class="flex-63">
+          <div class="flex items-center mb-5 sm:block">
+            <div class="
+              bg-secondary
+              h-56
+              text-white
+              text-xl
+              font-bold
+              mx-5
+              py-24
+              pl-4
+              flex-30
+              sm:bg-white
+              sm:h-4
+              sm:text-secondary
+              sm:text-base
+              sm:mx-0
+              sm:p-0"
+            >メールアドレス :</div>
+            <div class="flex60">
               <Field
                 name="email"
                 :rules="validateEmail"
@@ -15,13 +31,13 @@
                 <input
                   v-model="form.email"
                   type="text"
-                  class="input-style1"
+                  class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3 sm:w-81"
                   @input="handleChange"
                 />
               </Field>
               <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="email" /></div>
-              <div class="font-bold mt-2 ml-5 text-base">×携帯会社のメールは登録できません（docomo, ezweb, softbank等）</div>
-              <div class="my-2 ml-5 text-base tracking-widest">確認のため、もう一度入力してください。</div>
+              <div class="font-bold mt-2 sm:text-sm">×携帯会社のメールは登録できません（docomo, ezweb, softbank等）</div>
+              <div class="my-2 tracking-widest sm:text-sm">確認のため、もう一度入力してください。</div>
               <div>
                 <Field
                   name="emailConform"
@@ -31,7 +47,7 @@
                   <input
                     v-model="form.emailConform"
                     type="text"
-                    class="input-style1"
+                    class="w-full h-14 py-2 px-4 box-border border border-grayD2"
                     @input="handleChange"
                   />
                 </Field>
@@ -39,21 +55,21 @@
               <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="emailConform" /></div>
             </div>
           </div>
-          <div class="divide-x1"></div>
-          <div class="my-5 text-base tracking-widest text-center">アカウントは複数作成できません。</div>
+          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="my-5 tracking-widest text-center sm:text-sm">アカウントは複数作成できません。</div>
           <div class="text-center pb-5">
             <button
             type="button"
-            class="btn-style1 block-vector-right px-12 rounded-lg font-bold" 
+            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
             >メール送信
             </button>
           </div>
         </Form>
       </div>
       <div class="mt-14">
-        <div class="divide-y pl-4 text-2xl font-bold">通常5分程度で本登録のメールをお届けしていますが、届かない場合は下記をお試しください。</div>
+        <div class="divide-y pl-4 text-2xl font-bold sm:text-xl">通常5分程度で本登録のメールをお届けしていますが、届かない場合は下記をお試しください。</div>
         <div class="pl-5 mt-4 ml-1 tracking-widest">
-          <ul>
+          <ul class="list-disc sm:text-sm">
             <li>迷惑メールフォルダをご確認ください。</li>
             <li>携帯アドレスは登録できない場合がございますので、PCメールで再度送信してください。</li>
             <li>「support@yoxibitmail.com」を承認メールリストへ追加して、再度送信してください。</li>
@@ -61,9 +77,9 @@
         </div>
       </div>
       <div class="mt-14">
-        <div class="divide-y pl-4 text-2xl font-bold">お困りの場合はカスタマーサポートへご連絡ください。</div>
-        <div class="pl-5 mt-4 ml-1 tracking-widest">宛先: <span class="text-primary divide-x2">support@yoxibitmail.com</span></div>
-        <div class="pl-5 mt-4 ml-1 tracking-widest">件名: 口座開設希望</div>
+        <div class="divide-y pl-4 text-2xl font-bold sm:text-xl">お困りの場合はカスタマーサポートへご連絡ください。</div>
+        <div class="mt-4 tracking-widest sm:text-sm">宛先: <span class="text-primary divide-x2">support@yoxibitmail.com</span></div>
+        <div class="mt-2 tracking-widest sm:text-sm">件名: 口座開設希望</div>
       </div>
     </div>
   </PageLayout>
@@ -100,22 +116,3 @@ const validateEmailConform = () => {
   return true;
 }
 </script>
-
-<style lang="scss" scoped>
-.sign-up-step1 {
-
-  .email-form {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0px 8px 24px 0px #1E1E1E1A;
-  }
-
-  button > img {
-    margin-top: 5px;
-  }
-
-  li {
-    list-style-type: disc;
-  }
-}
-</style>

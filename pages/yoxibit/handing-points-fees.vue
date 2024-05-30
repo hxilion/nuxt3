@@ -1,10 +1,10 @@
 <template>
   <PageLayout>
     <div class="handing-points-fees">
-      <div id="card1" class="card">
-        <div class="divide-y font-bold text-2xl pl-5 mb-10">メールアドレス変更</div>
-        <div class="history-table">
-          <table>
+      <div id="card1" class="w-full bg-white p-8 shadow-ctz1 mb-2">
+        <div class="border-l-4 border-primary font-bold text-2xl pl-5 mb-10 sm:text-xl">メールアドレス変更</div>
+        <div>
+          <table class="sm:text-sm">
             <tbody class="color-secondary">
               <tr>
                 <td>下限額</td>
@@ -22,10 +22,10 @@
           </table>
         </div>
       </div>
-      <div id="card2" class="card">
-        <div class="divide-y font-bold text-2xl pl-5 mb-10">購入</div>
-        <div class="history-table">
-          <table>
+      <div id="card2" class="w-full bg-white p-8 shadow-ctz1 mb-2">
+        <div class="border-l-4 border-primary font-bold text-2xl pl-5 mb-10 sm:text-xl">購入</div>
+        <div>
+          <table class="sm:text-sm">
             <tbody class="color-secondary">
               <tr>
                 <td>下限額</td>
@@ -39,10 +39,10 @@
           </table>
         </div>
       </div>
-      <div id="card3" class="card">
-        <div class="divide-y font-bold text-2xl pl-5 mb-10">換金</div>
-        <div class="history-table">
-          <table class="mb-10">
+      <div id="card3" class="w-full bg-white p-8 shadow-ctz1 mb-2">
+        <div class="border-l-4 border-primary font-bold text-2xl pl-5 mb-10 sm:text-xl">換金</div>
+        <div>
+          <table class="sm:text-sm mb-10">
             <tbody class="color-secondary">
               <tr>
                 <td>下限額</td>
@@ -56,7 +56,7 @@
           </table>
           <div class="divide-x2 font-bold text-xl mb-5">
             <span class="symbol mr-5"></span>平日</div>
-          <table class="mb-10">
+          <table class="sm:text-sm mb-10">
             <tbody class="color-secondary">
               <tr>
                 <td>350pt以上</td>
@@ -70,7 +70,7 @@
           </table>
           <div class="divide-x2 font-bold text-xl mb-5">
             <span class="symbol mr-5"></span>土日祝</div>
-          <table>
+          <table class="sm:text-sm">
             <tbody class="color-secondary">
               <tr>
                 <td>900ptごとに</td>
@@ -90,13 +90,7 @@ import PageLayout from '../../components/yoxibit/pageLayout.vue';
 
 <style lang="scss" scoped>
 .handing-points-fees {
-  .card {
-    width: 100%;
-    background-color: #fff;
-    padding: 32px;
-    box-shadow: 0px 8px 24px 0px #1E1E1E1A;
-    margin-bottom: 80px;
-  }
+
 
   table, th, td {
     border: 1px solid #D2D2D2;
