@@ -1,4 +1,5 @@
 <template>
+  <Nav :isLoggedIn="true"/>
   <div class="yoxibit w-full h-auto mx-auto bg-grayF8 font-['Murecho']">
     <div class="point-back">
       <div class="w-full h-52 bg-gray96 py-4 sm:h-[336px]">
@@ -96,11 +97,14 @@
       </PageLayerGray>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup lang="ts">
 import PageLayerWhite from '../../components/yoxibit/pageLayerWhite.vue';
 import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
+import Nav from '../../components/yoxibit/nav.vue';
+import Footer from '../../components/yoxibit/footer.vue';
 </script>
 <style lang="scss" scoped>
 .yoxibit {

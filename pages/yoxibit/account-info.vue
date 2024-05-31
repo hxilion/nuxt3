@@ -1,4 +1,5 @@
 <template>
+  <Nav :isLoggedIn="true"/>
   <div class="yoxibit text-secondary">
     <div class="account-info">
       <div class="first-block bg-gray96 py-4">
@@ -170,13 +171,15 @@
       </PageLayerGray>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup lang="ts">
 import PageLayerWhite from '../../components/yoxibit/pageLayerWhite.vue';
 import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
+import Nav from '../../components/yoxibit/nav.vue';
+import Footer from '../../components/yoxibit/footer.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
-
 import { ref, reactive } from 'vue';
 
 const headers = ref([

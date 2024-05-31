@@ -44,7 +44,7 @@
       </div>
     </div>
   </div>
-  <PageLayout>
+  <PageLayerGray>
     <div class="registration-info">
       <div id="card1" class="w-full bg-white p-8 shadow-ctz1 mb-20">
         <div class="border-l-4 border-primary font-bold text-2xl pl-4 mb-10 sm:text-xl">登録情報変更</div>
@@ -584,11 +584,11 @@
         </Form>
       </div>
     </div>
-  </PageLayout>
+  </PageLayerGray>
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
 import { reactive } from 'vue';
 
