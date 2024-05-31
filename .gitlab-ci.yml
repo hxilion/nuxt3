@@ -20,9 +20,8 @@ build:
       - dist/
 
 pages:
-  stage: deploy
   script:
-    - mv dist public
+    - npm run generate
   artifacts:
     paths:
       - public
