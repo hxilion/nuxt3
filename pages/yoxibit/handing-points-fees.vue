@@ -1,21 +1,21 @@
 <template>
   <PageLayout>
-    <div class="handing-points-fees">
+    <div class="handing-points-fees text-secondary">
       <div id="card1" class="w-full bg-white p-8 shadow-ctz1 mb-2">
         <div class="border-l-4 border-primary font-bold text-2xl pl-5 mb-10 sm:text-xl">メールアドレス変更</div>
         <div>
           <table class="sm:text-sm">
             <tbody class="color-secondary">
               <tr>
-                <td>下限額</td>
+                <td class="w-[560px] font-bold bg-grayF8 sm:min-w-[163px]">下限額</td>
+                <td class="w-[560px] sm:min-w-[163px]">なし</td>
+              </tr>
+              <tr>
+                <td class="font-bold bg-grayF8">上限額</td>
                 <td>なし</td>
               </tr>
               <tr>
-                <td>上限額</td>
-                <td>なし</td>
-              </tr>
-              <tr>
-                <td>手数料</td>
+                <td class="font-bold bg-grayF8">手数料</td>
                 <td>なし</td>
               </tr>
             </tbody>
@@ -28,11 +28,11 @@
           <table class="sm:text-sm">
             <tbody class="color-secondary">
               <tr>
-                <td>下限額</td>
-                <td>2,000円</td>
+                <td class="w-[560px] font-bold bg-grayF8 sm:min-w-[69px]">下限額</td>
+                <td class="w-[560px] sm:min-w-[257px]">2,000円</td>
               </tr>
               <tr>
-                <td>上限額</td>
+                <td class="font-bold bg-grayF8">上限額</td>
                 <td>1日 500,000円（毎日0時更新）<br>1か月 10,000,000円（毎月1日更新）</td>
               </tr>
             </tbody>
@@ -45,11 +45,11 @@
           <table class="sm:text-sm mb-10">
             <tbody class="color-secondary">
               <tr>
-                <td>下限額</td>
-                <td>50ポイント</td>
+                <td class="w-[560px] font-bold bg-grayF8 sm:min-w-[69px]">下限額</td>
+                <td class="w-[560px] sm:min-w-[257px]">50ポイント</td>
               </tr>
               <tr>
-                <td>上限額</td>
+                <td class="font-bold bg-grayF8">上限額</td>
                 <td>なし<br>※1日5万pt以上は要事前連絡</td>
               </tr>
             </tbody>
@@ -59,11 +59,11 @@
           <table class="sm:text-sm mb-10">
             <tbody class="color-secondary">
               <tr>
-                <td>350pt以上</td>
-                <td>なし</td>
+                <td class="w-[560px] font-bold bg-grayF8 sm:min-w-[163px]">350pt以上</td>
+                <td class="w-[560px] sm:min-w-[163px]">なし</td>
               </tr>
               <tr>
-                <td>350pt未満</td>
+                <td class="font-bold bg-grayF8">350pt未満</td>
                 <td>1.3pt</td>
               </tr>
             </tbody>
@@ -73,8 +73,8 @@
           <table class="sm:text-sm">
             <tbody class="color-secondary">
               <tr>
-                <td>900ptごとに</td>
-                <td>2.9pt</td>
+                <td class="w-[560px] font-bold bg-grayF8 sm:min-w-[163px]">900ptごとに</td>
+                <td class="w-[560px] sm:min-w-[163px]">2.9pt</td>
               </tr>
             </tbody>
           </table>
@@ -91,26 +91,17 @@ import PageLayout from '../../components/yoxibit/pageLayout.vue';
 <style lang="scss" scoped>
 .handing-points-fees {
 
-
   table, th, td {
     border: 1px solid #D2D2D2;
   }
 
   td {
-    background-color:#ffffff;
-    color: #1E1E1E;
-    width: 480px;
     height: 48px;
     padding: 10px;
   }
 
-  td:first-of-type {
-    font-weight: 700;
-    background-color:#F8F8F8;
-  }
-
   .symbol::before {
-    content: url(/assets/img/yoxibit/diamond.png);
+    content: url("/assets/img/yoxibit/diamond.png");
   }
 
 }

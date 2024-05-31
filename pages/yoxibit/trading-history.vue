@@ -1,6 +1,6 @@
 <template>
   <PageLayout>
-    <div class="trading-history">
+    <div class="trading-history text-secondary">
       <Form class="mb-5">
         <div class="flex items-center justify-center sm:block">
           <div class="mr-4 sm:mr-0 sm:mb-3">
@@ -148,17 +148,12 @@ const list = ref([
 <style lang="scss" scoped>
 .trading-history {
 
-  li {
-    list-style-type: disc;
-  }
-
   table, th, td {
     border: 1px solid #D2D2D2;
   }
 
   td {
     background-color:#ffffff;
-    color: #1E1E1E;
     width: 480px;
     height: 48px;
     text-align:center;

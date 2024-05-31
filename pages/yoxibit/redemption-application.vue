@@ -148,14 +148,14 @@
         <div class="font-bold mb-1">口座情報は正しくご入力ください</div>
         <div class="sm:text-sm">口座情報の間違いや、お客さまの銀行口座が利用できない等の原因で資金が到着しなかったとしても、当社は責任を負いかねます。銀行で組戻し等の手続きもできません。</div>
         <div class="flex items-center justify-center mt-10 sm:block">
-          <div>
+          <div class="sm:text-center">
             <button
               type="button"
               class="white-vector-left w-80 h-14 px-12 px-12 rounded-lg font-bold text-white bg-secondary mr-4 sm:mr-0 sm:mb-4" 
               >トップに戻る
             </button>
           </div>
-          <div>
+          <div class="sm:text-center">
             <button
               type="button"
               class="block-vector-right w-80 h-14 bg-primary px-12 rounded-lg font-bold" 
@@ -172,7 +172,7 @@
       <div class="mb-10">
         <div class="border-l-4 border-primary font-bold text-2xl pl-5 mb-5 sm:text-xl">換金の所要時間</div>
         <div class="pl-5 my-4 ml-1 tracking-widest">
-          <ul class="sm:text-sm">
+          <ul class="list-disc sm:text-sm">
             <li>9時、13時、17時、22時に締めて順次手続きされます</li>
             <li>お客さまがご利用の銀行口座によっては当日着金にならない場合があります</li>
             <li>土日祝も対応しています</li>
@@ -227,20 +227,6 @@ const validateRequest = (value: any) => {
 
 <style lang="scss" scoped>
 .redemption-apply-step {
-  // .application {
-  //   width: 100%;
-  //   background-color: #fff;
-  //   padding: 32px;
-  //   box-shadow: 0px 8px 24px 0px #1E1E1E1A;
-  //   margin-bottom: 80px;
-  // }
-// px-4 py-3 gap-2
-//   .application-table {
-//     overflow:hidden;
-//     border-radius:10px 10px 0px 0px;
-//     padding: 12px 16px;
-//     gap: 8px;
-//   }
 
   table, th, td {
     border: 1px solid #D2D2D2;
@@ -248,13 +234,7 @@ const validateRequest = (value: any) => {
   }
 
   td {
-    color: #1E1E1E;
     height: 48px;
-  }
-
-  li {
-    list-style-type: disc;
-    color: #1E1E1E;
   }
 }
 </style>

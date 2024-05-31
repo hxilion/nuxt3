@@ -1,6 +1,13 @@
 module.exports = {
     theme: {
       extend: {
+        screens: {
+          '2xl': {'max': '1535px'},
+          'xl': {'max': '1279px'},
+          'lg': {'max': '1023px'},
+          'md': {'max': '767px'},
+          'sm': {'max': '639px'},
+        },
         colors: {
           primary: '#00FF50',
           secondary: '#1E1E1E',
