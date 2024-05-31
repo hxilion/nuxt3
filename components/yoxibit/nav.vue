@@ -36,7 +36,7 @@
                     </a>
                     <div class="space-x-2 text-white items-center flex">
                         <a class="font-bold relative px-2 py-2 text-center block tracking-widest min-w-[200px] bg-primary hover:opacity-50 duration-300 arrow-right-black text-black rounded-lg"
-                            href="/yoxibit/redemption-apply-step">
+                            href="/yoxibit/redemption-application">
                             <span>換金申請</span>
                         </a>
                         <a class="font-bold relative px-2 py-2 text-center block tracking-widest min-w-[200px] bg-black hover:opacity-50 duration-300 arrow-right-white rounded-lg"

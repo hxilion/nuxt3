@@ -47,7 +47,7 @@
                             href="/yoxibit/deposit/"><span>購入</span>
                         </a>
                         <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60 md:max-w-15 bg-primary hover:opacity-50 duration-300 rounded-lg arrow-right-black"
-                            href="/yoxibit/redemption-apply-step/"><span>換金</span>
+                            href="/yoxibit/redemption-application/"><span>換金</span>
                         </a>
                         <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60  md:max-w-15 bg-vblack hover:opacity-50 duration-300 text-white rounded-lg bg-secondary arrow-right-white"
                             href="/yoxibit/trading-history"><span>取引履歴</span>
@@ -257,10 +257,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import Nav from '~/components/yoxibit/nav.vue';
-import Footer from '~/components/yoxibit/footer.vue';
-import PageLayerGray from '~/components/yoxibit/pageLayerGray.vue';
-import PageLayerWhite from '~/components/yoxibit/pageLayerWhite.vue';
+import Nav from '../../components/yoxibit/nav.vue';
+import Footer from '../../components/yoxibit/footer.vue';
+import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
+import PageLayerWhite from '../../components/yoxibit/pageLayerWhite.vue';
 
 const items = ref([
     { href: '#manual', text: 'YOXIBITの仕組み' },

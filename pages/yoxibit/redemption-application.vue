@@ -1,6 +1,6 @@
 <template>
   <PageLayout>
-    <div class="redemption-apply-step text-secondary" >
+    <div class="redemption-application text-secondary" >
       <div class="text-w[32px] font-bold mb-4 block-vector-right">換金の所要時間</div>
       <div class="w-full bg-white p-8 shadow-ctz1 mb-20">
         <Form>
@@ -226,7 +226,7 @@ const validateRequest = (value: any) => {
 </script>
 
 <style lang="scss" scoped>
-.redemption-apply-step {
+.redemption-application {
 
   table, th, td {
     border: 1px solid #D2D2D2;

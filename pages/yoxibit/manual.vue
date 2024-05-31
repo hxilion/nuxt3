@@ -65,12 +65,12 @@
 </template>
 
 <script setup lang="ts">
-import Nav from '~/components/yoxibit/nav.vue';
-import Footer from '~/components/yoxibit/footer.vue';
-import PageLayerWhite from '~/components/yoxibit/pageLayerWhite.vue';
-import PageLayerGray from '~/components/yoxibit/pageLayerGray.vue';
-import ManualOutline from '~/components/yoxibit/manualOutline.vue';
-import ManualFeature from '~/components/yoxibit/manualFeature.vue';
+import Nav from '../../components/yoxibit/nav.vue';
+import Footer from '../../components/yoxibit/footer.vue';
+import PageLayerWhite from '../../components/yoxibit/pageLayerWhite.vue';
+import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
+import ManualOutline from '../../components/yoxibit/manualOutline.vue';
+import ManualFeature from '../../components/yoxibit/manualFeature.vue';
 </script>
 
 <style lang="scss" scoped>

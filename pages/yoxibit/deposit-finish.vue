@@ -105,7 +105,7 @@
                                                 onclick="ClipboardCopyText(&quot;８７０７９４９　ヤマダ　シンイチ&quot;);">振込名義をコピー</button>
                                         </div>
                                         <p class="font-bold" style="text-align:center;">必ず、この通り入力！<br>間違うと自動反映されません <a
-                                                href="/members/contact/" style="text-decoration:underline;">問合せ</a></p>
+                                                href="/yoxibit/contact/" style="text-decoration:underline;">問合せ</a></p>
                                     </td>
                                 </tr>
                             </tbody>

@@ -36,7 +36,7 @@
             >ログイン</div>
             <div class="p-4">
               <span>パスワードをお忘れの方は</span>
-              <a class="text-primary" href="/../forget">こちら</a>
+              <a class="text-primary" href="/yoxibit/forget">こちら</a>
             </div>
           </div>
           <div class="flex flex-col justify-center items-center p-4">
