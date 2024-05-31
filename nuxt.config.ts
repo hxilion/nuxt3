@@ -5,9 +5,6 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true
   },
-  nitro: {
-    preset: 'browser'
-  },
   build: {
     transpile: ['@headlessui/vue']
   },
