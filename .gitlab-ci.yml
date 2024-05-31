@@ -1,23 +1,11 @@
-image: node:21
-
-stages:
-  - build
-  - deploy
-
-cache:
-  paths:
-    - node_modules/
+image: node
 
 before_script:
   - npm install
 
-build:
-  stage: build
-  script:
-    - npx nuxi generate
-  artifacts:
-    paths:
-      - dist/
+cache:
+  paths:
+    - node_modules/
 
 pages:
   script:
@@ -25,5 +13,5 @@ pages:
   artifacts:
     paths:
       - public
-  only:
-    - main
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
