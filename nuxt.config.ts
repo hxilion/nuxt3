@@ -1,9 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  ssr: false,
+  ssr: true,
   typescript: {
     typeCheck: true
+  },
+  nitro: {
+    preset: 'browser'
   },
   build: {
     transpile: ['@headlessui/vue']
