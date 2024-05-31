@@ -44,5 +44,14 @@ export default defineNuxtConfig({
       primaryColor: '#0ea4e9',
       darkMode: false
     }
+  },
+  app: {
+    head: {
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap' }
+      ]
+    }
   }
 })

@@ -1,3 +1,7 @@
+* {
+  font-family: "Murecho", sans-serif;
+}
+
 //bg-secondary h-56 text-white text-xl
 .form-lable1 {
   background-color: #1E1E1E;
@@ -134,3 +138,60 @@
   background-position: center left 20px;
 }
 
+.primary-variant {
+  background: linear-gradient(0deg, #00FF50, #00FF50),linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+.arrow-right-white {
+  position: relative;
+  &::after {
+    content: url(/assets/img/yoxibit/arrow-right-white.svg);
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.arrow-left-white {
+  position: relative;
+  &::before {
+    content: url(/assets/img/yoxibit/arrow-right-white.svg);
+    position: absolute;
+    left: 20px;
+    transform: rotate(180deg);
+  }
+}
+
+.arrow-right-black {
+  position: relative;
+  &::after {
+    content: url(/assets/img/yoxibit/arrow-right-black.svg);
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.arrow-left-black {
+  position: relative;
+  &::before {
+    content: url(/assets/img/yoxibit/arrow-right-black.svg);
+    position: absolute;
+    left: 20px;
+    transform: rotate(180deg);
+  }
+}
+
+.arrow-down {
+  position: relative;
+  &::after {
+    content: url(/assets/img/yoxibit/arrow-down.svg);
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.circle-bit {
+  width: 80px;
+  height: 80px;
+  background-image: url(/assets/img/yoxibit/circle-bit.svg);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+}
