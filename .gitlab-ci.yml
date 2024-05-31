@@ -8,8 +8,9 @@ cache:
     - node_modules/
 
 pages:
+  stage: deploy
   script:
-    - npm run generate
+    - echo "The site will be deployed to $CI_PAGES_URL"
   artifacts:
     paths:
       - public

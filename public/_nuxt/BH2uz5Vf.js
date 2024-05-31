@@ -1,0 +1,1 @@
+import{_ as a,A as s,o as r,c as t,a as c,ai as n,b as _}from"./CMuwYJI-.js";const d={},l={class:"layer-gray"},i={class:"max-w-screen-xl mx-auto px-4 py-20"};function p(e,m){const o=s("router-view");return r(),t("div",l,[c("div",i,[n(e.$slots,"default",{},()=>[_(o)],!0)])])}const f=a(d,[["render",p],["__scopeId","data-v-8ed2e439"]]);export{f as P};
