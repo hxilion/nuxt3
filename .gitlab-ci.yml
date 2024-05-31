@@ -14,15 +14,15 @@ before_script:
 build:
   stage: build
   script:
-    - npm run generate
+    - npx nuxi generate
   artifacts:
     paths:
-      - .output/public
+      - dist/
 
 pages:
   stage: deploy
   script:
-    - mv .output/public public
+    - mv dist public
   artifacts:
     paths:
       - public
