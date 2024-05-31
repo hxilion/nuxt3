@@ -1,5 +1,5 @@
 <template>
-    <PageLayout>
+    <PageLayout :loginStatus="false">
       <div class="login w-full">
         <div class="flex flex-col justify-center items-center">
           <div class="font-bold text-3xl">『速くておトク』なYOXIBIT</div>

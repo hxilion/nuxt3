@@ -1,5 +1,5 @@
 <template>
-  <PageLayout>
+  <PageLayout :loginStatus="true">
     <div class="redemption-application text-secondary" >
       <div class="text-w[32px] font-bold mb-4 block-vector-right">換金の所要時間</div>
       <div class="w-full bg-white p-8 shadow-ctz1 mb-20">

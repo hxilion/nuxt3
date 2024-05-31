@@ -1,5 +1,5 @@
 <template>
-  <PageLayout>
+  <PageLayout :loginStatus="true">
     <div class="trading-history text-secondary">
       <Form class="mb-5">
         <div class="flex items-center justify-center sm:block">
@@ -64,7 +64,7 @@
 </template>
   
 <script setup lang="ts">
-import PageLayout from '@/components/yoxibit/pageLayout.vue';
+import PageLayout from '../../components/yoxibit/pageLayout.vue';
 import { Form } from 'vee-validate';
 import { reactive, ref } from 'vue';
 

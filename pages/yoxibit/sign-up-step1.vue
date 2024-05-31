@@ -1,5 +1,5 @@
 <template>
-  <PageLayout>
+  <PageLayout :loginStatus="true">
     <div class="sign-up-step1 text-secondary" >
       <div class="w-full bg-white shadow-ctz1 sm:py-6 sm:px-4">
         <div class="text-center font-bold py-5 text-2xl sm:text-xl">新規登録（仮登録）</div>

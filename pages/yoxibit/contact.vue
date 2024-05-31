@@ -1,5 +1,5 @@
 <template>
-    <PageLayout>
+    <PageLayout :loginStatus="false">
         <main class="flex-grow flex-1 overflow-x-hidden">
             <section class="py-2 px-4 xl:px-0">
                 <div class="max-w-screen-xl mx-auto">

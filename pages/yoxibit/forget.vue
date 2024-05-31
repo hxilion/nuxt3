@@ -1,5 +1,5 @@
 <template>
-    <PageLayout>
+    <PageLayout :loginStatus="false">
         <div class="flex flex-col w-full">
           <div class="w-full bg-white flex flex-col justify-center items-center p-4 text-xl shadow-2 rounded-lg">
               <div class="font-bold my-4">パスワードリマインダー</div>

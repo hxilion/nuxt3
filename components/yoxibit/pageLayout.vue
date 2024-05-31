@@ -6,10 +6,10 @@
 				<img src="assets/img/yoxibit/yoxibit_logo.svg" alt="" width="320px" height="80px">
 			</div>
 		</nav> -->
-		<Nav :isLoggedIn="isLoggedIn"/>
+		<Nav :isLoggedIn="props.loginStatus" />
 		<div class="max-w-screen-xl mx-auto px-4 py-20 sm:py-10 flex flex-1 items-stretch">
 			<slot>
-				<router-view @updateLoggedIn="changeLoggedIn"/>
+				<router-view/>
 			</slot>
 		</div>
 		<!-- <footer class="flex flex-col justify-center justify-self-end bg-white">
@@ -29,9 +29,9 @@
 <script lang="ts" setup>
 import Nav from './nav.vue';
 import Footer from './footer.vue';
-import { ref } from 'vue';
-const isLoggedIn = ref(true);
-const changeLoggedIn = (login: boolean) => {
-	isLoggedIn.value = login;
+interface Props {
+  loginStatus?: boolean;
 }
+
+const props = defineProps<Props>();
 </script>
