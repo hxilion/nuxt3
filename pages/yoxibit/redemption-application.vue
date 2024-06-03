@@ -1,7 +1,7 @@
 <template>
   <PageLayout :loginStatus="true">
     <div class="redemption-application text-secondary" >
-      <div class="text-w[32px] font-bold mb-4 block-vector-right">換金の所要時間</div>
+      <div class="text-w[32px] font-bold mb-4 block-vector-left">換金の所要時間</div>
       <div class="w-full bg-white p-8 shadow-ctz1 mb-20">
         <Form>
           <table class="w-full mb-10 sm:text-sm">
@@ -142,7 +142,7 @@
         <div class="font-bold">換金レートは、銀行店頭水準</div>
         <div class="pl-5 my-4 ml-1 tracking-widest">
           <ul class="sm:text-sm">
-            <li>都市銀行の「アメリカドルの現金両替レート（Cash.B）」と同水準の、リアルタイム変動レートが適用されます<br>> 参考：<span class="divide-x2 text-primary">三菱UFJ銀行 外国為替相場</span></li>
+            <li>都市銀行の「アメリカドルの現金両替レート（Cash.B）」と同水準の、リアルタイム変動レートが適用されます<br>> 参考：<span class="border-b border-primary text-primary">三菱UFJ銀行 外国為替相場</span></li>
           </ul>
         </div>
         <div class="font-bold mb-1">口座情報は正しくご入力ください</div>
@@ -190,7 +190,7 @@
       </div>
       <div class="mb-10">
         <div class="border-l-4 border-primary font-bold text-2xl pl-5 mb-5 sm:text-xl">換金申請のキャンセルができます</div>
-        <div class="sm:text-sm"><a href="#" class="divide-x2 text-primary">取引履歴</a>の閲覧から換金申請のキャンセルが可能です</div>
+        <div class="sm:text-sm"><a href="#" class="border-b border-primary text-primary">取引履歴</a>の閲覧から換金申請のキャンセルが可能です</div>
       </div>
     </div>
   </PageLayout>

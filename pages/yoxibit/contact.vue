@@ -12,7 +12,7 @@
                     </div>
                     <div class="mb-6 rounded-lg bg-white shadow-2 p-8">
                         <div class="flex justify-center font-bold text-2xl">お問合せ</div>
-                        <ul class="flex flex-col divide-x1 divide-garyD2 border-b border-garyD2">
+                        <ul class="flex flex-col border-b border-grayD2 my-5 divide-garyD2 border-b border-garyD2">
                             <li class="flex items-center py-4 flex-row">
                                 <div class="mb-0 w-1/3 flex items-center font-bold bg-black text-white px-6 py-8 mr-4">お名前</div>
                                 <div class="w-2/3">

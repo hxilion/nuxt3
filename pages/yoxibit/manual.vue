@@ -7,12 +7,12 @@
           <div class="flex">
             <button
               type="button"
-              class="btn-style2 px-12 rounded-lg font-bold mr-2 arrow-down"
+              class="w-full h-14 bg-white px-12 rounded-lg font-bold mr-2 arrow-down"
             >YOXIBITの仕組み？
             </button>
             <button
               type="button"
-              class="btn-style2 px-12 rounded-lg font-bold arrow-down" 
+              class="w-full h-14 bg-white px-12 rounded-lg font-bold arrow-down" 
             >YOXIBITの上手な使い方
             </button>
           </div>

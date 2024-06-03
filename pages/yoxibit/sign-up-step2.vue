@@ -16,7 +16,7 @@
       </div>
       <div class="mt-14">
         <div class="border-l-4 border-primary pl-4 text-2xl font-bold sm:text-xl">お困りの場合はカスタマーサポートへご連絡ください。</div>
-        <div class="mt-4 tracking-widest">宛先: <span class="text-primary border-l border-primary">support@yoxibitmail.com</span></div>
+        <div class="mt-4 tracking-widest">宛先: <span class="text-primary border-b border-primary">support@yoxibitmail.com</span></div>
         <div class="mt-2 tracking-widest">件名: 口座開設希望</div>
       </div>
     </div>
@@ -26,12 +26,3 @@
 <script setup lang="ts">
 import PageLayout from '../../components/yoxibit/pageLayout.vue';
 </script>
-
-<style lang="scss" scoped>
-.sign-up-step2 {
-
-  li {
-    list-style-type: disc;
-  }
-}
-</style>

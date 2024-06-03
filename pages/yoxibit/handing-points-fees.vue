@@ -54,7 +54,7 @@
               </tr>
             </tbody>
           </table>
-          <div class="divide-x2 font-bold text-xl mb-5">
+          <div class="border-b border-primary font-bold text-xl mb-5">
             <span class="symbol mr-5"></span>平日</div>
           <table class="sm:text-sm mb-10">
             <tbody class="color-secondary">
@@ -68,7 +68,7 @@
               </tr>
             </tbody>
           </table>
-          <div class="divide-x2 font-bold text-xl mb-5">
+          <div class="border-b border-primary font-bold text-xl mb-5">
             <span class="symbol mr-5"></span>土日祝</div>
           <table class="sm:text-sm">
             <tbody class="color-secondary">

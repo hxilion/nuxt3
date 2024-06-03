@@ -2,117 +2,6 @@
   font-family: "Murecho", sans-serif;
 }
 
-//bg-secondary h-56 text-white text-xl
-.form-lable1 {
-  background-color: #1E1E1E;
-  width: 360px;
-  height: 224px;
-}
-//bg-secondary h-22 text-white text-xl
-
-.form-lable2 {
-  background-color: #1E1E1E;
-  width: 360px;
-  height: 88px;
-}
-
-// bg-secondary w-90 h-35
-.form-lable3 {
-  background-color: #1E1E1E;
-  width: 360px;
-  height: 140px;
-}
-// flex items-center
-.container-flex1 {
-  display: flex;
-  align-items: center;
-}
-
-.container-flex2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-//w-full h-14 py-2 px-4 box-border border border-grayD2
-.input-style1 {
-  width: 100%;
-  height: 56px;
-  padding: 8px 16px;
-  border: 1px solid #D2D2D2;
-  box-sizing: border-box;
-}
-// w-100 h-14 px-4 py-2 box-border border border-grayD2
-.input-style2 {
-  width: 400px;
-  height: 56px;
-  padding: 8px 16px;
-  border: 1px solid #D2D2D2;
-  box-sizing: border-box;
-}
-// w-80 h-14 bg-primary
-.btn-style1 {
-  width: 320px;
-  height: 56px;
-  background-color: #00FF50;
-}
-//w-full h-14 bg-white
-.btn-style2 {
-  width: 100%;
-  height: 56px;
-  background-color: #FFFFFF;
-}
-// w-80 h-14 bg-grayD2 px-12
-.btn-style3 {
-  width: 320px;
-  height: 56px;
-  background-color: #1E1E1E;
-  padding: 0 48px;
-}
-
-.btn-style4 {
-  width: 66px;
-  height: 32px;
-  background-color: #DC0000;
-  padding: 0 16px;
-}
-
-.bg-gray {
-  width: 100%;
-	height: auto;
-	background: #969696;
-	margin-left: auto;
-	margin-right: auto;
-  font-family: Murecho;
-}
-// border-b border-grayD2 my-5
-.divide-x1 {
-  border-bottom: 1px solid #D2D2D2;
-  margin: 20px 0px;
-}
-// border-l border-primary
-.divide-x2 {
-  border-bottom: 1px solid #00FF50;
-}
-
-// border-l-4 border-primary
-.divide-y {
-  border-left: 4px solid #00FF50;
-}
-
-.flex-30 {
-  flex-basis: 30%;
-}
-
-.flex-63 {
-  flex-basis: 63%;
-}
-
-.error-msg {
-  width: 220px;
-  text-align: left;
-}
-
 .vector {
   appearance: none;
   background-image: url("/assets/img/yoxibit/vector-down.png");
@@ -124,6 +13,12 @@
   background-image: url("/assets/img/yoxibit/vector-right.png");
   background-repeat: no-repeat;
   background-position: center right 20px;
+}
+
+.block-vector-left {
+  background-image: url("/assets/img/yoxibit/vector-right.png");
+  background-repeat: no-repeat;
+  background-position: center left 120px;
 }
 
 .white-vector-right {
@@ -141,6 +36,7 @@
 .primary-variant {
   background: linear-gradient(0deg, #00FF50, #00FF50),linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
 }
+
 .arrow-right-white {
   position: relative;
   &::after {

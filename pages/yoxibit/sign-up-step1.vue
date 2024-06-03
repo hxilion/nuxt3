@@ -1,20 +1,19 @@
 <template>
   <PageLayout :loginStatus="true">
     <div class="sign-up-step1 text-secondary" >
-      <div class="w-full bg-white shadow-ctz1 sm:py-6 sm:px-4">
+      <div class="w-full bg-white shadow-ctz1 p-8 sm:py-6 sm:px-4">
         <div class="text-center font-bold py-5 text-2xl sm:text-xl">新規登録（仮登録）</div>
         <Form>
-          <div class="flex items-center mb-5 sm:block">
+          <div class="flex items-center gap-4 sm:block">
             <div class="
               bg-secondary
               h-56
               text-white
               text-xl
               font-bold
-              mx-5
               py-24
-              pl-4
-              flex-30
+              pl-6
+              w-[360px]
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -22,7 +21,7 @@
               sm:mx-0
               sm:p-0"
             >メールアドレス :</div>
-            <div class="flex60">
+            <div class="flex-1">
               <Field
                 name="email"
                 :rules="validateEmail"
@@ -55,7 +54,7 @@
               <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="emailConform" /></div>
             </div>
           </div>
-          <div class="border-b border-grayD2 mx-5 my-4 sm:border-0 sm:border-0"></div>
+          <div class="border-b border-grayD2 my-4 sm:border-0 sm:border-0"></div>
           <div class="my-5 tracking-widest text-center sm:text-sm">アカウントは複数作成できません。</div>
           <div class="text-center pb-5">
             <button
@@ -67,7 +66,7 @@
         </Form>
       </div>
       <div class="mt-14">
-        <div class="divide-y pl-4 text-2xl font-bold sm:text-xl">通常5分程度で本登録のメールをお届けしていますが、届かない場合は下記をお試しください。</div>
+        <div class="border-l-4 border-primary pl-4 text-2xl font-bold sm:text-xl">通常5分程度で本登録のメールをお届けしていますが、届かない場合は下記をお試しください。</div>
         <div class="pl-5 mt-4 ml-1 tracking-widest">
           <ul class="list-disc sm:text-sm">
             <li>迷惑メールフォルダをご確認ください。</li>
@@ -77,8 +76,8 @@
         </div>
       </div>
       <div class="mt-14">
-        <div class="divide-y pl-4 text-2xl font-bold sm:text-xl">お困りの場合はカスタマーサポートへご連絡ください。</div>
-        <div class="mt-4 tracking-widest sm:text-sm">宛先: <span class="text-primary divide-x2">support@yoxibitmail.com</span></div>
+        <div class="border-l-4 border-primary pl-4 text-2xl font-bold sm:text-xl">お困りの場合はカスタマーサポートへご連絡ください。</div>
+        <div class="mt-4 tracking-widest sm:text-sm">宛先: <span class="text-primary border-b border-primary">support@yoxibitmail.com</span></div>
         <div class="mt-2 tracking-widest sm:text-sm">件名: 口座開設希望</div>
       </div>
     </div>

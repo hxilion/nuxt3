@@ -2,7 +2,7 @@
   <PageLayout :loginStatus="true">
     <div class="trading-history text-secondary">
       <Form class="mb-5">
-        <div class="flex items-center justify-center sm:block">
+        <div class="flex items-center justify-center flex-wrap gap-y-2.5 sm:block">
           <div class="mr-4 sm:mr-0 sm:mb-3">
             <select v-model="searchform.date" class="w-60 h-14 px-4 py-2 border border-grayD2 box-border vector text-secondary sm:w-full">
               <option selected>年月で絞り込み</option>
@@ -31,33 +31,31 @@
         </div>
       </Form>
       <div>
-        <div class="sm:overflow-visible	">
-          <table id="table-list" class="px-3 py-4 gap-2">
-            <thead>
-              <tr>
-                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-56">申請日付</th>
-                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">申請内容</th>
-                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">状態</th>
-                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">取引額(pt)</th>
-                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-32">残高(pt)</th>
-                <th class="font-bold py-8 px-3 bg-secondary text-white h-12 min-w-56">詳細</th>
-              </tr>
-              <!-- <tr>
-                <th v-for="header in headers" class="font-bold py-8 px-3 bg-secondary text-white h-12"> {{ header }} </th>
-              </tr> -->
-            </thead>
-            <tbody class="color-secondary">
-              <tr v-for="item in list">
-                <td>{{ item.date }}</td>
-                <td>{{ item.content}}</td>
-                <td>{{ item.statue}}</td>
-                <td>{{ item.transactionAmount}}</td>
-                <td>{{ item.balance}}</td>
-                <td>{{ item.detail}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table id="table-list" class="px-3 py-4 gap-2 sm:block sm:overflow-x-auto">
+          <thead>
+            <tr>
+              <th class="font-bold py-4 px-3 bg-secondary text-white h-12 min-w-56">申請日付</th>
+              <th class="font-bold py-4 px-3 bg-secondary text-white h-12 min-w-32">申請内容</th>
+              <th class="font-bold py-4 px-3 bg-secondary text-white h-12 min-w-32">状態</th>
+              <th class="font-bold py-4 px-3 bg-secondary text-white h-12 min-w-32">取引額(pt)</th>
+              <th class="font-bold py-4 px-3 bg-secondary text-white h-12 min-w-32">残高(pt)</th>
+              <th class="font-bold py-4 px-3 bg-secondary text-white h-12 min-w-56">詳細</th>
+            </tr>
+            <!-- <tr>
+              <th v-for="header in headers" class="font-bold py-8 px-3 bg-secondary text-white h-12"> {{ header }} </th>
+            </tr> -->
+          </thead>
+          <tbody class="color-secondary">
+            <tr v-for="item in list">
+              <td>{{ item.date }}</td>
+              <td>{{ item.content}}</td>
+              <td>{{ item.statue}}</td>
+              <td>{{ item.transactionAmount}}</td>
+              <td>{{ item.balance}}</td>
+              <td>{{ item.detail}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </PageLayout>
