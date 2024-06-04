@@ -20,12 +20,3 @@
 <script setup lang="ts">
 import PageLayout from '@/components/yoxibit/pageLayout.vue';
 </script>
-
-<style lang="scss" scoped>
-.sign-up-step4 {
-
-  .title {
-    font-size: 32px;
-  }
-}
-</style>

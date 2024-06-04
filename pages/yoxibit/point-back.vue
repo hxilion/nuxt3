@@ -104,13 +104,3 @@ import PageLayerGray from '@/components/yoxibit/pageLayerGray.vue';
 import Nav from '@/components/yoxibit/nav.vue';
 import Footer from '@/components/yoxibit/footer.vue';
 </script>
-<style lang="scss" scoped>
-.yoxibit {
-
-  .grid-btn {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-  }
-}
-</style>

@@ -592,7 +592,6 @@ const formSetting = reactive ({
 });
 
 const showDialog = ref(false);
-const okBtn = ref(false);
 
 const updateDialogValue = (value: boolean) => {
   showDialog.value = value;
@@ -653,22 +652,4 @@ const validatePasswordConform = (value: any) => {
 
   return true;
 }
-
 </script>
-
-<style lang="scss" scoped>
-.registration {
-
-  .grid-btn1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-  }
-
-  .grid-btn2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-  }
-}
-</style>
