@@ -21,7 +21,7 @@
             YOXIBITとは
           </a>
         </div>
-        <div class="bg-white flex flex-col justify-center items-center px-8 py-4 text-xl shadow-2 rounded-lg">
+        <div class="bg-white flex flex-col justify-center items-center px-8 py-4 text-xl shadow-ctz1 rounded-lg">
             <div class="font-bold my-4">ログインする</div>
             <div class="w-full flex border-solid border-grayD2 border-b py-4">
               <div class="bg-secondary text-white w-80 mr-4 p-4">メールアドレス</div>
@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 import { useRouter } from 'vue-router'
 import { onMounted, defineEmits } from 'vue';
 

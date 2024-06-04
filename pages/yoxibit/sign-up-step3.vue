@@ -58,7 +58,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="password" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="password" /></div>
               <div class="my-2 text-base tracking-widest sm:text-sm sm:mb-0">確認のため、再入力をお願いします。</div>
               <Field
                 name="passwordConform"
@@ -72,7 +72,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="passwordConform" /></div>
+              <div class="ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="passwordConform" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -106,7 +106,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="name" /></div>
+              <div class="ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="name" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -140,7 +140,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="username" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="username" /></div>
               <div class="text-redDC font-normal sm:text-sm">※フリガナを間違えると、引き出しの際の振込ができませんので、正確にご入力ください。</div>
             </div>
           </div>
@@ -178,7 +178,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="firstName" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="firstName" /></div>
               </div>
               <div class="flex-1 sm:mt-2">
                 <Field
@@ -195,7 +195,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="lastName" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="lastName" /></div>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@
                   <option disabled value="">年</option>
                   <option v-for=" n in (100)" :value="year - n">{{ year - n }}</option>
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="year" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="year" /></div>
               </div>
               <div class="sm:w-[103px]">
                 <Field
@@ -242,7 +242,7 @@
                   <option disabled value="">月</option>
                   <option v-for=" n in 12" :value="n">{{ n }}</option>
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="month" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="month" /></div>
               </div>
               <div class="sm:w-[103px]">
                 <Field
@@ -255,7 +255,7 @@
                   <option disabled value="">日</option>
                   <option v-for=" n in 31" :value="n">{{ n }}</option>
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="day" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="day" /></div>
               </div>
             </div>
           </div>
@@ -292,7 +292,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="firstPostalCode" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="firstPostalCode" /></div>
               </div>
               <div class="w-4 text-center">-</div>
               <div class="w-36 sm:min-w-24">
@@ -309,7 +309,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="lastPostalCode" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="lastPostalCode" /></div>
               </div>
               <div>
                 <button
@@ -350,7 +350,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="state" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="state" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -383,7 +383,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="city" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="city" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -416,7 +416,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="address1" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="address1" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -449,7 +449,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="address2" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="address2" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -491,7 +491,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="securityAnswer" /></div>
+              <div class="ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="securityAnswer" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -516,7 +516,7 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
 import { reactive } from 'vue';
 

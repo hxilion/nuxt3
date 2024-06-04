@@ -250,10 +250,10 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import Nav from '../../components/yoxibit/nav.vue';
-import Footer from '../../components/yoxibit/footer.vue';
-import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
-import PageLayerWhite from '../../components/yoxibit/pageLayerWhite.vue';
+import Nav from '@/components/yoxibit/nav.vue';
+import Footer from '@/components/yoxibit/footer.vue';
+import PageLayerGray from '@/components/yoxibit/pageLayerGray.vue';
+import PageLayerWhite from '@/components/yoxibit/pageLayerWhite.vue';
 
 const items = ref([
     { href: '#manual', text: 'YOXIBITの仕組み' },

@@ -1,6 +1,6 @@
 <template>
   <Nav :isLoggedIn="true"/>
-  <div class="yoxibit font-['Murecho'] text-secondary">
+  <div class="yoxibit font-['Murecho']">
     <div class="account-info">
       <div class="w-full h-34 bg-gray96 py-8 sm:h-48">
         <div class="max-w-[1184px] mx-auto">
@@ -129,7 +129,7 @@
                         <input
                           v-model="formRegister.accountNumber"
                           type="text"
-                          class="w-full h-14 py-2 px-4 box-border border border-grayD2 mb-4"
+                          class="w-full h-14 py-2 px-4 box-border border border-grayD2"
                           @input="handleChange"
                         />
                       </Field>
@@ -147,7 +147,7 @@
                         <input
                           v-model="formRegister.accountName"
                           type="text"
-                          class="w-full h-14 py-2 px-4 box-border border border-grayD2 mb-4"
+                          class="w-full h-14 py-2 px-4 box-border border border-grayD2"
                           @input="handleChange"
                         />
                       </Field>
@@ -156,14 +156,14 @@
                   </tr>
                 </tbody>
               </table>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+                  >初めての方へ
+                </button>
+              </div>
             </Form>
-            <div class="text-center">
-              <button
-                type="button"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
-                >初めての方へ
-              </button>
-            </div>
           </div>
         </div>
       </PageLayerGray>
@@ -173,12 +173,12 @@
 </template>
 
 <script setup lang="ts">
-import PageLayerWhite from '../../components/yoxibit/pageLayerWhite.vue';
-import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
-import Nav from '../../components/yoxibit/nav.vue';
-import Footer from '../../components/yoxibit/footer.vue';
+import PageLayerWhite from '@/components/yoxibit/pageLayerWhite.vue';
+import PageLayerGray from '@/components/yoxibit/pageLayerGray.vue';
+import Nav from '@/components/yoxibit/nav.vue';
+import Footer from '@/components/yoxibit/footer.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
-import { ref, reactive } from 'vue';
+import { ref } from 'vue';
 
 const headers = ref([
   '銀行名',

@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 </script>
 
 <style lang="scss" scoped>

@@ -1,19 +1,20 @@
 <template>
+  <Nav :isLoggedIn="true"/>
   <div class="registration">
-    <div class="w-full h-52 bg-gray96 py-4 sm:h-[408px]">
-      <div class="max-w-screen-xl mx-auto px-4 py-4">
+    <div class="w-full h-52 bg-gray96 py-8 px-4 sm:h-[408px]">
+      <div class="max-w-[1184px] mx-auto">
         <div class="grid grid-cols-2 gap-x-2.5 sm:grid-cols-1 gap-y-2.5 mb-3">
           <a href="#card1">
             <button
               type="button"
-              class="w-full h-14 bg-white block-vector-right px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
             >登録情報変更
             </button>
           </a>
           <a href="#card2">
             <button
               type="button"
-              class="w-full h-14 bg-white block-vector-right px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
             >メールアドレス変更
             </button>
           </a>
@@ -22,21 +23,21 @@
           <a href="#card3">
             <button
               type="button"
-              class="w-full h-14 bg-white block-vector-right px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
             >パスワード変更
             </button>
           </a>
           <a href="#card4">
             <button
               type="button"
-              class="w-full h-14 bg-white block-vector-right px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
             >秘密の質問変更
             </button>
           </a>
           <a href="#card5">
             <button
               type="button"
-              class="w-full h-14 bg-white block-vector-right px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
             >ワンタイムパスワード変更
             </button>
           </a>
@@ -60,7 +61,6 @@
               w-[22.5rem]
               sm:bg-white
               sm:h-4
-              sm:text-secondary
               sm:text-base
               sm:p-0
               sm:mb-3"
@@ -80,7 +80,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="firstPostalCode" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="firstPostalCode" /></div>
               </div>
               <div class="w-4 text-center">-</div>
               <div class="w-36 sm:min-w-24">
@@ -97,7 +97,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="lastPostalCode" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="lastPostalCode" /></div>
               </div>
               <div>
                 <button
@@ -120,7 +120,6 @@
               w-[22.5rem]
               sm:bg-white
               sm:h-4
-              sm:text-secondary
               sm:text-base
               sm:p-0"
             >都道府県</div>
@@ -137,7 +136,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="state" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="state" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -152,7 +151,6 @@
               w-[22.5rem]
               sm:bg-white
               sm:h-4
-              sm:text-secondary
               sm:text-base
               sm:p-0"
             >市区町村</div>
@@ -169,7 +167,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="city" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="city" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -184,7 +182,6 @@
               w-[22.5rem]
               sm:bg-white
               sm:h-4
-              sm:text-secondary
               sm:text-base
               sm:p-0"
             >町名・番地</div>
@@ -201,7 +198,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="address1" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="address1" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -216,7 +213,6 @@
               w-[22.5rem]
               sm:bg-white
               sm:h-4
-              sm:text-secondary
               sm:text-base
               sm:p-0"
             >マンション名など</div>
@@ -233,7 +229,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="address2" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="address2" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -261,7 +257,6 @@
                 w-[22.5rem]
                 sm:bg-white
                 sm:h-4
-                sm:text-secondary
                 sm:text-base
                 sm:p-0"
               >現在のメールアドレス</div>
@@ -282,7 +277,6 @@
                 w-[22.5rem]
                 sm:bg-white
                 sm:h-4
-                sm:text-secondary
                 sm:text-base
                 sm:p-0"
                 >新しいメールアドレス</div>
@@ -299,7 +293,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="newEmail" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="newEmail" /></div>
                 <div class="my-2 text-base tracking-widest sm:text-sm">確認のため、もう一度入力してください。</div>
                 <Field
                   name="newEmailConform"
@@ -313,7 +307,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="newEmailConform" /></div>
+                <div class="ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="newEmailConform" /></div>
               </div>
             </div>
             <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -342,7 +336,6 @@
                 w-[22.5rem]
                 sm:bg-white
                 sm:h-4
-                sm:text-secondary
                 sm:text-base
                 sm:p-0"
               >現在のパスワード</div>
@@ -368,7 +361,6 @@
                 w-[22.5rem]
                 sm:bg-white
                 sm:h-4
-                sm:text-secondary
                 sm:text-base
                 sm:p-0"
               >新しいパスワード<div class="text-sm">16～40文字（半角英数）</div></div>
@@ -385,7 +377,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="newPassword" /></div>
+                <div class="text-red-600 text-xs font-normal"><ErrorMessage name="newPassword" /></div>
                 <div class="my-2 text-base tracking-widest">確認のため、もう一度入力してください。</div>
                 <Field
                   name="newPasswordConform"
@@ -399,7 +391,7 @@
                     @input="handleChange"
                   />
                 </Field>
-                <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="newPasswordConform" /></div>
+                <div class="ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="newPasswordConform" /></div>
               </div>
             </div>
             <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -429,7 +421,6 @@
                 w-[22.5rem]
                 sm:bg-white
                 sm:h-4
-                sm:text-secondary
                 sm:text-base
                 sm:p-0"
                 >現在の質問</div>
@@ -453,7 +444,6 @@
                 w-[22.5rem]
                 sm:bg-white
                 sm:h-4
-                sm:text-secondary
                 sm:text-base
                 sm:p-0"
               >新しい質問</div>
@@ -480,7 +470,7 @@
                     @input="handleChange"
                   />
                 </Field>
-              <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="securityAnswer" /></div>
+              <div class="ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="securityAnswer" /></div>
               </div>
             </div>
             <div class="border-b border-grayD2 my-4 sm:border-0"></div>
@@ -499,7 +489,7 @@
         <div class="border-l-4 border-primary font-bold text-2xl pl-4 mb-10 sm:text-xl">ワンタイムパスワード設定変更</div>
         <Form>
           <div class="flex items-center gap-4 sm:block">
-              <div class="
+            <div class="
               bg-secondary
               h-22
               text-white
@@ -509,54 +499,62 @@
               w-[22.5rem]
               sm:bg-white
               sm:h-4
-              sm:text-secondary
               sm:text-base
               sm:p-0"
-              >現在の設定</div>
-              <div class="basis-[50%] mt-3">
-                {{ formSetting.setting }}
-              </div>
+              >現在の設定
             </div>
-            <div class="border-b border-grayD2 my-4 sm:border-0"></div>
-            <div class="flex items-center gap-4 sm:block">
-              <div class="
-                bg-secondary
-                h-22
-                text-white
-                text-xl
-                font-bold
-                p-6
-                w-[22.5rem]
-                sm:bg-white
-                sm:h-4
-                sm:text-secondary
-                sm:text-base
-                sm:p-0"
-              >新しい設定</div>
-              <div class="basis-[50%]">
-                <select v-model="formSetting.newSetting" class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3 vector">
-                  <option selected>設定する</option>
-                </select>
-              </div>
+            <div class="basis-[50%] mt-3">
+              {{ formSetting.setting }}
             </div>
-            <div class="border-b border-grayD2 my-4 sm:border-0"></div>
-            <div>
-              <div class="text-center pb-5">
-                <button
-                type="submit"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
-                >更新
-                </button>
-              </div>
+          </div>
+          <div class="border-b border-grayD2 my-4 sm:border-0"></div>
+          <div class="flex items-center gap-4 sm:block">
+            <div class="
+              bg-secondary
+              h-22
+              text-white
+              text-xl
+              font-bold
+              p-6
+              w-[22.5rem]
+              sm:bg-white
+              sm:h-4
+              sm:text-base
+              sm:p-0"
+            >新しい設定</div>
+            <div class="basis-[50%]">
+              <select v-model="formSetting.newSetting" class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3 vector">
+                <option selected>設定する</option>
+              </select>
             </div>
+          </div>
+          <div class="border-b border-grayD2 my-4 sm:border-0"></div>
         </Form>
+        <div class="text-center pb-5">
+          <button
+            type="button"
+            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold"
+            @click="showDialog = true"
+            >更新
+          </button>
+        </div>
       </div>
     </div>
   </PageLayerGray>
+  <Footer />
+  <Dialog
+    :modelValue="showDialog"
+    title="変更を受け付けました"
+    @update:modelValue="updateDialogValue"
+    @update:modelButtonValue="true"
+  ></Dialog>
 </template>
 
 <script setup lang="ts">
-import PageLayerGray from '../../components/yoxibit/pageLayerGray.vue';
+import PageLayerGray from '@/components/yoxibit/pageLayerGray.vue';
+import Dialog from '@/components/yoxibit/dialog.vue';
+import Nav from '@/components/yoxibit/nav.vue';
+import Footer from '@/components/yoxibit/footer.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
 import { reactive } from 'vue';
 
@@ -592,6 +590,13 @@ const formSetting = reactive ({
   setting: '設定しない',
   newSetting: '設定する',
 });
+
+const showDialog = ref(false);
+const okBtn = ref(false);
+
+const updateDialogValue = (value: boolean) => {
+  showDialog.value = value;
+};
 
 const validateRequest = (value: any) => {
   if (!value) {

@@ -22,6 +22,6 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
-import Term from '../../components/yoxibit/term.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
+import Term from '@/components/yoxibit/term.vue';
 </script>

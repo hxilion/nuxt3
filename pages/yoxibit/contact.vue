@@ -10,7 +10,7 @@
                             までメールをお送りください。<br>
                         </p>
                     </div>
-                    <div class="mb-6 rounded-lg bg-white shadow-2 p-8">
+                    <div class="mb-6 rounded-lg bg-white shadow-ctz1 p-8">
                         <div class="flex justify-center font-bold text-2xl">お問合せ</div>
                         <ul class="flex flex-col border-b border-grayD2 my-5 divide-garyD2 border-b border-garyD2">
                             <li class="flex items-center py-4 flex-row">
@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 </script>
 
 <!-- <style scoped>

@@ -1,6 +1,6 @@
 <template>
   <PageLayout :loginStatus="true">
-    <div class="redemption-application text-secondary" >
+    <div class="redemption-application" >
       <div class="text-w[32px] font-bold mb-4 block-vector-left">換金の所要時間</div>
       <div class="w-full bg-white p-8 shadow-ctz1 mb-20">
         <Form>
@@ -25,7 +25,7 @@
                       @input="handleChange"
                     /><span class="text-sm ml-1">pt</span>
                   </Field>
-                  <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="amount" /></div>
+                  <div class="text-red-600 text-xs font-normal"><ErrorMessage name="amount" /></div>
                 </td>
               </tr>
               <tr v-if="isAccount">
@@ -81,7 +81,7 @@
                       @input="handleChange"
                     />
                   </Field>
-                  <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="account1" /></div>
+                  <div class="text-red-600 text-xs font-normal"><ErrorMessage name="account1" /></div>
                   <Field
                     name="account2"
                     :rules="validateRequest"
@@ -95,7 +95,7 @@
                       @input="handleChange"
                     />
                   </Field>
-                  <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="account2" /></div>
+                  <div class="text-red-600 text-xs font-normal"><ErrorMessage name="account2" /></div>
                   <div v-if="isAccount" class="mb-4">{{ form.account3 }}</div>
                   <Field
                     name="account4"
@@ -110,7 +110,7 @@
                       @input="handleChange"
                     />
                   </Field>
-                  <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="account4" /></div>
+                  <div class="text-red-600 text-xs font-normal"><ErrorMessage name="account4" /></div>
                   <Field
                     name="account5"
                     :rules="validateRequest"
@@ -123,7 +123,7 @@
                       @input="handleChange"
                     />
                   </Field>
-                  <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="account5" /></div>
+                  <div class="text-red-600 text-xs font-normal"><ErrorMessage name="account5" /></div>
                 </td>
               </tr>
             </tbody>
@@ -197,7 +197,7 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
 import { reactive, ref } from 'vue';
 

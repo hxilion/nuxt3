@@ -1,4 +1,10 @@
 module.exports = {
+  content: [
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+  ],
   theme: {
     extend: {
       screens: {
@@ -18,10 +24,7 @@ module.exports = {
         primaryVariant: '#80FFA7'
       },
       boxShadow: {
-        '2': '0px 8px 24px 0px #1E1E1E1A'
-      },
-      boxShadow: {
-        'ctz1': '0px 8px 24px 0px rgba(201, 210, 210)',
+        'ctz1': '0px 8px 24px 0px #1E1E1E1A',
       }
     },
   },

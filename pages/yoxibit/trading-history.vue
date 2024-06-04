@@ -1,15 +1,15 @@
 <template>
   <PageLayout :loginStatus="true">
-    <div class="trading-history text-secondary">
+    <div class="trading-history">
       <Form class="mb-5">
         <div class="flex items-center justify-center flex-wrap gap-y-2.5 sm:block">
           <div class="mr-4 sm:mr-0 sm:mb-3">
-            <select v-model="searchform.date" class="w-60 h-14 px-4 py-2 border border-grayD2 box-border vector text-secondary sm:w-full">
+            <select v-model="searchform.date" class="w-60 h-14 px-4 py-2 border border-grayD2 box-border vector sm:w-full">
               <option selected>年月で絞り込み</option>
             </select>
           </div>
           <div class="mr-4 sm:mr-0 sm:mb-3">
-            <select v-model="searchform.store" class="w-60 h-14 px-4 py-2 border border-grayD2 box-border vector text-secondary sm:w-full">
+            <select v-model="searchform.store" class="w-60 h-14 px-4 py-2 border border-grayD2 box-border vector sm:w-full">
               <option selected>加盟店で絞り込み</option>
             </select>
           </div>
@@ -62,7 +62,7 @@
 </template>
   
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 import { Form } from 'vee-validate';
 import { reactive, ref } from 'vue';
 

@@ -1,7 +1,7 @@
 <template>
     <PageLayout :loginStatus="false">
         <div class="flex flex-col w-full">
-          <div class="w-full bg-white flex flex-col justify-center items-center p-4 text-xl shadow-2 rounded-lg">
+          <div class="w-full bg-white flex flex-col justify-center items-center p-4 text-xl shadow-ctz1 rounded-lg">
               <div class="font-bold my-4">パスワードリマインダー</div>
               <div class="w-full flex border-solid border-grayD2 border-b py-4">
                 <div class="bg-secondary text-white w-1/4 mr-4 p-4">メールアドレス</div>
@@ -65,7 +65,7 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 import { ref, computed, watch } from 'vue';
 
 const email = ref('');

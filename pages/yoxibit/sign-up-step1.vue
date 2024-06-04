@@ -1,6 +1,6 @@
 <template>
   <PageLayout :loginStatus="true">
-    <div class="sign-up-step1 text-secondary" >
+    <div class="sign-up-step1" >
       <div class="w-full bg-white shadow-ctz1 p-8 sm:py-6 sm:px-4">
         <div class="text-center font-bold py-5 text-2xl sm:text-xl">新規登録（仮登録）</div>
         <Form>
@@ -16,7 +16,6 @@
               w-[360px]
               sm:bg-white
               sm:h-4
-              sm:text-secondary
               sm:text-base
               sm:mx-0
               sm:p-0"
@@ -34,7 +33,7 @@
                   @input="handleChange"
                 />
               </Field>
-              <div class="error-msg text-red-600 text-xs font-normal"><ErrorMessage name="email" /></div>
+              <div class="text-red-600 text-xs font-normal"><ErrorMessage name="email" /></div>
               <div class="font-bold mt-2 sm:text-sm">×携帯会社のメールは登録できません（docomo, ezweb, softbank等）</div>
               <div class="my-2 tracking-widest sm:text-sm">確認のため、もう一度入力してください。</div>
               <div>
@@ -51,14 +50,14 @@
                   />
                 </Field>
               </div>
-              <div class="error-msg ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="emailConform" /></div>
+              <div class="ml-15 text-red-600 text-xs font-normal"><ErrorMessage name="emailConform" /></div>
             </div>
           </div>
           <div class="border-b border-grayD2 my-4 sm:border-0 sm:border-0"></div>
           <div class="my-5 tracking-widest text-center sm:text-sm">アカウントは複数作成できません。</div>
           <div class="text-center pb-5">
             <button
-            type="button"
+            type="submit"
             class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
             >メール送信
             </button>
@@ -85,7 +84,7 @@
 </template>
 
 <script setup lang="ts">
-import PageLayout from '../../components/yoxibit/pageLayout.vue';
+import PageLayout from '@/components/yoxibit/pageLayout.vue';
 import { Field, Form, ErrorMessage } from 'vee-validate';
 import { reactive } from 'vue';
 
