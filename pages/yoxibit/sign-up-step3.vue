@@ -1,5 +1,5 @@
 <template>
-  <PageLayout :loginStatus="true">
+  <PageLayout :loginStatus="false">
     <div class="sign-up-step3" >
       <div class="p-8 w-full bg-white shadow-ctz1 sm:py-6 sm:px-4">
         <Form>

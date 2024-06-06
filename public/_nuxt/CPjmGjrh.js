@@ -1,1 +1,0 @@
-import{_ as t,A as s,o as a,c as r,a as c,ai as n,b as _}from"./BKFMS4XJ.js";const l={},i={class:"layer-white w-full h-auto mx-auto bg-grayF8 font-['Murecho']"},d={class:"max-w-screen-xl mx-auto px-4 py-20 xs:py-10"};function u(e,m){const o=s("router-view");return a(),r("div",i,[c("div",d,[n(e.$slots,"default",{},()=>[_(o)])])])}const f=t(l,[["render",u]]);export{f as P};

@@ -1,5 +1,5 @@
 <template>
-  <PageLayout :loginStatus="true">
+  <PageLayout :loginStatus="false">
     <div class="text-center sm:text-sm" >
       <div class="text-[32px] font-bold sm:text-2xl">YOXIBIT登録申請</div>
       <div class="my-16">ご登録申請が完了いたしました。</div>

@@ -3,10 +3,10 @@
         <div class="flex flex-col w-full">
           <div class="w-full bg-white flex flex-col justify-center items-center p-4 text-xl shadow-ctz1 rounded-lg">
               <div class="font-bold my-4">パスワードリマインダー</div>
-              <div class="w-full flex border-solid border-grayD2 border-b py-4">
-                <div class="bg-secondary text-white w-1/4 mr-4 p-4">メールアドレス</div>
+              <div class="w-full flex border-solid border-grayD2 border-b py-4 sm:flex-col sm:border-0 sm:py-2">
+                <div class="bg-secondary text-white w-1/4 mr-4 p-4 sm:w-full sm:bg-white sm:px-0 sm:text-secondary">メールアドレス</div>
                 <input
-                  class="w-3/4 border-solid border-grayD2 border px-4"
+                  class="w-3/4 border-solid border-grayD2 border px-4 sm:w-full sm:h-14 sm:font-bold"
                   type="text"
                   v-model="email"
                   @input="validateEmail"
@@ -14,39 +14,41 @@
                   required
                 />
               </div>
-              <div class="w-full flex border-solid border-grayD2 border-b py-4">
-                <div class="bg-secondary text-white w-1/4 mr-4 p-4">生年月日</div>
-                <select
-                  class="w-1/5 border-solid border-grayD2 border mr-4 px-4"
-                  name="year"
-                  id="year"
-                  v-model="selectedYear"
-                  @change="updateDays"
-                >
-                  <option value="">年</option>
-                  <option v-for="year in years" :key="year" :value="year">{{ year }}年</option>
-                </select>
-
-                <select
-                  class="w-1/5 border-solid border-grayD2 border mr-4 px-4"
-                  name="month"
-                  id="month"
-                  v-model="selectedMonth"
-                  @change="updateDays"
-                >
-                  <option value="">月</option>
-                  <option v-for="month in 12" :key="month" :value="month">{{ month }}月</option>
-                </select>
-
-                <select
-                  class="w-1/5 border-solid border-grayD2 border mr-4 px-4"
-                  name="day"
-                  id="day"
-                  v-model="selectedDay"
-                >
-                  <option value="">日</option>
-                  <option v-for="day in days" :key="day" :value="day">{{ day }}日</option>
-                </select>
+              <div class="w-full flex border-solid border-grayD2 border-b py-4 sm:flex-col sm:border-0 sm:py-2">
+                <div class="bg-secondary text-white w-1/4 mr-4 p-4 sm:w-full sm:bg-white sm:px-0 sm:text-secondary">生年月日</div>
+                <div class="flex w-3/4 sm:w-full">
+                  <select
+                    class="w-1/5 sm:flex-1 sm:w-full border-solid border-grayD2 border mr-4 px-4 sm:w-full sm:h-14 sm:font-bold"
+                    name="year"
+                    id="year"
+                    v-model="selectedYear"
+                    @change="updateDays"
+                  >
+                    <option value="">年</option>
+                    <option v-for="year in years" :key="year" :value="year">{{ year }}年</option>
+                  </select>
+  
+                  <select
+                    class="w-1/5 sm:flex-1 sm:w-full border-solid border-grayD2 border mr-4 px-4"
+                    name="month"
+                    id="month"
+                    v-model="selectedMonth"
+                    @change="updateDays"
+                  >
+                    <option value="">月</option>
+                    <option v-for="month in 12" :key="month" :value="month">{{ month }}月</option>
+                  </select>
+  
+                  <select
+                    class="w-1/5 sm:flex-1 sm:w-full border-solid border-grayD2 border mr-4 px-4"
+                    name="day"
+                    id="day"
+                    v-model="selectedDay"
+                  >
+                    <option value="">日</option>
+                    <option v-for="day in days" :key="day" :value="day">{{ day }}日</option>
+                  </select>
+                </div>
               </div>
               <div
                 class="bg-primary rounded-lg arrow-right-black w-80 h-14 flex justify-center items-center cursor-pointer my-4 font-bold"
@@ -57,8 +59,8 @@
               </div>
             </div>
             <div class="flex flex-col">
-                <div class="font-bold text-2xl px-2 border-primary border-l-4 border-solid my-4">お困りの場合はご連絡ください</div>
-                <div class="text-primary underline">お問合せフォームからパスワードの確認をする</div>
+                <div class="font-bold text-2xl px-2 border-primary border-l-4 border-solid my-4 sm:text-xl">お困りの場合はご連絡ください</div>
+                <div class="text-primary underline sm:text-sm">お問合せフォームからパスワードの確認をする</div>
             </div>
         </div>
     </PageLayout>

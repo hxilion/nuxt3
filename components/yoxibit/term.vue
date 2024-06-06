@@ -10,7 +10,5 @@
 </template>
 
 <script lang="ts" setup name="term">
-import { defineProps } from 'vue';
-
 defineProps(['title', 'text'])
 </script>

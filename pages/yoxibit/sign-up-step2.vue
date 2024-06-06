@@ -1,5 +1,5 @@
 <template>
-  <PageLayout :loginStatus="true">
+  <PageLayout :loginStatus="false">
     <div class="sign-up-step2 sm:text-sm" >
       <div class="mb-5">メールをお送りしました</div>
       <div>あなたのメールアドレスへ口座開設のご案内をお送りしました。</div>

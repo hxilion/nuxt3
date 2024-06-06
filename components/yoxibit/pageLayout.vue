@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-    <Footer />
+    <Footer :isLoggedIn="props.loginStatus" />
   </div>
 </template>
 

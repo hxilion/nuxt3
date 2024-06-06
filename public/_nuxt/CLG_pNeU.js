@@ -1,1 +1,0 @@
-import{c as a,ai as t,a as l,o as s}from"./BKFMS4XJ.js";const o=l("header",{class:"flex w-full justify-center px-8 xl:px-0"},null,-1),u={__name:"default",setup(r){return(e,c)=>(s(),a("div",null,[o,t(e.$slots,"default")]))}};export{u as default};

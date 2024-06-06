@@ -1,9 +1,9 @@
 <template>
     <PageLayout :loginStatus="false">
         <main class="flex-grow flex-1 overflow-x-hidden">
-            <section class="py-2 px-4 xl:px-0">
+            <section class="py-2 px-4">
                 <div class="max-w-screen-xl mx-auto">
-                    <div class="mb-8">
+                    <div class="mb-8 sm:text-sm">
                         <p class="mb-2">サポート対応時間 8:00-24:30</p>
                         <p>
                             カスタマーサポート（<a class="text-primary" href="support@yoxibitmail.com">support@yoxibitmail.com</a>）
@@ -11,23 +11,23 @@
                         </p>
                     </div>
                     <div class="mb-6 rounded-lg bg-white shadow-ctz1 p-8">
-                        <div class="flex justify-center font-bold text-2xl">お問合せ</div>
-                        <ul class="flex flex-col border-b border-grayD2 my-5 divide-garyD2 border-b border-garyD2">
-                            <li class="flex items-center py-4 flex-row">
-                                <div class="mb-0 w-1/3 flex items-center font-bold bg-black text-white px-6 py-8 mr-4">お名前</div>
-                                <div class="w-2/3">
+                        <div class="flex justify-center font-bold text-2xl sm:text-xl">お問合せ</div>
+                        <ul class="flex flex-col border-b border-grayD2 my-5 sm:border-0 ">
+                            <li class="flex items-center py-4 flex-row sm:flex-col sm:items-start">
+                                <div class="mb-0 w-1/3 sm:w-full sm:bg-white sm:text-secondary sm:py-2 sm:px-0 flex items-center font-bold bg-black text-white px-6 py-8 mr-4">お名前</div>
+                                <div class="w-2/3 sm:w-full">
                                     <input class="appearance-none border border-gray-300 p-3 w-full" name="name" value="" type="text" data-sharkid="__0">
                                 </div>
                             </li>
-                            <li class="flex items-center py-4 flex-row">
-                                <div class=" mb-0 w-1/3 flex items-center font-bold bg-black text-white px-6 py-8 mr-4">メールアドレス</div>
-                                <div class="w-2/3">
+                            <li class="flex items-center py-4 flex-row sm:flex-col sm:items-start">
+                                <div class=" mb-0 w-1/3 sm:w-full sm:bg-white sm:text-secondary sm:py-2 sm:px-0 flex items-center font-bold bg-black text-white px-6 py-8 mr-4">メールアドレス</div>
+                                <div class="w-2/3 sm:w-full">
                                     <input class="appearance-none border border-gray-300 p-3 w-full" name="email" value="" type="text" data-sharkid="__1">
                                 </div>
                             </li>
-                            <li class="flex items-center py-4 flex-row">
-                                <div class="mb-0 w-1/3 flex items-center font-bold bg-black text-white px-6 py-[10%] mr-4">お問合せ内容</div>
-                                <div class="w-2/3">
+                            <li class="flex items-center py-4 flex-row sm:flex-col sm:items-start">
+                                <div class="mb-0 w-1/3 sm:w-full sm:bg-white sm:text-secondary sm:py-2 sm:px-0 flex items-center font-bold bg-black text-white px-6 py-[10%] mr-4">お問合せ内容</div>
+                                <div class="w-2/3 sm:w-full">
                                     <textarea name="comment" class="border border-gray-300 rounded p-3 w-full h-64" placeholder="" data-sharkid="__2"></textarea>
                                 </div>
                             </li>
