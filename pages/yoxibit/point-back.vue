@@ -78,7 +78,7 @@
       <div class="text-center my-16">
         <button
           type="submit"
-          class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+          class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
         >初めての方へ
         </button>
       </div>
