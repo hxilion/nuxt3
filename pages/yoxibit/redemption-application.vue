@@ -46,7 +46,7 @@
                   <div>
                     <button
                       type="button"
-                      class="rounded-lg font-bold text-white bg-secondary px-4 h-12 mt-1" 
+                      class="rounded-lg font-bold text-white bg-secondary px-4 h-12 mt-1 hover:bg-gray8E" 
                       >口座の登録/削除はこちら
                     </button>
                   </div>
@@ -151,14 +151,14 @@
           <div class="sm:text-center">
             <button
               type="button"
-              class="white-vector-left w-80 h-14 px-12 rounded-lg font-bold text-white bg-secondary sm:mb-4 sm:w-[311px]" 
+              class="white-vector-left w-80 h-14 px-12 rounded-lg font-bold text-white bg-secondary sm:mb-4 hover:bg-gray8E sm:w-[311px]" 
               >トップに戻る
             </button>
           </div>
           <div class="sm:text-center">
             <button
               type="button"
-              class="block-vector-right w-80 h-14 bg-primary px-12 rounded-lg font-bold sm:w-[311px]" 
+              class="block-vector-right w-80 h-14 bg-primary px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
               >上記に同意して換金する
             </button>
           </div>

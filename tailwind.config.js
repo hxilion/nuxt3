@@ -20,7 +20,9 @@ module.exports = {
         grayD2: '#D2D2D2',
         gray96: '#969696',
         grayF8: '#F8F8F8',
+        gray8E: '#8E8E8E',
         redDC: '#DC0000',
+        redED: '#ED8080',
         primaryVariant: '#80FFA7'
       },
       boxShadow: {

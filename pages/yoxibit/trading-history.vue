@@ -16,14 +16,14 @@
           <div class="text-center mr-4 sm:mr-0 sm:mb-3">
             <button
             type="submit"
-            class="w-[130px] h-14 block-vector-right px-12 rounded-lg font-bold bg-primary sm:w-full" 
+            class="w-[130px] h-14 block-vector-right px-12 rounded-lg font-bold bg-primary hover:bg-primaryVariant sm:w-full" 
             >検索
             </button>
           </div>
           <div class="text-center sm:mb-3">
             <button
               type="button"
-              class="w-[130px] h-14 white-vector-right px-12 rounded-lg font-bold text-white bg-secondary sm:w-full" 
+              class="w-[130px] h-14 white-vector-right px-12 rounded-lg font-bold text-white bg-secondary hover:bg-gray8E sm:w-full" 
               @click="downloadPDF"
               >PDF
             </button>

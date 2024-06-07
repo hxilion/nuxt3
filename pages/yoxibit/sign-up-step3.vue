@@ -321,7 +321,7 @@
               <div>
                 <button
                   type="submit"
-                  class="bg-secondary text-white px-4 rounded-lg font-bold w-24 h-12 ml-2" 
+                  class="bg-secondary text-white px-4 rounded-lg font-bold w-24 h-12 ml-2 hover:bg-gray8E" 
                 >住所取得
                 </button>
               </div>
@@ -517,7 +517,7 @@
           <div class="text-center pb-5">
             <button
             type="submit"
-            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
+            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
             >登録する
             </button>
           </div>

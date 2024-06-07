@@ -7,14 +7,14 @@
           <a href="#card1">
             <button
               type="button"
-              class="w-full h-14 bg-white block-vector-right px-12 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-12 rounded-lg font-bold hover:opacity-50" 
             >登録済み口座情報
             </button>
           </a>
           <a href="#card2">
             <button
               type="button"
-              class="w-full h-14 bg-white block-vector-right px-12 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-12 rounded-lg font-bold hover:opacity-50" 
             >新規口座登録
             </button>
           </a>
@@ -42,7 +42,7 @@
               <td>
                 <button
                   type="button"
-                  class="w-[66px] h-8 bg-redDC px-4 text-white" 
+                  class="w-[66px] h-8 bg-redDC px-4 text-white hover:bg-redED" 
                   >削除
                 </button>
               </td>
@@ -159,7 +159,7 @@
           <div class="text-center">
             <button
               type="submit"
-              class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
+              class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
               >初めての方へ
             </button>
           </div>

@@ -1,20 +1,20 @@
 <template>
   <Nav :isLoggedIn="true" :pathTitle="'登録情報'" :pathName="'REGISTRATION INFORMATION'"/>
-  <div class="registration">
+  <div class="registration-info">
     <div class="w-full h-52 bg-gray96 py-8 px-4 sm:h-[408px]">
       <div class="max-w-[1184px] mx-auto">
         <div class="grid grid-cols-2 gap-x-2.5 sm:grid-cols-1 gap-y-2.5 mb-3">
           <a href="#card1">
             <button
               type="button"
-              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold hover:opacity-50" 
             >登録情報変更
             </button>
           </a>
           <a href="#card2">
             <button
               type="button"
-              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold hover:opacity-50" 
             >メールアドレス変更
             </button>
           </a>
@@ -23,21 +23,21 @@
           <a href="#card3">
             <button
               type="button"
-              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold hover:opacity-50" 
             >パスワード変更
             </button>
           </a>
           <a href="#card4">
             <button
               type="button"
-              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold hover:opacity-50" 
             >秘密の質問変更
             </button>
           </a>
           <a href="#card5">
             <button
               type="button"
-              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold" 
+              class="w-full h-14 bg-white vector px-5 rounded-lg font-bold hover:opacity-50" 
             >ワンタイムパスワード変更
             </button>
           </a>
@@ -104,7 +104,7 @@
               <div>
                 <button
                   type="submit"
-                  class="bg-secondary text-white px-4 rounded-lg font-bold w-24 h-12" 
+                  class="bg-secondary text-white px-4 rounded-lg font-bold w-24 h-12 hover:bg-gray8E" 
                 >住所取得
                 </button>
               </div>
@@ -247,7 +247,7 @@
             <div class="text-center pb-5">
               <button
               type="submit"
-              class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
+              class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
               >更新
               </button>
             </div>
@@ -329,7 +329,7 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
+                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
                 >更新
                 </button>
               </div>
@@ -417,7 +417,7 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
+                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
                 >更新
                 </button>
               </div>
@@ -500,7 +500,7 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
+                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
                 >更新
                 </button>
               </div>
@@ -559,7 +559,7 @@
         <div class="text-center pb-5">
           <button
             type="button"
-            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]"
+            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]"
             @click="showDialog = true"
             >更新
           </button>
