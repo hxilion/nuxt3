@@ -47,10 +47,10 @@
   </div>
   <PageLayerGray>
     <div class="registration-info">
-      <div id="card1" class="bg-white p-8 shadow-ctz1 mb-20 sm:py-6 sm:px-4">
+      <div id="card1" class="bg-white p-4 shadow-ctz1 mb-20 sm:p-4">
         <div class="border-l-4 border-primary font-bold text-2xl pl-4 mb-10 sm:text-xl">登録情報変更</div>
         <Form>
-          <div class="flex items-center gap-4 sm:block">
+          <div class="flex items-center gap-4 flex-wrap sm:block">
             <div class="
               bg-secondary
               h-22
@@ -59,13 +59,15 @@
               font-bold
               p-6
               w-[22.5rem]
+              sm:w-full
               sm:bg-white
+              sm:text-secondary
               sm:h-4
               sm:text-base
               sm:p-0
               sm:mb-3"
             >郵便番号 （半角）</div>
-            <div class="flex items-center">
+            <div class="flex items-center flex-wrap gap-y-4">
               <div class="w-[6.25rem] sm:w-20">
                 <Field
                   name="firstPostalCode"
@@ -83,7 +85,7 @@
                 <div class="text-red-600 text-xs font-normal"><ErrorMessage name="firstPostalCode" /></div>
               </div>
               <div class="w-4 text-center">-</div>
-              <div class="w-36 sm:min-w-24">
+              <div class="w-36 mr-3  sm:min-w-24">
                 <Field
                   name="lastPostalCode"
                   :rules="validateRequest"
@@ -102,7 +104,7 @@
               <div>
                 <button
                   type="submit"
-                  class="bg-secondary text-white px-4 rounded-lg font-bold w-24 h-12 ml-2" 
+                  class="bg-secondary text-white px-4 rounded-lg font-bold w-24 h-12" 
                 >住所取得
                 </button>
               </div>
@@ -118,12 +120,14 @@
               font-bold
               p-6
               w-[22.5rem]
+              sm:w-full
               sm:bg-white
+              sm:text-secondary
               sm:h-4
               sm:text-base
               sm:p-0"
             >都道府県</div>
-            <div class="basis-[50%]">
+            <div class="flex-1">
               <Field
                 name="state"
                 :rules="validateRequest"
@@ -149,12 +153,14 @@
               font-bold
               p-6
               w-[22.5rem]
+              sm:w-full
               sm:bg-white
+              sm:text-secondary
               sm:h-4
               sm:text-base
               sm:p-0"
             >市区町村</div>
-            <div class="basis-[50%]">
+            <div class="flex-1">
               <Field
                 name="city"
                 :rules="validateRequest"
@@ -180,12 +186,14 @@
               font-bold
               p-6
               w-[22.5rem]
+              sm:w-full
               sm:bg-white
+              sm:text-secondary
               sm:h-4
               sm:text-base
               sm:p-0"
             >町名・番地</div>
-            <div class="basis-[50%]">
+            <div class="flex-1">
               <Field
                 name="address1"
                 :rules="validateRequest"
@@ -211,12 +219,14 @@
               font-bold
               p-6
               w-[22.5rem]
+              sm:w-full
               sm:bg-white
+              sm:text-secondary
               sm:h-4
               sm:text-base
               sm:p-0"
             >マンション名など</div>
-            <div class="basis-[50%]">
+            <div class="flex-1">
               <Field
                 name="address2"
                 :rules="validateRequest"
@@ -237,13 +247,13 @@
             <div class="text-center pb-5">
               <button
               type="submit"
-              class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+              class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
               >更新
               </button>
             </div>
         </Form>
       </div>
-      <div id="card2" class="bg-white p-8 shadow-ctz1 mb-20">
+      <div id="card2" class="bg-white p-4 shadow-ctz1 mb-20">
         <div class="border-l-4 border-primary font-bold text-2xl pl-4 mb-10 sm:text-xl">メールアドレス変更</div>
         <Form>
           <div class="flex items-center gap-4 sm:block">
@@ -255,12 +265,14 @@
                 font-bold
                 p-6
                 w-[22.5rem]
+                sm:w-full
                 sm:bg-white
+                sm:text-secondary
                 sm:h-4
                 sm:text-base
                 sm:p-0"
               >現在のメールアドレス</div>
-              <div class="basis-[50%] sm:mt-3 sm:text-sm">
+              <div class="flex-1 sm:mt-3 sm:text-sm">
                 {{ formEmai.email }}
               </div>
             </div>
@@ -275,12 +287,14 @@
                 py-24
                 pl-6
                 w-[22.5rem]
+                sm:w-full
                 sm:bg-white
+                sm:text-secondary
                 sm:h-4
                 sm:text-base
                 sm:p-0"
                 >新しいメールアドレス</div>
-              <div class="basis-[50%]">
+              <div class="flex-1">
                 <Field
                   name="newEmail"
                   :rules="validateEmail"
@@ -315,14 +329,14 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
                 >更新
                 </button>
               </div>
             </div>
         </Form>
       </div>
-      <div id="card3" class="bg-white p-8 shadow-ctz1 mb-20">
+      <div id="card3" class="bg-white p-4 shadow-ctz1 mb-20">
         <div class="border-l-4 border-primary font-bold text-2xl pl-4 mb-10 sm:text-xl">パスワード変更</div>
         <Form>
           <div class="flex items-center gap-4 sm:block">
@@ -334,12 +348,14 @@
                 font-bold
                 p-6
                 w-[22.5rem]
+                sm:w-full
                 sm:bg-white
+                sm:text-secondary
                 sm:h-4
                 sm:text-base
                 sm:p-0"
               >現在のパスワード</div>
-              <div class="basis-[50%]">
+              <div class="flex-1">
                 <input
                   v-model="formPassword.password"
                   type="password"
@@ -359,12 +375,14 @@
                 py-24
                 pl-6
                 w-[22.5rem]
+                sm:w-full
                 sm:bg-white
+                sm:text-secondary
                 sm:h-4
                 sm:text-base
                 sm:p-0"
               >新しいパスワード<div class="text-sm">16～40文字（半角英数）</div></div>
-              <div class="basis-[50%]">
+              <div class="flex-1">
                 <Field
                   name="newPassword"
                   :rules="validatePassword"
@@ -399,14 +417,14 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
                 >更新
                 </button>
               </div>
             </div>
         </Form>
       </div>
-      <div id="card4" class="bg-white p-8 shadow-ctz1 mb-20">
+      <div id="card4" class="bg-white p-4 shadow-ctz1 mb-20">
         <div class="border-l-4 border-primary font-bold text-2xl pl-4 mb-10 sm:text-xl">秘密の質問変更</div>
         <Form>
           <div class="flex items-center gap-4 sm:block">
@@ -419,12 +437,14 @@
                 py-14
                 pl-6
                 w-[22.5rem]
+                sm:w-full
                 sm:bg-white
+                sm:text-secondary
                 sm:h-4
                 sm:text-base
                 sm:p-0"
                 >現在の質問</div>
-              <div class="basis-[50%]">
+              <div class="flex-1">
                 <div class="font-bold sm:font-normal mt-3">質問</div>
                 <div class="mb-2">{{ formSecurity.securityQuestion }}</div>
                 <div class="font-bold sm:font-normal mt-3">答え</div>
@@ -442,12 +462,14 @@
                 py-24
                 pl-6
                 w-[22.5rem]
+                sm:w-full
                 sm:bg-white
+                sm:text-secondary
                 sm:h-4
                 sm:text-base
                 sm:p-0"
               >新しい質問</div>
-              <div class="basis-[50%]">
+              <div class="flex-1">
                 <div class="font-bold sm:font-normal mt-3">質問</div>
                 <select v-model="formSecurity.newSecurityQuestion" class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-2 vector">
                   <option selected>あなたの最初のペットの名前は？</option>
@@ -478,14 +500,14 @@
               <div class="text-center pb-5">
                 <button
                 type="submit"
-                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+                class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
                 >更新
                 </button>
               </div>
             </div>
         </Form>
       </div>
-      <div id="card5" class="bg-white p-8 shadow-ctz1 mb-20">
+      <div id="card5" class="bg-white p-4 shadow-ctz1 mb-20">
         <div class="border-l-4 border-primary font-bold text-2xl pl-4 mb-10 sm:text-xl">ワンタイムパスワード設定変更</div>
         <Form>
           <div class="flex items-center gap-4 sm:block">
@@ -497,13 +519,15 @@
               font-bold
               p-6
               w-[22.5rem]
+              sm:w-full
               sm:bg-white
+              sm:text-secondary
               sm:h-4
               sm:text-base
               sm:p-0"
               >現在の設定
             </div>
-            <div class="basis-[50%] mt-3">
+            <div class="flex-1 mt-3">
               {{ formSetting.setting }}
             </div>
           </div>
@@ -517,12 +541,14 @@
               font-bold
               p-6
               w-[22.5rem]
+              sm:w-full
               sm:bg-white
+              sm:text-secondary
               sm:h-4
               sm:text-base
               sm:p-0"
             >新しい設定</div>
-            <div class="basis-[50%]">
+            <div class="flex-1">
               <select v-model="formSetting.newSetting" class="w-full h-14 py-2 px-4 box-border border border-grayD2 sm:mt-3 vector">
                 <option selected>設定する</option>
               </select>
@@ -533,7 +559,7 @@
         <div class="text-center pb-5">
           <button
             type="button"
-            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold"
+            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]"
             @click="showDialog = true"
             >更新
           </button>

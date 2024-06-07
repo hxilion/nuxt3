@@ -2,7 +2,7 @@
   <PageLayout :loginStatus="true" :pathTitle="'換金申請'" :pathName="'REDEMPTION APPLICATION'">
     <div class="redemption-application" >
       <div class="text-w[32px] font-bold mb-4 block-vector-left">換金の所要時間</div>
-      <div class="w-full bg-white p-8 shadow-ctz1 mb-20">
+      <div class="w-full bg-white p-4 shadow-ctz1 mb-20">
         <Form>
           <table class="w-full mb-10 sm:text-sm">
             <tbody>
@@ -132,7 +132,7 @@
         <div class="text-redDC font-bold text-2xl text-center mb-10 sm:text-xl sm:mb-5">ご注意</div>
         <div class="font-bold">送金は1日5回</div>
         <div class="pl-5 my-4 ml-1 tracking-widest">
-          <ul class="sm:text-sm">
+          <ul class="list-disc sm:text-sm">
             <li>年中無休、土日祝も送金されます</li>
             <li>毎日9:00, 13:00, 17:00, 22:00に作業開始<br>完了までに数分～120分程度かかります</li>
             <li>休み明け等で申請が集中するときは、通常より時間がかかります</li>
@@ -141,24 +141,24 @@
         </div>
         <div class="font-bold">換金レートは、銀行店頭水準</div>
         <div class="pl-5 my-4 ml-1 tracking-widest">
-          <ul class="sm:text-sm">
+          <ul class="list-disc sm:text-sm">
             <li>都市銀行の「アメリカドルの現金両替レート（Cash.B）」と同水準の、リアルタイム変動レートが適用されます<br>> 参考：<span class="border-b border-primary text-primary">三菱UFJ銀行 外国為替相場</span></li>
           </ul>
         </div>
         <div class="font-bold mb-1">口座情報は正しくご入力ください</div>
         <div class="sm:text-sm">口座情報の間違いや、お客さまの銀行口座が利用できない等の原因で資金が到着しなかったとしても、当社は責任を負いかねます。銀行で組戻し等の手続きもできません。</div>
-        <div class="flex items-center justify-center mt-10 sm:block">
+        <div class="flex items-center justify-center mt-10 gap-4 sm:block">
           <div class="sm:text-center">
             <button
               type="button"
-              class="white-vector-left w-80 h-14 px-12 px-12 rounded-lg font-bold text-white bg-secondary mr-4 sm:mr-0 sm:mb-4" 
+              class="white-vector-left w-80 h-14 px-12 rounded-lg font-bold text-white bg-secondary sm:mb-4 sm:w-[311px]" 
               >トップに戻る
             </button>
           </div>
           <div class="sm:text-center">
             <button
               type="button"
-              class="block-vector-right w-80 h-14 bg-primary px-12 rounded-lg font-bold" 
+              class="block-vector-right w-80 h-14 bg-primary px-12 rounded-lg font-bold sm:w-[311px]" 
               >上記に同意して換金する
             </button>
           </div>

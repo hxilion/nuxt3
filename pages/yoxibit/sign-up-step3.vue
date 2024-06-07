@@ -13,6 +13,7 @@
               py-8
               p-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -39,6 +40,7 @@
               py-16
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -86,6 +88,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -120,6 +123,7 @@
               py-10
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -155,6 +159,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -210,6 +215,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -270,6 +276,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -331,6 +338,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -364,6 +372,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -397,6 +406,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -430,6 +440,7 @@
               py-8
               pl-6
               w-[360px]
+              sm:w-full
               sm:bg-white
               sm:h-4
               sm:text-secondary
@@ -463,6 +474,7 @@
                 py-24
                 pl-6
                 w-[360px]
+                sm:w-full
                 sm:bg-white
                 sm:h-4
                 sm:text-secondary
@@ -505,7 +517,7 @@
           <div class="text-center pb-5">
             <button
             type="submit"
-            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
             >登録する
             </button>
           </div>

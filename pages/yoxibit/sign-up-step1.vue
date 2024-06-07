@@ -58,7 +58,7 @@
           <div class="text-center pb-5">
             <button
             type="submit"
-            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold" 
+            class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:w-[311px]" 
             >メール送信
             </button>
           </div>
