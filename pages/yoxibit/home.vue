@@ -1,5 +1,5 @@
 <template>
-    <Nav />
+    <Nav :isLoggedIn="true" />
     <div class="max-w-screen-xl mx-auto px-4 py-20 sm:py-0 sm:px-0 flex flex-col flex-1 items-stretch">
         <PageLayerGray>
             <div class="max-w-screen-xl mx-auto w-full text-secondary">
@@ -246,7 +246,7 @@
             </section>
         </PageLayerGray>
     </div>
-    <Footer />
+    <Footer :isLoggedIn="true"/>
 </template>
 
 <script setup lang="ts">

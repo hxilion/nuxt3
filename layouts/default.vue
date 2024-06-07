@@ -35,4 +35,8 @@
 
 // const userStore = useUserStore()
 // const userProfile = computed(() => userStore.profile)
+import { useYoxibitStore } from '@/stores/yoxibit'
+
+const userStore = useYoxibitStore();
+console.log('userStore', userStore);
 </script>

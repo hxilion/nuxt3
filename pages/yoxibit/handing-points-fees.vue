@@ -1,5 +1,5 @@
 <template>
-  <PageLayout :loginStatus="true">
+  <PageLayout :loginStatus="true" :pathTitle="'取扱限度額・手数料'" :pathName="'HANDLING POINTS/FEES'">
     <div class="handing-points-fees">
       <div id="card1" class="w-full bg-white p-8 shadow-ctz1 mb-2">
         <div class="border-l-4 border-primary font-bold text-2xl pl-5 mb-10 sm:text-xl">メールアドレス変更</div>

@@ -1,5 +1,5 @@
 <template>
-  <PageLayout :loginStatus="true">
+  <PageLayout :loginStatus="true" :pathTitle="'取引履歴'" :pathName="'TRADING HISTORY'">
     <div class="trading-history">
       <Form class="mb-5">
         <div class="flex items-center justify-center flex-wrap gap-y-2.5 sm:block">

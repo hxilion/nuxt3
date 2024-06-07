@@ -33,8 +33,8 @@
                             </li>
                         </ul>
                         <div class="text-center flex flex-col items-center justify-center space-y-8 mt-6">
-                            <button type="button" class="w-auto cursor-pointer font-bold relative py-4 text-center block tracking-widest text-base px-24 flex inline-flex justify-center text-black bg-primary hover:opacity-50 duration-300 rounded-lg arrow-right-black">
-                            <span>確認画面</span>
+                            <button type="button" class="w-auto cursor-pointer font-bold relative py-4 text-center block tracking-widest text-base px-24 flex inline-flex justify-center text-black bg-primary hover:opacity-50 duration-300 rounded-lg arrow-right-black sm:px-20">
+                            <span @click="showDialog = true">確認画面</span>
                             </button>
                         </div>
                     </div>
@@ -42,10 +42,27 @@
             </section>
         </main>
     </PageLayout>
+    <Dialog
+    :modelValue="showDialog"
+    :modelButtonValue="true"
+    :cancelText="'CANCEL'"
+    title="確認送信"
+    @update:modelValue="updateDialogValue"
+    @update:modelButtonValue="true"
+  >
+  <div>There is a explain with this popup.</div>
+  </Dialog>
 </template>
 
 <script setup lang="ts">
 import PageLayout from '@/components/yoxibit/pageLayout.vue';
+import Dialog from '~/components/yoxibit/dialog.vue';
+import { ref } from 'vue';
+const showDialog = ref(false);
+
+const updateDialogValue = (value: boolean) => {
+  showDialog.value = value;
+};
 </script>
 
 <!-- <style scoped>

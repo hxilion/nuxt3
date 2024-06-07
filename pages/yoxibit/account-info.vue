@@ -1,5 +1,5 @@
 <template>
-  <Nav :isLoggedIn="true"/>
+  <Nav :isLoggedIn="true" :pathTitle="'口座情報'" :pathName="'ACCOUNT INFORMATION'"/>
   <div class="yoxibit font-['Murecho']">
     <div class="account-info">
       <div class="w-full h-34 bg-gray96 py-8 sm:h-48">

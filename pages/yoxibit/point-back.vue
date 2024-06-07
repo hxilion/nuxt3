@@ -1,5 +1,5 @@
 <template>
-  <Nav :isLoggedIn="true"/>
+  <Nav :isLoggedIn="true" :pathTitle="'ポイントバックについて'" :pathName="'POINT BACK'" />
   <div class="point-back">
     <div class="w-full bg-gray96 py-8 sm:h-[336px]">
       <div class="max-w-[1184px] mx-auto px-4">

@@ -18,7 +18,7 @@
           class="w-48 h-14 px-12 font-bold text-secondary rounded-lg bg-white "
           @click="closeDialog"
         >
-          Close
+          {{ cancelText }}
         </button>
         <button
           class="w-48 h-14 px-12 font-bold text-secondary rounded-lg bg-primary ml-3"
@@ -56,6 +56,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  cancelText: {
+    type: String,
+    default: 'Close'
+  }
 });
 
 const emit = defineEmits(['update:modelValue', 'update:modelButtonValue']);

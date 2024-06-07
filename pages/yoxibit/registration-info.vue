@@ -1,5 +1,5 @@
 <template>
-  <Nav :isLoggedIn="true"/>
+  <Nav :isLoggedIn="true" :pathTitle="'登録情報'" :pathName="'REGISTRATION INFORMATION'"/>
   <div class="registration">
     <div class="w-full h-52 bg-gray96 py-8 px-4 sm:h-[408px]">
       <div class="max-w-[1184px] mx-auto">

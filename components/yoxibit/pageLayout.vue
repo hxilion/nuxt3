@@ -1,11 +1,15 @@
 <template>
-  <div class="yoxibit flex flex-col min-h-screen">
-    <Nav :isLoggedIn="props.loginStatus" />
-    <div class="flex-grow flex-1 overflow-x-hidden">
-      <div class="bg-grayF8 font-['Murecho'] text-secondary px-4 py-10">
-        <div class="max-w-[1184px] mx-auto">
+  <div class="yoxibit flex min-h-screen flex-col">
+    <Nav
+      :isLoggedIn="props.loginStatus"
+      :pathName="props.pathName"
+      :pathTitle="props.pathTitle"
+    />
+    <div class="flex-1 flex-grow overflow-x-hidden">
+      <div class="bg-grayF8 px-4 py-10 font-['Murecho'] text-secondary">
+        <div class="mx-auto max-w-[1184px]">
           <slot>
-            <router-view/>
+            <router-view />
           </slot>
         </div>
       </div>
@@ -17,9 +21,19 @@
 <script lang="ts" setup>
 import Nav from './nav.vue';
 import Footer from './footer.vue';
-interface Props {
-  loginStatus?: boolean;
-}
 
-const props = defineProps<Props>();
+const props = defineProps({
+  loginStatus: {
+    type: Boolean,
+    default: false
+  },
+  pathTitle: {
+    type: String,
+    default: ''
+  },
+  pathName: {
+    type: String,
+    default: ''
+  },
+});
 </script>

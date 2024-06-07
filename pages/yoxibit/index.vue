@@ -59,6 +59,7 @@ onMounted(() => {
   emit('updateLoggedIn', false);
 });
 const router = useRouter()
+const userLogin = useCookie('login');
 const login = () => {
   router.push('/yoxibit/home')
 }

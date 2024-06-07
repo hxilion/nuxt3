@@ -1,5 +1,5 @@
 <template>
-  <PageLayout :loginStatus="true">
+  <PageLayout :loginStatus="true" :pathTitle="'換金申請'" :pathName="'REDEMPTION APPLICATION'">
     <div class="redemption-application" >
       <div class="text-w[32px] font-bold mb-4 block-vector-left">換金の所要時間</div>
       <div class="w-full bg-white p-8 shadow-ctz1 mb-20">

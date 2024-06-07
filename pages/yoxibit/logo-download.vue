@@ -1,5 +1,5 @@
 <template>
-    <PageLayout :loginStatus="true">
+    <PageLayout :loginStatus="true" :pathTitle="'ロゴデータ ダウンロード'" :pathName="'LOGO DOWNLOAD'">
         <div class="bg-grayF8">
             <div class="flex flex-col">
                 <div class="px-4 border-l-4 border-primary text-2xl font-bold">サムネイル</div>

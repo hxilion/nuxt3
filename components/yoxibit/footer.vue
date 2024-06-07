@@ -43,7 +43,7 @@ const props = withDefaults(defineProps<{
 const items = ref([
     { href: '/yoxibit/home', text: 'ホーム' },
     { href: '/yoxibit/manual', text: '初めての⽅へ' },
-    { href: '/yoxibit/handing-points-fees', text: 'ポイントバックについて' },
+    { href: '/yoxibit/point-back', text: 'ポイントバックについて' },
     { href: '/yoxibit/contact', text: 'お問合せ' },
     { href: '/yoxibit/trading-history', text: '取引履歴' },
     { href: '/yoxibit', text: '登録情報' },
