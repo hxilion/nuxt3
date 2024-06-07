@@ -9,13 +9,13 @@
   background-position: right 20px center;
 }
 
-.block-vector-right {
+.black-vector-right {
   background-image: url("/assets/img/yoxibit/arrow-right-black.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
 }
 
-.block-vector-left {
+.black-vector-left {
   background-image: url("/assets/img/yoxibit/arrow-right-black.svg");
   background-repeat: no-repeat;
   background-position: center left 120px;
@@ -35,53 +35,6 @@
 
 .primary-variant {
   background: linear-gradient(0deg, #00FF50, #00FF50),linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-}
-
-.arrow-right-white {
-  position: relative;
-  &::after {
-    content: url(/assets/img/yoxibit/arrow-right-white.svg);
-    position: absolute;
-    right: 20px;
-  }
-}
-
-.arrow-left-white {
-  position: relative;
-  &::before {
-    content: url(/assets/img/yoxibit/arrow-right-white.svg);
-    position: absolute;
-    left: 20px;
-    transform: rotate(180deg);
-  }
-}
-
-.arrow-right-black {
-  position: relative;
-  &::after {
-    content: url(/assets/img/yoxibit/arrow-right-black.svg);
-    position: absolute;
-    right: 20px;
-  }
-}
-
-.arrow-left-black {
-  position: relative;
-  &::before {
-    content: url(/assets/img/yoxibit/arrow-right-black.svg);
-    position: absolute;
-    left: 20px;
-    transform: rotate(180deg);
-  }
-}
-
-.arrow-down {
-  position: relative;
-  &::after {
-    content: url(/assets/img/yoxibit/arrow-down.svg);
-    position: absolute;
-    right: 20px;
-  }
 }
 
 .circle-bit {

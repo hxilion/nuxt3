@@ -159,7 +159,7 @@
           <div class="text-center">
             <button
               type="submit"
-              class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
+              class="w-80 h-14 bg-primary black-vector-right px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
               >初めての方へ
             </button>
           </div>

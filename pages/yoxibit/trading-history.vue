@@ -16,7 +16,7 @@
           <div class="text-center mr-4 sm:mr-0 sm:mb-3">
             <button
             type="submit"
-            class="w-[130px] h-14 block-vector-right px-12 rounded-lg font-bold bg-primary hover:bg-primaryVariant sm:w-full" 
+            class="w-[130px] h-14 black-vector-right px-12 rounded-lg font-bold bg-primary hover:bg-primaryVariant sm:w-full" 
             >検索
             </button>
           </div>

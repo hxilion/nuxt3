@@ -65,9 +65,9 @@
           </div>
         </div>
         <div
-          class="arrow-right-black my-4 flex h-14 w-80 cursor-pointer items-center justify-center rounded-lg bg-primary font-bold"
+          class="black-vector-right my-4 flex h-14 w-80 cursor-pointer items-center justify-center rounded-lg bg-primary font-bold hover:bg-primaryVariant"
           :class="{ 'cursor-not-allowed opacity-50': !isFormValid }"
-          @click="showDialog = true"
+          @click="isFormValid ? showDialog = true : ''"
         >
           確認画面
         </div>
@@ -90,7 +90,7 @@
     @update:modelValue="updateDialogValue"
     @update:modelButtonValue="true"
   >
-  <div>There is a explain with this popup.</div>
+    <div>There is a explain with this popup.</div>
   </Dialog>
 </template>
 

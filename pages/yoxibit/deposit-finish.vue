@@ -5,27 +5,6 @@
     :pathName="'DEPOSIT'"
   >
     <main class="flex-1 flex-grow overflow-x-hidden">
-      <section class="bg-white" id="title">
-        <div class="max-w-screen-xl relative mx-auto px-4 py-16">
-          <div class="block w-full overflow-x-scroll sm:hidden">
-            <nav
-              class="bg-grey-light absolute left-4 top-0 ml-4 ml-5 mt-5 w-full w-full rounded-md sm:ml-0 sm:mt-2"
-            >
-              <ol class="flex items-center justify-start space-x-2 text-sm">
-                <li class="whitespace-nowrap">
-                  <a class="text-secondary underline" href="/yoxibit/home">ホーム</a>
-                </li>
-                <li>&gt;</li>
-                <li class="whitespace-nowrap">購入事前申請</li>
-              </ol>
-            </nav>
-          </div>
-          <div class="text-center">
-            <h2 class="mb-1 text-4xl font-bold tracking-widest sm:text-2xl">購入事前申請</h2>
-            <p class="font-bold tracking-widest text-primary">DEPOSIT</p>
-          </div>
-        </div>
-      </section>
       <section class="bg-grayF8 px-4 py-20 tracking-widest sm:px-0">
         <div class="max-w-screen-xl mx-auto">
           <div class="shadow-vglow bg-white p-8 sm:p-4">

@@ -42,19 +42,19 @@
                 </div>
                 <div class="text-center">
                     <div class="flex text-secondary items-center justify-center mb-6 space-y-0 flex-row space-x-4 sm:flex-col sm:space-x-0 sm:space-y-4">
-                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60 max-w-15 bg-primary hover:opacity-50 duration-300 rounded-lg arrow-right-black sm:w-full sm:text-base"
+                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60 max-w-15 bg-primary hover:bg-primaryVariant duration-300 rounded-lg black-vector-right sm:w-full sm:text-base"
                             href="/yoxibit/deposit/"><span>購入</span>
                         </a>
-                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60 max-w-15 bg-primary hover:opacity-50 duration-300 rounded-lg arrow-right-black sm:w-full sm:text-base"
+                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60 max-w-15 bg-primary hover:bg-primaryVariant duration-300 rounded-lg black-vector-right sm:w-full sm:text-base"
                             href="/yoxibit/redemption-application/"><span>換金</span>
                         </a>
-                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60  max-w-15 bg-vblack hover:opacity-50 duration-300 text-white rounded-lg bg-secondary arrow-right-white sm:w-full sm:text-base"
+                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest py-3 text-lg w-60  max-w-15 bg-vblack hover:bg-gray8E duration-300 text-white rounded-lg bg-secondary white-vector-right sm:w-full sm:text-base"
                             href="/yoxibit/trading-history"><span>取引履歴</span>
 
                         </a>
                     </div>
                     <div class="flex items-center justify-center">
-                        <a class="text-lg font-bold flex items-center justify-center space-x-2 px-10 arrow-right-black sm:text-base"
+                        <a class="text-lg font-bold flex items-center justify-center space-x-2 px-10 black-vector-right sm:text-base"
                             href="/yoxibit/handing-points-fees"><span>利用限度額・手数料</span>
                         </a>
                     </div>
@@ -72,7 +72,7 @@
                         <p class="sm:text-sm">YOXIBITの仕組みについて、詳しく説明しています。初めて利用される方や、YOXIBITについて詳しく知りたい方はこちらのページをご確認ください。</p>
                     </div>
                     <div class="text-center flex justify-center">
-                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest text-md w-full max-w-[333px] text-secondary bg-primary hover:opacity-50 duration-300 rounded-lg arrow-right-black"
+                        <a class="font-bold relative p-1 py-4 text-center block tracking-widest text-md w-full max-w-[333px] text-secondary bg-primary hover:bg-primaryVariant duration-300 rounded-lg black-vector-right"
                             href="/yoxibit/manual/">
                             <span>初めての方へ</span>
                         </a>
@@ -101,7 +101,7 @@
                                         sollicitudin lacus, ut interdum tellus elit sed risus. </p>
                                 </div>
                                 <div>
-                                    <a class="font-bold relative p-1 py-4 text-center block tracking-widest text-xl w-full text-vblack bg-primary hover:opacity-50 duration-300 arrow-right-black rounded-lg sm:text-base"
+                                    <a class="font-bold relative p-1 py-4 text-center block tracking-widest text-xl w-full text-vblack bg-primary hover:bg-primaryVariant duration-300 black-vector-right rounded-lg sm:text-base"
                                         href="#">
                                         <span>詳しく見る</span>
                                     </a>
@@ -122,7 +122,7 @@
                                         dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
                                         sollicitudin lacus, ut interdum tellus elit sed risus. </p>
                                 </div>
-                                <div><a class="font-bold relative p-1 py-4 text-center block tracking-widest text-xl w-full text-vblack bg-primary hover:opacity-50 duration-300 arrow-right-black rounded-lg sm:text-base"
+                                <div><a class="font-bold relative p-1 py-4 text-center block tracking-widest text-xl w-full text-vblack bg-primary hover:bg-primaryVariant duration-300 black-vector-right rounded-lg sm:text-base"
                                         href="#">
                                         <span>詳しく見る</span>
                                     </a>

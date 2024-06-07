@@ -18,7 +18,7 @@
           </div>
         </div>
         <a href="/yoxibit/manual"
-          class="bg-secondary text-white rounded-lg sm:rounded-none w-80 sm:w-full h-14 flex justify-center items-center cursor-pointer arrow-right-white my-16">
+          class="bg-secondary text-white rounded-lg sm:rounded-none w-80 sm:w-full h-14 flex justify-center items-center cursor-pointer white-vector-right my-16 hover:opacity-50">
           YOXIBITとは
         </a>
       </div>
@@ -33,7 +33,7 @@
           <input class="w-full border-solid border-grayD2 border sm:h-14" type="text">
         </div>
         <div
-          class="bg-primary rounded-lg arrow-right-black w-80 h-14 flex justify-center items-center cursor-pointer my-4 font-bold"
+          class="bg-primary rounded-lg black-vector-right w-80 h-14 flex justify-center items-center cursor-pointer my-4 font-bold hover:bg-primaryVariant"
           @click="login">ログイン</div>
         <div class="p-4 sm:text-sm">
           <span>パスワードをお忘れの方は</span>
@@ -42,7 +42,7 @@
       </div>
       <div class="flex flex-col justify-center items-center p-4">
         <div class="p-2">会員登録がお済みでない方はこちら</div>
-        <div class="bg-secondary arrow-right-white rounded-lg flex justify-center items-center w-80 h-14 cursor-pointer font-bold text-white" @click="register">新規登録</div>
+        <div class="bg-secondary white-vector-right rounded-lg flex justify-center items-center w-80 h-14 cursor-pointer font-bold text-white hover:opacity-50" @click="register">新規登録</div>
       </div>
     </div>
   </PageLayout>

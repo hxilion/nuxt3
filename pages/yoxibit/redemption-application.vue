@@ -158,7 +158,7 @@
           <div class="sm:text-center">
             <button
               type="button"
-              class="block-vector-right w-80 h-14 bg-primary px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
+              class="black-vector-right w-80 h-14 bg-primary px-12 rounded-lg font-bold hover:bg-primaryVariant sm:w-[311px]" 
               >上記に同意して換金する
             </button>
           </div>

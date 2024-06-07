@@ -1,11 +1,11 @@
 <template>
     <template v-if="isLoggedIn">
-        <footer class="flex flex-col justify-center justify-self-end bg-white text-secondary font-bold sm:px-4">
-            <div class="border-primary border-b max-w-screen-xl py-4 max-w-[1184px] mx-auto w-3/4 text-xl sm:w-full">
+        <footer class="flex flex-col justify-center justify-self-end bg-white text-secondary font-bold sm:px-0">
+            <div class="border-primary border-b max-w-screen-xl py-4 max-w-[1184px] mx-auto w-3/4 text-xl sm:w-full sm:mx-4">
                 サイトマップ
                 <span class="text-primary ml-4 text-sm">SITE MAP</span>
             </div>
-            <div class="flex justify-start max-w-[1184px] w-3/4 mx-auto flex-wrap pt-4 pb-10 sm:w-full">
+            <div class="flex justify-start max-w-[1184px] w-3/4 mx-auto flex-wrap pt-4 pb-10 sm:w-full sm:mx-4">
                 <template v-for="(item, index) in items" :key="index">
                     <div class="flex items-center space-x-2 w-1/2 py-2 sm:w-full">
                         <img class="mr-1.5" src="/assets/img/yoxibit/topics-arrow.svg" />

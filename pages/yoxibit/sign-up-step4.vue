@@ -9,7 +9,7 @@
       <div class="text-center my-16">
         <button
         type="submit"
-        class="w-80 h-14 bg-primary block-vector-right px-12 rounded-lg font-bold sm:text-base hover:bg-primaryVariant sm:w-[311px]" 
+        class="w-80 h-14 bg-primary black-vector-right px-12 rounded-lg font-bold sm:text-base hover:bg-primaryVariant sm:w-[311px]" 
         >ログイン画面
         </button>
       </div>

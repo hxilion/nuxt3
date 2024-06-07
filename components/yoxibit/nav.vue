@@ -1,7 +1,7 @@
 <template>
   <template v-if="isLoggedIn">
     <div class="relative bg-primary text-lg">
-      <div class="absolute right-0 flex h-full text-secondary sm:hidden">
+      <div class="absolute right-0 flex h-full text-secondary sm:hidden z-10">
         <ul class="flex h-full flex-row text-[1.1rem] text-base font-bold">
           <li class="flex h-full items-center px-3">
             <div class="flex items-center bg-primary pl-2">
@@ -12,7 +12,7 @@
           </li>
           <li class="h-full border-l border-black">
             <a
-              class="block flex h-full items-center px-8 duration-200 hover:opacity-50"
+              class="block flex h-full items-center px-8 duration-200 hover:bg-primaryVariant cursor-pointer"
               href="/yoxibit/registration-info"
             >
               <span class="pb-px">登録情報</span>
@@ -20,7 +20,7 @@
           </li>
           <li class="flex h-full">
             <a
-              class="flex items-center items-center bg-black px-8 text-white duration-200 hover:bg-white hover:text-secondary"
+              class="flex items-center items-center bg-black px-8 text-white duration-200 hover:bg-gray8E cursor-pointer"
               href="/yoxibit"
               >ログアウト</a
             >
@@ -28,7 +28,7 @@
         </ul>
       </div>
       <div
-        class="max-w-screen-xl relative mx-auto flex w-full justify-between py-2.5 sm:h-[56px] sm:max-w-full sm:px-2 sm:py-4"
+        class="max-w-screen-xl relative mx-auto flex w-full justify-between px-4 py-2.5 sm:h-[56px] sm:max-w-full sm:px-2 sm:py-4"
       >
         <p class="flex items-center pl-0 text-sm font-bold text-secondary">
           <span>『速くておトク』なベガウォレット</span>
@@ -72,26 +72,26 @@
           <div class="flex w-full flex-wrap border-b border-grayD2 py-2 font-bold">
             <a
               href="/yoxibit/deposit"
-              class="arrow-right-black my-2 mr-4 flex-1 rounded-lg bg-primary p-4 text-center"
+              class="black-vector-right my-2 mr-4 flex-1 rounded-lg bg-primary p-4 text-center"
             >
               購入
             </a>
             <a
               href="/yoxibit/redemption-application/"
-              class="arrow-right-black my-2 flex-1 rounded-lg bg-primary p-4 text-center"
+              class="black-vector-right my-2 flex-1 rounded-lg bg-primary p-4 text-center"
             >
               換金
             </a>
             <a
               href="/yoxibit/trading-history"
-              class="arrow-right-white my-2 w-full rounded-lg bg-secondary p-4 text-center text-white"
+              class="white-vector-right my-2 w-full rounded-lg bg-secondary p-4 text-center text-white"
             >
               取引履歴一覧
             </a>
           </div>
           <div class="w-full py-4">
             <div
-              class="arrow-right-white w-full rounded-lg bg-gray96 p-4 text-center font-bold text-white"
+              class="white-vector-right w-full rounded-lg bg-gray96 p-4 text-center font-bold text-white"
               @click="logout"
             >
               ログアウト
@@ -103,7 +103,7 @@
     <div class="bg-white pt-6 sm:pt-0">
       <div class="max-w-screen-xl sm: mx-auto max-w-full px-4">
         <div class="flex justify-between py-0 py-4 pb-0 sm:justify-center sm:py-4">
-          <a class="duration-300 hover:opacity-50" href="/yoxibit/home">
+          <a class="duration-300" href="/yoxibit/home">
             <img
               class="mx-0 mb-0 h-[48px] h-[65px] w-[358px] w-full max-w-[400px] sm:w-[192px]"
               src="/assets/img/yoxibit/yoxibit-logo.svg"
@@ -111,13 +111,13 @@
           </a>
           <div class="flex items-center space-x-2 text-white sm:hidden">
             <a
-              class="arrow-right-black relative block min-w-[200px] rounded-lg bg-primary px-2 py-2 text-center font-bold tracking-widest text-secondary duration-300 hover:opacity-50"
+              class="black-vector-right relative block min-w-[200px] rounded-lg bg-primary px-2 py-2 text-center font-bold tracking-widest text-secondary duration-300 hover:bg-primaryVariant"
               href="/yoxibit/redemption-application"
             >
               <span>換金申請</span>
             </a>
             <a
-              class="arrow-right-white relative block min-w-[200px] rounded-lg bg-black px-2 py-2 text-center font-bold tracking-widest duration-300 hover:opacity-50"
+              class="white-vector-right relative block min-w-[200px] rounded-lg bg-black px-2 py-2 text-center font-bold tracking-widest duration-300 hover:bg-gray8E"
               href="/yoxibit/trading-history"
             >
               <span>取引履歴一覧</span>

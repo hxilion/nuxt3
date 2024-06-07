@@ -103,7 +103,7 @@
                     class="mb-4 flex items-center justify-center space-x-4 text-lg font-bold sm:flex-col sm:space-x-0 sm:space-y-4 sm:text-base"
                   >
                     <a
-                      class="arrow-right-black arrow-left-white block w-full max-w-80 rounded-lg bg-secondary p-1 py-4 text-center tracking-widest text-white duration-300 hover:opacity-50"
+                      class="white-vector-left block w-full max-w-80 rounded-lg bg-secondary p-1 py-4 text-center tracking-widest text-white duration-300 hover:bg-gray8E"
                       href="/yoxibit/home"
                     >
                       <span>トップに戻る</span>
@@ -112,7 +112,7 @@
                       type="button"
                       name="ok"
                       @click="DepositSubmit"
-                      class="arrow-right-black mb-0 block w-full max-w-80 rounded-lg bg-primary p-1 py-4 text-center tracking-widest text-secondary duration-300 hover:opacity-50"
+                      class="black-vector-right mb-0 block w-full max-w-80 rounded-lg bg-primary p-1 py-4 text-center tracking-widest text-secondary duration-300 hover:bg-primaryVariant"
                     >
                       <span id="okname">申請を確定する</span>
                     </button>
