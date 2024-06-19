@@ -116,9 +116,9 @@
           <img src="/assets/img/email/pazuru-logo-white.png" alt="">
         </div>
         <div class="text-xs" style="color: #f4eafe;">
-          <a class="border-l-4 border-primary" href="/">プライバシーポリシー</a>
-          <a class="border-l-4 border-primary" href="/">利用規約</a>
-          <a class="border-l-4 border-primary" href="/">よくある質問</a>
+          <a class="border-primary" href="/">プライバシーポリシー</a>
+          <a class="border-primary" href="/">利用規約</a>
+          <a class="border-primary" href="/">よくある質問</a>
           <a href="/">カスタマーサポート</a>
         </div>
         <div class="text-color-1 text-xs mt-10" style="color: #fff;">
@@ -138,7 +138,7 @@
     border-bottom: 1px solid #cc9dfa;
   }
 
-  .border-l-4 border-primary {
+  .border-primary {
     border-right: 1px solid #f4eafe;
     margin-right: 10px;
     padding-right: 10px;
