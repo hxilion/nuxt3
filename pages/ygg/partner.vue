@@ -1,65 +1,175 @@
 <template>
-  <div class="partner" style="font-family:'M PLUS 2'">
-    <div class="card1 py-10 px-10 flex">
+  <div class="partner" style="font-family: 'M PLUS 2'">
+    <div class="card1 flex h-auto w-full px-10 pb-0 pt-10 lg:px-5 lg:py-5">
       <div class="relative text-left">
-        <div class="title text-4xl font-bold mt-5 mb-14">Partner with Yggdrasil</div>
-        <div class="pb-5" style="max-width: 800px;">
-          Here at Yggdrasil we believe in strong, strategic, long-lasting partnerships. 
-          Together with our partners we create innovative iGaming solutions and top-notch games. 
-          Besides building client relations with operators, we drive collaboration in key areas of our business through the YGG Masters program, 
-          affiliation opportunities and with streamers.
+        <div class="title mb-14 mt-5 text-4xl font-bold">Partner with Yggdrasil</div>
+        <div class="pb-5" style="max-width: 800px">
+          Here at Yggdrasil we believe in strong, strategic, long-lasting partnerships. Together
+          with our partners we create innovative iGaming solutions and top-notch games. Besides
+          building client relations with operators, we drive collaboration in key areas of our
+          business through the YGG Masters program, affiliation opportunities and with streamers.
           Take the lead and partner with us!
         </div>
-        <div class="font-bold pb-5">
-          Take the lead and partner with us!
-        </div>
+        <div class="pb-5 font-bold">Take the lead and partner with us!</div>
       </div>
-      <div class="picture text-right" style="max-width: 640px; min-width: 390px;">
-        <img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/partners-header.png" alt="">
+      <div
+        class="picture mt-10 block text-right lg:hidden"
+        style="max-width: 640px; min-width: 390px"
+      >
+        <img
+          src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/partners-header.png"
+          alt=""
+        />
       </div>
     </div>
-    <div class="card2">
-      123
+    <div class="card2 w-full">
+      <div class="mx-auto max-w-screen-2xl"></div>
     </div>
-    <div class="card3">
-      <div class="pt-20 pb-12 px-8">
-        <div class="text-2xl text-white pb-10 font-bold">Some of our partners</div>
-        <div class="partners-logo">
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/MicrosoftTeams-image-9.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/InterWetten_Logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/Betfred-logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/Veikkaus-logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/casinoBarcelona_Logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/LeoVegas_Logo_2A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/KINDRED-logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/tipsport_Logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/betway_Logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/POKERSTARS_Logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/Entain_Logo_A.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/888_Logo_A.png" alt=""></div>
-          <div class="logo-bg" style="padding-top: 25px;padding-bottom: 25px;"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/william-hill.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/betsson-group.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/casumo.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/mrgreen.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/lottoland.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/comeon.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/lottomatica.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/skill-on-net.png" alt=""></div>
-          <div class="logo-bg"><img src="https://xfm.tzg.mybluehost.me/website_d91302e3/wp-content/uploads/2024/05/bet365.png" alt=""></div>
+    <div class="card3 h-auto w-full">
+      <div class="mx-auto max-w-screen-2xl">
+        <div class="px-8 pb-12 pt-10">
+          <div class="pb-10 text-2xl font-bold text-white">Some of our partners</div>
+          <div class="partners-logo">
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/MicrosoftTeams-image-9.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/InterWetten_Logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/Betfred-logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/Veikkaus-logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/casinoBarcelona_Logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/LeoVegas_Logo_2A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/KINDRED-logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/tipsport_Logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/betway_Logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/POKERSTARS_Logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/Entain_Logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/888_Logo_A.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg" style="padding-top: 25px; padding-bottom: 25px">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/william-hill.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/betsson-group.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/casumo.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/mrgreen.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/lottoland.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/comeon.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/lottomatica.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/skill-on-net.png"
+                alt=""
+              />
+            </div>
+            <div class="logo-bg">
+              <img
+                src="https://yggdrasilgaminggames.com/wp-content/uploads/2024/05/bet365.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="partner-card4">
-      <div class="pt-20 pb-12 px-8">
-        <div class="text-2xl pb-10 font-bold">
-          Partner with us
-        </div>
-        <a href="/">
-            <button
-              type="button"
-              class="rounded-sm px-7 text-base text-white font-bold">SEND
+      <div class="mx-auto flex max-w-screen-2xl">
+        <div class="px-8 pb-12 pt-20">
+          <div class="pb-10 text-2xl font-bold">Partner with us</div>
+          <a href="/">
+            <button type="button" class="rounded-sm px-7 text-base font-bold text-white">
+              SEND
             </button>
           </a>
+        </div>
       </div>
     </div>
   </div>
@@ -69,8 +179,6 @@
 
 <style>
 .card1 {
-  width: 100%;
-  height: 435px;
   background-color: #ecf0f1;
 }
 
@@ -78,20 +186,17 @@
   color: #fa6432;
 }
 
-.card1 .picture {
+/* .card1 .picture {
   position: relative;
   top: -50px;
-}
+} */
 
 .card2 {
-  width: 100%;
   height: 665px;
   background: linear-gradient(16deg, #171a1f 0, #363b4a 100%);
 }
 
 .card3 {
-  width: 100%;
-  height: 665px;
   background: linear-gradient(199deg, #fa9633 0, #fa6533 100%) no-repeat #fa6533;
 }
 
@@ -101,8 +206,30 @@
   grid-column-gap: 30px;
 }
 
+@media (max-width: 1024px) {
+  .partners-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .partners-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .partners-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+
 .logo-bg {
-  background-color: rgba(255,255,255,.25);
+  background-color: rgba(255, 255, 255, 0.25);
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -116,5 +243,4 @@
   height: 40px;
   width: 200px;
 }
-
 </style>
